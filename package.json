@@ -1,0 +1,7 @@
+{
+  "name": "dfe-spfe-frontend",
+  "private": true,
+  "dependencies": {
+    "govuk-frontend": "^2.12.0"
+  }
+}
