@@ -1,27 +1,71 @@
-class ContentfulGatewayStub
-  attr_reader :is_get_case_study_called, :get_case_study_called_with
+# frozen_string_literal: true
 
-  def initialize
-    @is_get_case_study_called = false
+describe UseCase::GetCaseStudy do
+  let(:case_study_slug) { 'case-study-blub-primary-school' }
+  let(:contentful_gateway) { spy }
+  let(:get_case_study) do
+    UseCase::GetCaseStudy.new(content_gateway: contentful_gateway)
+  end
+  let(:response) { get_case_study.execute(slug: case_study_slug) }
+
+  before { response }
+
+  it 'can call the contentful gateway' do
+    expect(contentful_gateway).to have_received(:get_case_study)
   end
 
-  def get_case_study(slug:)
-    @is_get_case_study_called = true
-    @get_case_study_called_with = slug
-    Domain::CaseStudy.new.tap do |case_study|
-      if slug == 'case-study-grantham-primary-school'
-        case_study.name = 'Case Study - Grantham Primary School'
-        case_study.slug = 'case-study-grantham-primary-school'
-        case_study.hero_image = '//images.ctfassets.net/grantham-hero-image.png'
+  it 'can call the contentful gateway with the slug' do
+    expect(contentful_gateway).to have_received(:get_case_study).with(slug: case_study_slug)
+  end
+
+  context 'When case study is Woof Primary School' do
+    let(:case_study) do
+      Domain::CaseStudy.new.tap do |case_study|
+        case_study.name = 'Case Study - Woof Primary School'
+        case_study.slug = 'case-study-woof-primary-school'
+        case_study.hero_image = '//images.ctfassets.net/woof-hero-image.png'
         case_study.content = [{
           type: :heading,
           data: {
-            text: 'School leader transforms Grantham primary school',
+            text: 'School leader transforms Woof primary school',
             level: :heading_one,
             bold: true
           }
         }]
-      else
+      end
+    end
+    let(:case_study_slug) { 'case-study-woof-primary-school' }
+    let(:contentful_gateway) { double(get_case_study: case_study) }
+
+    it 'can get the name of a case study from the gateway (example one)' do
+      expect(response).to include(name: 'Case Study - Woof Primary School')
+    end
+
+    it 'can get the slug of a case study from the gateway (example one)' do
+      expect(response).to include(slug: 'case-study-woof-primary-school')
+    end
+
+    it 'can get the hero image of a case study from the gateway (example one)' do
+      expect(response).to include(hero_image: '//images.ctfassets.net/woof-hero-image.png')
+    end
+
+    it 'can get the content of a case study from the gateway (example one)' do
+      expect(response).to include(
+        content: [{
+          type: :heading,
+          data: {
+            text: 'School leader transforms Woof primary school',
+            level: :heading_one,
+            bold: true
+          }
+        }]
+      )
+    end
+  end
+
+  context 'When case study is Meow Primary School' do
+    let(:case_study) do
+      Domain::CaseStudy.new.tap do |case_study|
         case_study.name = 'Case Study - Meow Primary School'
         case_study.slug = 'case-study-meow-primary-school'
         case_study.hero_image = '//images.ctfassets.net/meow-hero-image.png'
@@ -35,86 +79,40 @@ class ContentfulGatewayStub
         }]
       end
     end
-  end
-end
+    let(:case_study_slug) { 'case-study-meow-primary-school' }
+    let(:contentful_gateway) { double(get_case_study: case_study) }
 
-describe UseCase::GetCaseStudy do
-  let(:case_study_slug) { 'case-study-grantham-primary-school' }
-  let(:contentful_gateway) { ContentfulGatewayStub.new }
-  let(:get_case_study) do
-    UseCase::GetCaseStudy.new(content_gateway: contentful_gateway)
-  end
-  let(:response) { get_case_study.execute(slug: case_study_slug) }
+    it 'can get the name of a case study from the gateway (example two)' do
+      response = get_case_study.execute(slug: case_study_slug)
 
-  before { response }
+      expect(response).to include(name: 'Case Study - Meow Primary School')
+    end
 
-  it 'can call the contentful gateway' do
-    expect(contentful_gateway.is_get_case_study_called).to be_truthy
-  end
+    it 'can get the slug of a case study from the gateway (example two)' do
+      response = get_case_study.execute(slug: case_study_slug)
 
-  it 'can call the contentful gateway with the slug' do
-    expect(contentful_gateway.get_case_study_called_with).to eq(case_study_slug)
-  end
+      expect(response).to include(slug: 'case-study-meow-primary-school')
+    end
 
-  it 'can get the name of a case study from the gateway (example one)' do
-    expect(response).to include(name: 'Case Study - Grantham Primary School')
-  end
+    it 'can get the hero image of a case study from the gateway (example two)' do
+      response = get_case_study.execute(slug: case_study_slug)
 
-  it 'can get the name of a case study from the gateway (example two)' do
-    case_study_slug = 'case-study-meow-primary-school'
-    response = get_case_study.execute(slug: case_study_slug)
+      expect(response).to include(hero_image: '//images.ctfassets.net/meow-hero-image.png')
+    end
 
-    expect(response).to include(name: 'Case Study - Meow Primary School')
-  end
+    it 'can get the content of a case study from the gateway (example two)' do
+      response = get_case_study.execute(slug: case_study_slug)
 
-  it 'can get the slug of a case study from the gateway (example one)' do
-    expect(response).to include(slug: 'case-study-grantham-primary-school')
-  end
-
-  it 'can get the slug of a case study from the gateway (example two)' do
-    case_study_slug = 'case-study-meow-primary-school'
-    response = get_case_study.execute(slug: case_study_slug)
-
-    expect(response).to include(slug: 'case-study-meow-primary-school')
-  end
-
-  it 'can get the hero image of a case study from the gateway (example one)' do
-    expect(response).to include(hero_image: '//images.ctfassets.net/grantham-hero-image.png')
-  end
-
-  it 'can get the hero image of a case study from the gateway (example two)' do
-    case_study_slug = 'case-study-meow-primary-school'
-    response = get_case_study.execute(slug: case_study_slug)
-
-    expect(response).to include(hero_image: '//images.ctfassets.net/meow-hero-image.png')
-  end
-
-  it 'can get the content of a case study from the gateway (example one)' do
-    expect(response).to include(
-      content: [{
-        type: :heading,
-        data: {
-          text: 'School leader transforms Grantham primary school',
-          level: :heading_one,
-          bold: true
-        }
-      }]
-    )
-  end
-
-  it 'can get the content of a case study from the gateway (example two)' do
-    case_study_slug = 'case-study-meow-primary-school'
-    response = get_case_study.execute(slug: case_study_slug)
-
-    expect(response).to include(
-      content: [{
-        type: :heading,
-        data: {
-          text: 'School leader transforms Meow primary school',
-          level: :heading_one,
-          bold: true
-        }
-      }]
-    )
+      expect(response).to include(
+        content: [{
+          type: :heading,
+          data: {
+            text: 'School leader transforms Meow primary school',
+            level: :heading_one,
+            bold: true
+          }
+        }]
+      )
+    end
   end
 end
