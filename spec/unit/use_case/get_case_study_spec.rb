@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 describe UseCase::GetCaseStudy do
-  let(:case_study_slug) { 'case-study-blub-primary-school' }
+  let(:case_study_slug) { nil }
   let(:contentful_gateway) { spy }
   let(:get_case_study) do
     UseCase::GetCaseStudy.new(content_gateway: contentful_gateway)
@@ -12,10 +12,6 @@ describe UseCase::GetCaseStudy do
 
   it 'can call the contentful gateway' do
     expect(contentful_gateway).to have_received(:get_case_study)
-  end
-
-  it 'can call the contentful gateway with the slug' do
-    expect(contentful_gateway).to have_received(:get_case_study).with(slug: case_study_slug)
   end
 
   context 'When case study is Woof Primary School' do
@@ -36,6 +32,10 @@ describe UseCase::GetCaseStudy do
     end
     let(:case_study_slug) { 'case-study-woof-primary-school' }
     let(:contentful_gateway) { double(get_case_study: case_study) }
+
+    it 'can call the contentful gateway with the slug' do
+      expect(contentful_gateway).to have_received(:get_case_study).with(slug: case_study_slug)
+    end
 
     it 'can get the name of a case study from the gateway (example one)' do
       expect(response).to include(name: 'Case Study - Woof Primary School')
@@ -80,7 +80,11 @@ describe UseCase::GetCaseStudy do
       end
     end
     let(:case_study_slug) { 'case-study-meow-primary-school' }
-    let(:contentful_gateway) { double(get_case_study: case_study) }
+    let(:contentful_gateway) { double(get_case_study: case_study) }\
+
+    it 'can call the contentful gateway with the slug' do
+      expect(contentful_gateway).to have_received(:get_case_study).with(slug: case_study_slug)
+    end
 
     it 'can get the name of a case study from the gateway (example two)' do
       response = get_case_study.execute(slug: case_study_slug)
