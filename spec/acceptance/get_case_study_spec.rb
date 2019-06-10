@@ -11,7 +11,7 @@ describe 'Get Case Study' do
 
     response = get_case_study.execute(slug: case_study_slug)
 
-    expect(response).to eq({
+    expect(response).to eq(
       name: 'Case Study - Grantham Primary School',
       slug: 'case-study-grantham-primary-school',
       hero_image: '//images.ctfassets.net/grantham-hero-image.png',
@@ -23,6 +23,6 @@ describe 'Get Case Study' do
           bold: true
         }
       }]
-    })
+    )
   end
 end
