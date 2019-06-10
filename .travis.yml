@@ -12,5 +12,5 @@ install:
   - yarn
 script:
   - bundle exec rails assets:precompile
-  - bundle exec rails rspec
+  - bundle exec rspec
   - bundle exec govuk-lint-ruby app config db lib spec --format clang
