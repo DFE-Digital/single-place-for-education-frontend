@@ -80,7 +80,7 @@ describe UseCase::GetCaseStudy do
       end
     end
     let(:case_study_slug) { 'case-study-meow-primary-school' }
-    let(:contentful_gateway) { double(get_case_study: case_study) }\
+    let(:contentful_gateway) { double(get_case_study: case_study) }
 
     it 'can call the contentful gateway with the slug' do
       expect(contentful_gateway).to have_received(:get_case_study).with(slug: case_study_slug)
