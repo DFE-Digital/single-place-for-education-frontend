@@ -1,5 +1,15 @@
 <div class="govuk-width-container">
   <main class="govuk-main-wrapper " id="main-content" role="main">
-    <h1 class="govuk-heading-xl">Default page template</h1>
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+        <div class="govuk-grid-row">
+          Some text
+        </div>
+        <%= render 'layouts/components/full_bleed_image', alt_text: 'example image', image_src: asset_url('full-width-example.png') %>
+        <div class="govuk-grid-row">
+          Some other text
+        </div>
+      </div>
+    </div>
   </main>
 </div>
