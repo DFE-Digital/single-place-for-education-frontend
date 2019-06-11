@@ -3,9 +3,20 @@
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-full">
         <div class="govuk-grid-row">
-          Some text
+          <%= render 'layouts/components/headings/one', text: 'Example heading one' %>
         </div>
-        <%= render 'layouts/components/full_bleed_image', alt_text: 'example image', image_src: asset_url('full-width-example.png') %>
+        <div class="govuk-grid-row">
+          <%= render 'layouts/components/headings/two', text: 'Example heading two' %>
+        </div>
+        <div class="govuk-grid-row">
+          <%= render 'layouts/components/headings/three', text: 'Example heading three' %>
+        </div>
+        <div class="govuk-grid-row">
+          <%= render 'layouts/components/headings/four', text: 'Example heading four' %>
+        </div>
+        <div class="govuk-grid-row">
+          <%= render 'layouts/components/full_bleed_image', alt_text: 'example image', image_src: asset_url('full-width-example.png') %>
+        </div>
         <div class="govuk-grid-row">
           Some other text
         </div>
