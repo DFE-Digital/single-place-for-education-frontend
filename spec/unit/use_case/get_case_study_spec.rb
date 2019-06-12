@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'rails_helper'
+
 describe UseCase::GetCaseStudy do
   let(:case_study_slug) { nil }
   let(:contentful_gateway) { spy }
