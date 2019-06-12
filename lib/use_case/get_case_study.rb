@@ -6,7 +6,7 @@ class UseCase::GetCaseStudy
   def execute(slug:)
     case_study = @content_gateway.get_case_study(slug: slug)
     return nil if case_study.nil?
-    
+
     {
       name: case_study.name,
       slug: case_study.slug,

@@ -201,14 +201,13 @@ describe Gateway::ContentfulGateway do
         .with(headers: headers)
         .to_return(status: 200, body: response_with_no_items, headers: {})
 
-      response_with_items = File.open("#{fixtures_path}case_study_example_one.json", &:read)
       stub_request(:get, case_study_url)
         .with(headers: headers)
         .to_return(status: 200, body: response_with_no_items, headers: {})
 
       case_study
     end
-    
+
     it 'returns nil' do
       expect(case_study).to eq(nil)
     end
