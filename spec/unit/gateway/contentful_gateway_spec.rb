@@ -178,4 +178,38 @@ describe Gateway::ContentfulGateway do
       ])
     end
   end
+
+  context '#get_case_study (none found example)' do
+    let(:space_id) { 'owl' }
+    let(:access_token) { 'hoot' }
+    let(:slug) { 'hoot-primary-school-case-study' }
+    let(:contentful_gateway) do
+      described_class.new(space_id: space_id, access_token: access_token)
+    end
+    let(:initial_url) do
+      "https://cdn.contentful.com/spaces/#{space_id}/environments/master/content_types?limit=1000"
+    end
+    let(:case_study_url) do
+      "https://cdn.contentful.com/spaces/#{space_id}/environments/master/entries?content_type=caseStudy&include=10&fields.slug=#{slug}"
+    end
+    let(:case_study) { contentful_gateway.get_case_study(slug: slug) }
+
+    before do
+      headers['Authorization'] = "Bearer #{access_token}"
+
+      stub_request(:get, initial_url)
+        .with(headers: headers)
+        .to_return(status: 200, body: response_with_no_items, headers: {})
+
+      stub_request(:get, case_study_url)
+        .with(headers: headers)
+        .to_return(status: 200, body: response_with_no_items, headers: {})
+
+      case_study
+    end
+
+    it 'can return nil when a Contentful case study is not found' do
+      expect(case_study).to eq(nil)
+    end
+  end
 end

@@ -16,6 +16,7 @@ class Gateway::ContentfulGateway
       'include' => 10,
       'fields.slug' => slug
     ).first
+    return nil if case_study_response.nil?
 
     build_case_study_from_response(case_study_response)
   end
