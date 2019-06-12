@@ -1,0 +1,42 @@
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+        <% @case_study[:content].each do |content| %>
+          <% case content[:type] %>
+          <% when :heading %>
+            <% case content[:data][:level] %>
+            <% when :heading_one %>
+              <div class="govuk-grid-row">
+                <%= render 'layouts/components/headings/one', text: content[:data][:text] %>
+              </div>
+            <% when :heading_two %>
+              <div class="govuk-grid-row">
+                <%= render 'layouts/components/headings/two', text: content[:data][:text] %>
+              </div>
+            <% when :heading_three %>
+              <div class="govuk-grid-row">
+                <%= render 'layouts/components/headings/three', text: content[:data][:text] %>
+              </div>
+            <% when :heading_four %>
+              <div class="govuk-grid-row">
+                <%= render 'layouts/components/headings/four', text: content[:data][:text] %>
+              </div>
+            <% end %>
+          <% when :paragraph %>
+            <div class="govuk-grid-row">
+              <p><%= content[:data][:text] %></p>
+            </div>
+          <% when :image %>
+            <% case content[:data][:width] %>
+            <% when :full_bleed %>
+              <div class="govuk-grid-row">
+                <%= render 'layouts/components/full_bleed_image', alt_text: 'example image', image_src: content[:data][:url] %>
+              </div>
+            <% end %>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+  </main>
+</div>
