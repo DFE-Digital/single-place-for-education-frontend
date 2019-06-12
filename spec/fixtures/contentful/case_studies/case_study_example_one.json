@@ -1,0 +1,273 @@
+{
+    "sys": {
+        "type": "Array"
+    },
+    "total": 1,
+    "skip": 0,
+    "limit": 100,
+    "items": [
+        {
+            "sys": {
+                "space": {
+                    "sys": {
+                        "type": "Link",
+                        "linkType": "Space",
+                        "id": "gfzscr0ovdsz"
+                    }
+                },
+                "id": "6GBcTID8DyGnwacCAWAEIs",
+                "type": "Entry",
+                "createdAt": "2019-06-10T15:56:16.675Z",
+                "updatedAt": "2019-06-10T15:56:16.675Z",
+                "environment": {
+                    "sys": {
+                        "id": "master",
+                        "type": "Link",
+                        "linkType": "Environment"
+                    }
+                },
+                "revision": 1,
+                "contentType": {
+                    "sys": {
+                        "type": "Link",
+                        "linkType": "ContentType",
+                        "id": "caseStudy"
+                    }
+                },
+                "locale": "en-US"
+            },
+            "fields": {
+                "name": "Case Study - Meow Primary School",
+                "slug": "baaa-primary-school-case-study",
+                "heroImage": {
+                    "sys": {
+                        "type": "Link",
+                        "linkType": "Entry",
+                        "id": "4HnI2xHStFYxgWxf5qHDSg"
+                    }
+                },
+                "content": [
+                    {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Entry",
+                            "id": "4hhoS7ykkrfApMAEKlpw8b"
+                        }
+                    },
+                    {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Entry",
+                            "id": "7DC8UmzuW7EUkWv3VTn47i"
+                        }
+                    },
+                    {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Entry",
+                            "id": "16APnZeLr9cijhYANJfrjr"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "includes": {
+        "Entry": [
+            {
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "gfzscr0ovdsz"
+                        }
+                    },
+                    "id": "16APnZeLr9cijhYANJfrjr",
+                    "type": "Entry",
+                    "createdAt": "2019-06-10T15:55:44.158Z",
+                    "updatedAt": "2019-06-10T15:56:09.377Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 2,
+                    "contentType": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "ContentType",
+                            "id": "paragraph"
+                        }
+                    },
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "text": "This is a Woof paragraph woof woof"
+                }
+            },
+            {
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "gfzscr0ovdsz"
+                        }
+                    },
+                    "id": "4HnI2xHStFYxgWxf5qHDSg",
+                    "type": "Entry",
+                    "createdAt": "2019-06-06T14:55:36.577Z",
+                    "updatedAt": "2019-06-06T15:25:57.048Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 4,
+                    "contentType": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "ContentType",
+                            "id": "heroImage"
+                        }
+                    },
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "name": "School Corridor",
+                    "file": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Asset",
+                            "id": "4q0eJAqxwnDHGPq956pLa4"
+                        }
+                    }
+                }
+            },
+            {
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "gfzscr0ovdsz"
+                        }
+                    },
+                    "id": "4hhoS7ykkrfApMAEKlpw8b",
+                    "type": "Entry",
+                    "createdAt": "2019-06-10T15:55:05.350Z",
+                    "updatedAt": "2019-06-10T15:55:05.350Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 1,
+                    "contentType": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "ContentType",
+                            "id": "image"
+                        }
+                    },
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "name": "This is a test image",
+                    "width": "Full Bleed",
+                    "file": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Asset",
+                            "id": "4q0eJAqxwnDHGPq956pLa4"
+                        }
+                    }
+                }
+            },
+            {
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "gfzscr0ovdsz"
+                        }
+                    },
+                    "id": "7DC8UmzuW7EUkWv3VTn47i",
+                    "type": "Entry",
+                    "createdAt": "2019-06-10T15:54:38.622Z",
+                    "updatedAt": "2019-06-10T15:54:38.622Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 1,
+                    "contentType": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "ContentType",
+                            "id": "heading"
+                        }
+                    },
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "text": "This is a test Woof heading",
+                    "level": "H1",
+                    "bold": true
+                }
+            }
+        ],
+        "Asset": [
+            {
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "gfzscr0ovdsz"
+                        }
+                    },
+                    "id": "4q0eJAqxwnDHGPq956pLa4",
+                    "type": "Asset",
+                    "createdAt": "2019-06-06T14:55:31.792Z",
+                    "updatedAt": "2019-06-06T15:26:04.781Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 2,
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "title": "School Corridor",
+                    "file": {
+                        "url": "//images.ctfassets.net/dog/school-corridor.jpeg",
+                        "details": {
+                            "size": 166901,
+                            "image": {
+                                "width": 1920,
+                                "height": 1279
+                            }
+                        },
+                        "fileName": "school-corridor.jpeg",
+                        "contentType": "image/jpeg"
+                    }
+                }
+            }
+        ]
+    }
+}
