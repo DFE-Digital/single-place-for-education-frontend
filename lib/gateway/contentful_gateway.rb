@@ -45,7 +45,7 @@ private
       when 'paragraph'
         content_array << create_paragraph(content)
       else
-        @logger.warn("Content Not Supported")
+        @logger.warn("Content #{content.sys[:content_type].id} not supported")
       end
     end
     content_array
