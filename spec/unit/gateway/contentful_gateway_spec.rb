@@ -179,7 +179,7 @@ describe Gateway::ContentfulGateway do
     end
   end
 
-  context '#When no case study is found' do
+  context '#get_case_study (none found example)' do
     let(:space_id) { 'owl' }
     let(:access_token) { 'hoot' }
     let(:slug) { 'hoot-primary-school-case-study' }
@@ -208,7 +208,7 @@ describe Gateway::ContentfulGateway do
       case_study
     end
 
-    it 'returns nil' do
+    it 'can return nil when a Contentful case study is not found' do
       expect(case_study).to eq(nil)
     end
   end
