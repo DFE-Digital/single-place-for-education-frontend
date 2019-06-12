@@ -121,4 +121,14 @@ describe UseCase::GetCaseStudy do
       )
     end
   end
+  context 'When no case study is found' do
+    let(:case_study) { nil }
+    let(:case_study_slug) { 'case-study-hoot-primary-school' }
+    let(:contentful_gateway) { double(get_case_study: case_study) }
+
+    it 'can handle when the gateway returns nil' do
+      response = get_case_study.execute(slug: case_study_slug)
+      expect(response).to eq(nil)
+    end
+  end
 end
