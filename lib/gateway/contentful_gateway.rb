@@ -44,6 +44,8 @@ private
         content_array << create_heading(content)
       when 'paragraph'
         content_array << create_paragraph(content)
+      when 'small'
+        content_array << create_small(content)
       when 'testimonial'
         content_array << create_testimonial(content)
       else
@@ -51,6 +53,15 @@ private
       end
     end
     content_array
+  end
+
+  def create_small(content)
+    {
+      type: :small,
+      data: {
+        text: content.text
+      }
+    }
   end
 
   def create_testimonial(content)
@@ -62,9 +73,9 @@ private
           text: content.before_quote.text
         },
         quote: {
-           text: content.quote.text
+          text: content.quote.text
         },
-         author: {
+        author: {
           text:  content.author.text
         }
       }

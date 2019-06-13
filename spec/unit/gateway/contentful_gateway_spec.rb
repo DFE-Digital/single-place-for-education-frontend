@@ -107,14 +107,19 @@ describe Gateway::ContentfulGateway do
               text: 'Test wolf testimonial text'
             },
             quote: {
-               text: 'Wolves are great'
+              text: 'Wolves are great'
             },
-             author: {
-              text:  'Edd the wolf'
+            author: {
+              text: 'Edd the wolf'
             }
           }
+        },
+        {
+          type: :small,
+          data: {
+            text: "Published 20th June 1999"
+          }
         }
-
       ])
     end
 
@@ -201,24 +206,30 @@ describe Gateway::ContentfulGateway do
           }
         },
         {
-       type: :testimonial,
-       data: {
-         heading: {
-           text: 'Testimonial',
-           level: :heading_two,
-           bold: true
-         },
-         before_quote: {
-           text: 'Test testimonial text'
-         },
-         quote: {
-            text: 'Cats are great'
-         },
-          author: {
-           text:  'Jim the cat'
-         }
-       }
-     }
+          type: :testimonial,
+          data: {
+            heading: {
+              text: 'Testimonial',
+              level: :heading_two,
+              bold: true
+            },
+            before_quote: {
+              text: 'Test testimonial text'
+            },
+            quote: {
+              text: 'Cats are great'
+            },
+            author: {
+              text: 'Jim the cat'
+            }
+          }
+        },
+        {
+          type: :small,
+          data: {
+            text: "Published 23th July 2077"
+          }
+        }
       ])
     end
   end
