@@ -46,7 +46,6 @@ private
         content_array << create_paragraph(content)
       when 'small'
         content_array << create_small(content)
-
       when 'testimonial'
         content_array << create_testimonial(content)
       else
@@ -74,9 +73,9 @@ private
           text: content.before_quote.text
         },
         quote: {
-           text: content.quote.text
+          text: content.quote.text
         },
-         author: {
+        author: {
           text:  content.author.text
         }
       }
