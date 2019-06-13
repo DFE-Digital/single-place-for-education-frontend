@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-xdescribe 'Get Case Study' do
+describe 'Get Case Study' do
   let(:logger) { spy }
   let(:fixtures_path) { "#{__dir__}/../fixtures/contentful/case_studies/" }
   let(:headers) do
@@ -77,7 +77,7 @@ xdescribe 'Get Case Study' do
             data: { 
               heading: { 
                 text: 'Testimonial', 
-                level: :heading_three, 
+                level: :heading_two, 
                 bold: true 
               }, 
               before_quote: { 
