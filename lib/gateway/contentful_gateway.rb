@@ -46,6 +46,9 @@ private
         content_array << create_paragraph(content)
       when 'small'
         content_array << create_small(content)
+
+      when 'testimonial'
+        content_array << create_testimonial(content)
       else
         @logger.warn("Content #{content.sys[:content_type].id} not supported")
       end
@@ -58,6 +61,24 @@ private
       type: :small,
       data: {
         text: content.text
+      }
+    }
+  end
+  
+  def create_testimonial(content)
+    {
+      type: :testimonial,
+      data: {
+        heading: create_heading(content.heading)[:data],
+        before_quote: {
+          text: content.before_quote.text
+        },
+        quote: {
+           text: content.quote.text
+        },
+         author: {
+          text:  content.author.text
+        }
       }
     }
   end

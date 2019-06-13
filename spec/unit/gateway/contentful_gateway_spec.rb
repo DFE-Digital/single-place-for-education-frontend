@@ -96,6 +96,25 @@ describe Gateway::ContentfulGateway do
           }
         },
         {
+          type: :testimonial,
+          data: {
+            heading: {
+              text: 'Testimonial',
+              level: :heading_two,
+              bold: true
+            },
+            before_quote: {
+              text: 'Test wolf testimonial text'
+            },
+            quote: {
+               text: 'Wolves are great'
+            },
+             author: {
+              text:  'Edd the wolf'
+            }
+          }
+        },
+        {
           type: :small,
           data: {
             text: "Published 20th June 1999"
@@ -105,7 +124,7 @@ describe Gateway::ContentfulGateway do
     end
 
     it 'can log when a content type is not supported' do
-      expect(logger).to have_received(:warn).with("Content testimonial not supported")
+      expect(logger).to have_received(:warn).with("Content unimplemented not supported")
     end
   end
 
@@ -184,6 +203,25 @@ describe Gateway::ContentfulGateway do
           type: :paragraph,
           data: {
             text: "This is a Meow paragraph meow meow"
+          }
+        },
+        {
+          type: :testimonial,
+          data: {
+            heading: {
+              text: 'Testimonial',
+              level: :heading_two,
+              bold: true
+            },
+            before_quote: {
+              text: 'Test testimonial text'
+            },
+            quote: {
+                text: 'Cats are great'
+            },
+              author: {
+              text:  'Jim the cat'
+            }
           }
         },
         {
