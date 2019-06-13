@@ -8,10 +8,10 @@ class CaseStudyController < ApplicationController
     get_case_study = UseCase::GetCaseStudy.new(content_gateway: contentful_gateway)
     @case_study = get_case_study.execute(slug: params[:slug])
 
-    if @case_study[:slug] == params[:slug].to_s
+    if !@case_study.nil? && @case_study[:slug] == params[:slug].to_s
       render 'case_study/show'
     else
-      render file: "#{Rails.root}/public/404.html", layout: false, status: :not_found
+      render 'error/404', status: :not_found
     end
   end
 end
