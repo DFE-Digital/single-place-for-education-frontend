@@ -118,8 +118,8 @@ describe Gateway::ContentfulGateway do
       ])
     end
 
-    xit 'can log when a content type is not supported' do
-      expect(logger).to have_received(:warn).with("Content testimonial not supported")
+    it 'can log when a content type is not supported' do
+      expect(logger).to have_received(:warn).with("Content unimplemented not supported")
     end
   end
 
