@@ -44,11 +44,31 @@ private
         content_array << create_heading(content)
       when 'paragraph'
         content_array << create_paragraph(content)
+      when  'testimonial' 
+        content_array << create_testimonial(content)
       else
         @logger.warn("Content #{content.sys[:content_type].id} not supported")
       end
     end
     content_array
+  end
+
+  def create_testimonial(content)
+    {
+      type: :testimonial,
+      data: { 
+        heading: create_heading(content.heading)[:data],
+        before_quote: { 
+          text: content.text.text
+        }, 
+        quote: {
+           text: content.quote.text
+        },
+         author: {
+          text:  content.author.text
+        }
+      }
+    }
   end
 
   def create_image(content)
