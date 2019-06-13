@@ -71,6 +71,25 @@ describe 'Get Case Study' do
             data: {
               text: "This is a paragraph"
             }
+          },
+          {
+            type: :testimonial,
+            data: {
+              heading: {
+                text: 'Testimonial',
+                level: :heading_two,
+                bold: true
+              },
+              before_quote: {
+                text: 'Test testimonial text'
+              },
+              quote: {
+                 text: 'Cats are great'
+              },
+               author: {
+                text:  'Jim the cat'
+              }
+            }
           }
         ]
       )
