@@ -3,25 +3,25 @@ require 'rails_helper'
 describe 'Get Case Study' do
   let(:logger) { spy }
   let(:fixtures_path) { "#{__dir__}/../fixtures/contentful/case_studies/" }
-    let(:headers) do
-      {
-        'Accept-Encoding' => 'gzip',
-        'Connection' => 'close',
-        'Content-Type' => 'application/vnd.contentful.delivery.v1+json',
-        'Host' => 'cdn.contentful.com',
-        'User-Agent' => 'http.rb/3.3.0',
-      }
-    end
+  let(:headers) do
+    {
+      'Accept-Encoding' => 'gzip',
+      'Connection' => 'close',
+      'Content-Type' => 'application/vnd.contentful.delivery.v1+json',
+      'Host' => 'cdn.contentful.com',
+      'User-Agent' => 'http.rb/3.3.0',
+    }
+  end
 
-    let(:space_id) { 'cat' }
-    let(:access_token) { 'meow' }
-    let(:slug) { 'case-study-grantham-primary-school' }
-    let(:initial_url) do
-      "https://cdn.contentful.com/spaces/#{space_id}/environments/master/content_types?limit=1000"
-    end
-    let(:case_study_url) do
-      "https://cdn.contentful.com/spaces/#{space_id}/environments/master/entries?content_type=caseStudy&include=10&fields.slug=#{slug}"
-    end
+  let(:space_id) { 'cat' }
+  let(:access_token) { 'meow' }
+  let(:slug) { 'case-study-grantham-primary-school' }
+  let(:initial_url) do
+    "https://cdn.contentful.com/spaces/#{space_id}/environments/master/content_types?limit=1000"
+  end
+  let(:case_study_url) do
+    "https://cdn.contentful.com/spaces/#{space_id}/environments/master/entries?content_type=caseStudy&include=10&fields.slug=#{slug}"
+  end
 
   context '#when the case study has content'do
     before do
