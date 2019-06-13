@@ -64,7 +64,7 @@ private
       }
     }
   end
-  
+
   def create_testimonial(content)
     {
       type: :testimonial,
