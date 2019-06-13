@@ -121,6 +121,7 @@ describe UseCase::GetCaseStudy do
       )
     end
   end
+
   context 'When no case study is found' do
     let(:case_study) { nil }
     let(:case_study_slug) { 'case-study-hoot-primary-school' }

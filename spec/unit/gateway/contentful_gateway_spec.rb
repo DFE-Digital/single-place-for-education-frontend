@@ -107,10 +107,10 @@ describe Gateway::ContentfulGateway do
               text: 'Test wolf testimonial text'
             },
             quote: {
-               text: 'Wolves are great'
+              text: 'Wolves are great'
             },
-             author: {
-              text:  'Edd the wolf'
+            author: {
+              text: 'Edd the wolf'
             }
           }
         },
@@ -217,10 +217,10 @@ describe Gateway::ContentfulGateway do
               text: 'Test testimonial text'
             },
             quote: {
-                text: 'Cats are great'
+              text: 'Cats are great'
             },
-              author: {
-              text:  'Jim the cat'
+            author: {
+              text: 'Jim the cat'
             }
           }
         },

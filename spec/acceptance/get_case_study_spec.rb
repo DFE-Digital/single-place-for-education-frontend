@@ -81,13 +81,13 @@ describe 'Get Case Study' do
                 bold: true
               },
               before_quote: {
-                  text: 'Test testimonial text'
+                text: 'Test testimonial text'
               },
               quote: {
-                  text: 'Cats are great'
+                text: 'Cats are great'
               },
               author: {
-                  text:  'Jim the cat'
+                text:  'Jim the cat'
               }
             }
           },
