@@ -1,8 +1,10 @@
 .dfe-image__full-bleed {
+  max-height: 75vh;
   width: 100vw;
   position: relative;
   left: 50%;
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
+  object-fit: cover;
 }

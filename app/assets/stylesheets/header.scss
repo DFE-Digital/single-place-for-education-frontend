@@ -13,3 +13,7 @@
 .dfe-header__logo {
   background-image: image-url('header-logo.png')
 }
+
+.govuk-header__link:visited {
+  color: transparent;
+}

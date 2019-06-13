@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
   root 'home#index'
-  # root 'application#action'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get 'case-study/:slug', to: 'case_study#show'
 end
