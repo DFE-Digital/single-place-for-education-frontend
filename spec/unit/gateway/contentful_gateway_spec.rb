@@ -3,6 +3,7 @@
 require 'rails_helper'
 
 describe Gateway::ContentfulGateway do
+  let(:logger) { spy }
   let(:fixtures_path) { "#{__dir__}/../../fixtures/contentful/case_studies/" }
   let(:headers) do
     {
@@ -22,7 +23,7 @@ describe Gateway::ContentfulGateway do
     let(:access_token) { 'woof' }
     let(:slug) { 'baaa-primary-school-case-study' }
     let(:contentful_gateway) do
-      described_class.new(space_id: space_id, access_token: access_token)
+      described_class.new(space_id: space_id, access_token: access_token, logger: logger)
     end
     let(:initial_url) do
       "https://cdn.contentful.com/spaces/#{space_id}/environments/master/content_types?limit=1000"
@@ -96,6 +97,10 @@ describe Gateway::ContentfulGateway do
         }
       ])
     end
+
+    it 'can log when a content type is not supported' do
+      expect(logger).to have_received(:warn).with("Content testimonial not supported")
+    end
   end
 
   context '#get_case_study (example two)' do
@@ -103,7 +108,7 @@ describe Gateway::ContentfulGateway do
     let(:access_token) { 'awoo' }
     let(:slug) { 'sss-primary-school-case-study' }
     let(:contentful_gateway) do
-      described_class.new(space_id: space_id, access_token: access_token)
+      described_class.new(space_id: space_id, access_token: access_token, logger: logger)
     end
     let(:initial_url) do
       "https://cdn.contentful.com/spaces/#{space_id}/environments/master/content_types?limit=1000"

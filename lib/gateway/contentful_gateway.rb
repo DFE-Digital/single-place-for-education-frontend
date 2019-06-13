@@ -1,5 +1,7 @@
 class Gateway::ContentfulGateway
-  def initialize(space_id:, access_token:)
+  def initialize(space_id:, access_token:, logger: nil)
+    @logger = logger
+    @logger ||= Logger.new(STDOUT)
     @space_id = space_id
     @access_token = access_token
     @client = Contentful::Client.new(
@@ -42,6 +44,8 @@ private
         content_array << create_heading(content)
       when 'paragraph'
         content_array << create_paragraph(content)
+      else
+        @logger.warn("Content #{content.sys[:content_type].id} not supported")
       end
     end
     content_array
