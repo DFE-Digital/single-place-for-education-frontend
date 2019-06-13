@@ -1,39 +1,148 @@
 <div class="govuk-width-container">
+  <%= render 'layouts/components/images/hero', image_src: asset_url('home-hero-lady.jpeg') %>
   <main class="govuk-main-wrapper " id="main-content" role="main">
-    <div class="govuk-grid-row">
+    <div class="govuk-grid-row govuk-!-padding-3">
       <div class="govuk-grid-column-full">
-        <div class="govuk-grid-row">
-          <%= render 'layouts/components/headings/one', text: 'Example heading one' %>
+        <div class="govuk-grid-row govuk-!-padding-top-5">
+          <%= render 'layouts/components/headings/three', text: 'Information', bold: false %>
+          <div class="govuk-grid-column-one-half">
+            <%= render 'layouts/components/buttons/secondary_button', text: 'School strategy' %><br />
+            <%= render 'layouts/components/buttons/secondary_button', text: 'Curriculum & accountability' %><br />
+            <%= render 'layouts/components/buttons/secondary_button', text: 'News' %>
+          </div>
+          <div class="govuk-grid-column-one-half">
+            <%= render 'layouts/components/buttons/secondary_button', text: 'Developing people' %><br />
+            <%= render 'layouts/components/buttons/secondary_button', text: 'Reduce teacher workload' %>
+          </div>
         </div>
-        <div class="govuk-grid-row">
-          <%= render 'layouts/components/headings/two', text: 'Example heading two' %>
+        <div class="govuk-grid-row govuk-!-padding-top-5 govuk-!-padding-bottom-9">
+          <%= render 'layouts/components/headings/three', text: 'Services' %>
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-one-half">
+              <%= render 'layouts/components/buttons/primary_button', text: 'Get school-to-school support', link: '#' %>
+              <%= render 'layouts/components/buttons/primary_button', text: 'Find a job in teaching', link: '#' %>
+              <%= render 'layouts/components/buttons/primary_button', text: 'List a teaching job at your school', link: '#' %>
+            </div>
+            <div class="govuk-grid-column-one-half">
+              <%= render 'layouts/components/buttons/primary_button', text: 'Lorem ipsum dolor sit amet', link: '#' %>
+              <%= render 'layouts/components/buttons/primary_button', text: 'Lorem ipsum dolor sit amet', link: '#' %>
+            </div>
+          </div>
         </div>
-        <div class="govuk-grid-row">
-          <%= render 'layouts/components/headings/three', text: 'Example heading three' %>
+        <div class="background-wide">
+          <div class="govuk-grid-row govuk-!-padding-top-9 govuk-!-padding-bottom-9">
+            <div class="govuk-grid-column-one-third govuk-!-padding-top-7">
+              <%= render 'layouts/components/headings/two', text: 'Stay informed and compliant' %>
+              <p class="govuk-body">Latest updates</p>
+
+              <div class="govuk-row">
+                <%= render 'layouts/components/small', text: '1 update — 5 mins ago' %>
+                <%= render 'layouts/components/link', text: 'High needs strategic planning (guidance)' %>
+                <hr class="section-break-thin">
+              </div>
+              <div class="govuk-row">
+                <%= render 'layouts/components/small', text: '3 updates — 1 hour ago' %>
+                <%= render 'layouts/components/link', text: 'School census 2018 to 2019: technical information (guidance)' %>
+                <hr class="section-break-thin">
+              </div>
+              <div class="govuk-row">
+                <%= render 'layouts/components/small', text: '7 updates — a week ago' %>
+                <%= render 'layouts/components/link', text: 'Regulating independent schools' %>
+                <hr class="section-break-thin">
+              </div>
+            </div>
+            <div class="govuk-grid-column-two-thirds govuk-!-padding-top-7" style="background-color:white;">
+              <%= render 'layouts/components/headings/two', text: 'Help us shape education policy in England' %>
+              <p class="govuk-body">Get involved and help us test out new policy thinking and initiatives</p>
+              <div class="govuk-row">
+                <div class="govuk-grid-column-one-half">
+                  <%= render 'layouts/components/images/thumbnail', image_src: asset_url('phone.jpeg') %>
+                  <p class="govuk-body govuk-!-margin-bottom-6">Relationships and Sex Education (RSE) and Health Education</p>
+                  <%= render 'layouts/components/link', text: 'Register to be an early adopter school' %>
+                </div>
+                <div class="govuk-grid-column-one-half">
+                  <%= render 'layouts/components/images/thumbnail', image_src: asset_url('phone2.jpeg') %>
+                  <p class="govuk-body govuk-!-margin-bottom-9">Curriculum Materials Beta testers wanted!</p>
+                  <%= render 'layouts/components/link', text: 'Help us develop our new curriculum materials platform' %>
+                </div>
+                <div class="govuk-row">
+                  <div class="govuk-grid-column-full govuk-!-margin-top-9">
+                    <%= render 'layouts/components/buttons/secondary_button', text: 'See other ways you can help out' %><br />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="govuk-grid-row">
-          <%= render 'layouts/components/headings/four', text: 'Example heading four' %>
+        <div class="govuk-grid-row govuk-!-padding-top-9 govuk-!-padding-bottom-9">
+          <%= render 'layouts/components/headings/three', text: 'Find and advertise a job' %>
+          <div class="govuk-grid-row govuk-!-padding-top-5">
+            <div class="govuk-grid-column-one-half">
+              <%= render 'layouts/components/link', text: 'Assisstant head teacher' %>
+              <p class="govuk-body">West Bromwich, West Midlands, B71 2QR</p>
+              <%= render 'layouts/components/link', text: 'Head of year' %>
+              <p class="govuk-body govuk-!-margin-bottom-9">Nottingham, Nottingham, NG11 8JW</p>
+              <%= render 'layouts/components/buttons/secondary_button', text: 'See all jobs' %><br>
+              <%= render 'layouts/components/buttons/secondary_button', text: 'Advertise a job' %>
+            </div>
+            <div class="govuk-grid-column-one-half">
+              <%= render 'layouts/components/images/default', image_src: asset_url('teacher2.png') %>
+            </div>
+          </div>
         </div>
-        <div class="govuk-grid-row">
-          <%= render 'layouts/components/paragraph', text: 'Example paragraph' %>
-          <%= render 'layouts/components/paragraph', text: 'And another example paragraph' %>
-          <%= render 'layouts/components/paragraph', text: 'Yet another example' %>
+        <div class="background-wide">
+          <div class="govuk-grid-row govuk-!-padding-top-9 govuk-!-padding-bottom-9">
+            <%= render 'layouts/components/headings/three', text: 'Education apps' %>
+            <p class="govuk-body">From teaching French to managing timetables, find digital tools to help you manage and improve how you run your school</p>
+            <%= render 'layouts/components/headings/four', text: 'Recently added apps' %>
+            <div class="govuk-grid-row govuk-!-padding-bottom-5">
+              <div class="govuk-grid-column-one-half">
+                <%= render 'layouts/components/resource_link_with_icon', image_src: asset_url('class-charts.png'), heading: 'ClassCharts', text: 'Behaviour management', link: '#' %>
+                <%= render 'layouts/components/resource_link_with_icon', image_src: asset_url('school-ping.png'), heading: 'SchoolPing', text: 'Staff and parent comms', link: '#' %>
+              </div>
+              <div class="govuk-grid-column-one-half">
+                <%= render 'layouts/components/resource_link_with_icon', image_src: asset_url('frog.png'), heading: 'Frog', text: 'Improve pupil outcomes', link: '#' %>
+              </div>
+            </div>
+            <%= render 'layouts/components/buttons/secondary_button', text: 'See all apps' %>
+          </div>
         </div>
-        <div class="govuk-grid-row">
-          <%= render 'layouts/components/small', text: 'Example small' %>
-          <%= render 'layouts/components/small', text: 'And another example small' %>
-          <%= render 'layouts/components/small', text: 'Yet another example' %>
+        <div class="govuk-grid-row govuk-!-padding-top-9 govuk-!-padding-bottom-5">
+          <%= render 'layouts/components/headings/three', text: 'Resources' %>
+          <%= render 'layouts/components/images/default', image_src: asset_url('cartoon-people.png') %>
+          <div class="govuk-grid-row govuk-!-padding-top-9">
+            <div class="govuk-grid-column-two-thirds">
+              <%= render 'layouts/components/link', text: 'Workload reduction toolkit' %>
+              <p class="govuk-body govuk-!-margin-top-5">Practical advice and tools for school leaders and teachers to help review and reduce workload</p>
+            </div>
+          </div>
+          <div class="govuk-grid-row govuk-!-padding-top-9 align-resource_link_with_icons-center">
+            <div class="govuk-grid-column-one-half">
+              <%= render 'layouts/components/images/default', image_src: asset_url('teacher.png') %>
+            </div>
+            <div class="govuk-grid-column-one-half">
+              <%= render 'layouts/components/link', text: 'Safeguarding & mental health in schools' %>
+              <p class="govuk-body govuk-!-margin-top-5">Support on wellbeing for teachers in schools and colleges</p>
+            </div>
+          </div>
         </div>
-        <div class="govuk-grid-row">
-          <%= render 'layouts/components/link', text: 'Example link' %><br />
-          <%= render 'layouts/components/link', text: 'And another link' %><br />
-          <%= render 'layouts/components/link', text: 'Yet another link' %>
-        </div>
-        <div class="govuk-grid-row">
-          <%= render 'layouts/components/full_bleed_image', alt_text: 'example image', image_src: asset_url('full-width-example.png') %>
-        </div>
-        <div class="govuk-grid-row width-s padding-top-m">
-          <%= render 'layouts/components/testimonial', testimonial: { heading: { text: 'Testimonials', level: :heading_three, bold: true }, before_quote: { text: 'Example said of Example Two and the role she plays in his school:'}, quote: { text: 'This is an example quote. Quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote.' }, author: { text: 'Headteacher, Example' } } %>
+        <hr>
+        <div class="govuk-grid-row govuk-!-padding-top-5">
+          <%= render 'layouts/components/headings/three', text: 'What\'s new?' %>
+          <div class="govuk-grid-row govuk-!-padding-top-5">
+            <div class="govuk-grid-column-one-third govuk-!-margin-bottom-9">
+              <%= render 'layouts/components/images/thumbnail', image_src: asset_url('teacher-effect.png') %>
+              <%= render 'layouts/components/link', text: 'Watch Lizzie\'s #TeacherEffect story unfold here' %>
+            </div>
+            <div class="govuk-grid-column-one-third govuk-!-margin-bottom-9">
+              <%= render 'layouts/components/images/thumbnail', image_src: asset_url('life-lessons.png') %>
+              <%= render 'layouts/components/link', text: 'Stacia\'s teacher gave her courage and taught her to believe in herself. #LifeLessons' %>
+            </div>
+            <div class="govuk-grid-column-one-third">
+              <%= render 'layouts/components/images/thumbnail', image_src: asset_url('relationships-and-sex-education.png') %>
+              <%= render 'layouts/components/link', text: 'The way we\'re teaching relationships, sex and health education is changing' %>
+            </div>
+          </div>
         </div>
       </div>
     </div>

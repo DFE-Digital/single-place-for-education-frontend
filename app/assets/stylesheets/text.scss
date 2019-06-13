@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-.govuk-heading-xl, .govuk-heading-l, .govuk-heading-m, .govuk-body, .govuk-body-s, .govuk-link {
+.govuk-heading-xl, .govuk-heading-l, .govuk-heading-m, .govuk-body, .govuk-body-s, .govuk-link, .govuk-button {
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
 }
 
@@ -20,4 +20,9 @@ hr {
   border: 2px solid;
   box-shadow: 0px 2px #E0E0E0;
   margin: 7.5% 0 5% 0;
+}
+
+.section-break-thin {
+  border: 1px solid #BFC1C3;
+  box-shadow: none;
 }

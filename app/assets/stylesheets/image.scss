@@ -19,3 +19,26 @@
   margin-right: -50vw;
   object-fit: cover;
 }
+
+.dfe-image__default {
+  width: 100%;
+  max-height: 50vh;
+  object-fit: cover;
+}
+
+.dfe-image__icon {
+  background-color: #ffffff;
+  height: 75px;
+  width: 75px;
+  object-fit: contain;
+  padding: 10px;
+  float: left;
+  margin-right: 50px;
+}
+
+.dfe-image__thumbnail {
+  width: 100%;
+  height: 25vh;
+  object-fit: cover;
+  margin-bottom: 5%;
+}
