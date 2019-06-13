@@ -280,7 +280,7 @@
                             "id": "BYlCGECmo2CJFZ7CAcJRV"
                         }
                     },
-                    "paragraph": {
+                    "beforeQuote": {
                         "sys": {
                             "type": "Link",
                             "linkType": "Entry",
@@ -342,7 +342,7 @@
                             "id": "mT6VxT2ngxGCgVLAfZfwK"
                         }
                     },
-                    "text": {
+                    "beforeQuote": {
                         "sys": {
                             "type": "Link",
                             "linkType": "Entry",

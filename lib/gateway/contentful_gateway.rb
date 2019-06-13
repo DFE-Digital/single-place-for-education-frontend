@@ -59,7 +59,7 @@ private
       data: {
         heading: create_heading(content.heading)[:data],
         before_quote: {
-          text: content.text.text
+          text: content.before_quote.text
         },
         quote: {
            text: content.quote.text
