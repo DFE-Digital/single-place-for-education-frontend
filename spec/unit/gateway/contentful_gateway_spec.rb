@@ -97,20 +97,20 @@ describe Gateway::ContentfulGateway do
         },
         {
           type: :testimonial,
-          data: { 
-            heading: { 
-              text: 'Testimonial', 
-              level: :heading_two, 
-              bold: true 
-            }, 
-            before_quote: { 
+          data: {
+            heading: {
+              text: 'Testimonial',
+              level: :heading_two,
+              bold: true
+            },
+            before_quote: {
               text: 'Test wolf testimonial text'
-            }, 
+            },
             quote: {
-               text: 'Wolves are great' 
+               text: 'Wolves are great'
             },
              author: {
-              text:  'Edd the wolf' 
+              text:  'Edd the wolf'
             }
           }
         }
@@ -200,25 +200,25 @@ describe Gateway::ContentfulGateway do
             text: "This is a Meow paragraph meow meow"
           }
         },
-           {
-          type: :testimonial,
-          data: { 
-            heading: { 
-              text: 'Testimonial', 
-              level: :heading_two, 
-              bold: true 
-            }, 
-            before_quote: { 
-              text: 'Test testimonial text'
-            }, 
-            quote: {
-               text: 'Cats are great' 
-            },
-             author: {
-              text:  'Jim the cat' 
-            }
-          }
-        }
+        {
+       type: :testimonial,
+       data: {
+         heading: {
+           text: 'Testimonial',
+           level: :heading_two,
+           bold: true
+         },
+         before_quote: {
+           text: 'Test testimonial text'
+         },
+         quote: {
+            text: 'Cats are great'
+         },
+          author: {
+           text:  'Jim the cat'
+         }
+       }
+     }
       ])
     end
   end
