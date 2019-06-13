@@ -94,6 +94,12 @@ describe Gateway::ContentfulGateway do
           data: {
             text: "This is a Woof paragraph woof woof"
           }
+        },
+        {
+          type: :small,
+          data: {
+            text: "Published 20th June 1999"
+          }
         }
       ])
     end
@@ -178,6 +184,12 @@ describe Gateway::ContentfulGateway do
           type: :paragraph,
           data: {
             text: "This is a Meow paragraph meow meow"
+          }
+        },
+        {
+          type: :small,
+          data: {
+            text: "Published 23th July 2077"
           }
         }
       ])

@@ -71,6 +71,12 @@ describe 'Get Case Study' do
             data: {
               text: "This is a paragraph"
             }
+          },
+          {
+            type: :small,
+            data: {
+              text: "Published 4th June 2019"
+            }
           }
         ]
       )

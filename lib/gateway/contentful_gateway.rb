@@ -44,11 +44,22 @@ private
         content_array << create_heading(content)
       when 'paragraph'
         content_array << create_paragraph(content)
+      when 'small'
+        content_array << create_small(content)
       else
         @logger.warn("Content #{content.sys[:content_type].id} not supported")
       end
     end
     content_array
+  end
+
+  def create_small(content)
+    {
+      type: :small,
+      data: {
+        text: content.text
+      }
+    }
   end
 
   def create_image(content)
