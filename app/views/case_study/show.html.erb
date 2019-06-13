@@ -36,7 +36,7 @@
             <% end %>
           <% when :testimonial %>
             <div class="govuk-grid-row padding-top-m  width-s">
-              <%= render 'layouts/components/testimonial', testimonial: content[:data][:testimonial] %>
+              <%= render 'layouts/components/testimonial', testimonial: content[:data] %>
             </div>
           <% end %>
         <% end %>
