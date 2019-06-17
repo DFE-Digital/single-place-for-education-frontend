@@ -16,7 +16,7 @@
                 <%= render 'layouts/components/headings/two', text: content[:data][:text] %>
               </div>
             <% when :heading_three %>
-              <div class="govuk-grid-row padding-top-m width-s">
+              <div class="govuk-grid-row govuk-!-padding-top-9 width-s heavy">
                 <%= render 'layouts/components/headings/three', text: content[:data][:text] %>
               </div>
             <% when :heading_four %>
@@ -31,12 +31,12 @@
           <% when :image %>
             <% case content[:data][:width] %>
             <% when :full_bleed %>
-              <div class="govuk-grid-row padding-top-m">
-                <%= render 'layouts/components/full_bleed_image', alt_text: 'example image', image_src: content[:data][:url] %>
+              <div class="govuk-grid-row govuk-!-padding-top-9">
+                <%= render 'layouts/components/images/full_bleed_image', alt_text: 'example image', image_src: content[:data][:url] %>
               </div>
             <% end %>
           <% when :testimonial %>
-            <div class="govuk-grid-row padding-top-m  width-s">
+            <div class="govuk-grid-row govuk-!-padding-top-9 width-s">
               <%= render 'layouts/components/testimonial', testimonial: content[:data] %>
             </div>
           <% when :small %>

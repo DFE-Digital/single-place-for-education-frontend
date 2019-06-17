@@ -5,3 +5,15 @@
 .dfe__body {
   overflow-x: hidden;
 }
+
+.background-wide {
+  background-color: #F2F2F2;
+  margin: 0 -500% !important;
+  padding: 0 500% !important;
+}
+
+.align-items-center {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
