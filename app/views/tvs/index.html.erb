@@ -1,0 +1,42 @@
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <%= render 'layouts/components/headings/one', text: 'Teaching Vacancies' %>
+    <p class="govuk-body">Below are the 50 most recent teaching vacancies. View these and more on the
+      <a class="govuk-link" href="https://teaching-vacancies.service.gov.uk/">Teaching Vacancies Service</a></p>
+    <%= render 'layouts/components/headings/two', text: 'Recent job postings' %>
+    <% @response.each do |job| %>
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+          <span class="govuk-caption-l"><%= "#{job['hiringOrganization']['name']}, #{job['jobLocation']['address']['addressLocality']}, #{job['jobLocation']['address']['addressRegion']}" %></span>
+          <h2 class="govuk-heading-l"><%= job['title'] %></h2>
+          <dl class="govuk-summary-list govuk-summary-list--no-border">
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Salary
+              </dt>
+              <dd class="govuk-summary-list__value">
+                <% if job['baseSalary']['value']['minValue'] && job['baseSalary']['value']['maxValue'] %>
+                  <%= "£#{job['baseSalary']['value']['minValue']} to £#{job['baseSalary']['value']['maxValue']} per #{job['baseSalary']['value']['unitText'] == 'YEAR' ? 'year' : '???'}" %>
+                <% else %>
+                  <%= "£#{job['baseSalary']['value']['value']} per #{job['baseSalary']['value']['unitText'] == 'YEAR' ? 'year' : '???'}" %>
+                <% end %>
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Date posted
+              </dt>
+              <dd class="govuk-summary-list__value">
+                <%= Date.parse(job['datePosted']).strftime('%d/%m/%y') %>
+              </dd>
+            </div>
+            <a class="govuk-link" href="<%= job['url'] %>">See more</a>
+          </dl>
+          <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible"/>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+

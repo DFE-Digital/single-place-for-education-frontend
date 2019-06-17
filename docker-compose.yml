@@ -14,3 +14,5 @@ services:
     environment:
       BASIC_AUTH_USER: 'user'
       BASIC_AUTH_PASSWORD: 'password'
+      CONTENTFUL_SPACE_ID:
+      CONTENTFUL_ACCESS_TOKEN:

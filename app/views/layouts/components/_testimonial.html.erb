@@ -1,0 +1,31 @@
+<% case testimonial[:heading][:level] %>
+<% when :heading_one %>
+  <div class="govuk-grid-row">
+    <%= render 'layouts/components/headings/one', text: testimonial[:heading][:text] %>
+  </div>
+<% when :heading_two %>
+  <div class="govuk-grid-row">
+    <%= render 'layouts/components/headings/two', text: testimonial[:heading][:text] %>
+  </div>
+<% when :heading_three %>
+  <div class="govuk-grid-row">
+    <%= render 'layouts/components/headings/three', text: testimonial[:heading][:text] %>
+  </div>
+<% when :heading_four %>
+  <div class="govuk-grid-row">
+    <%= render 'layouts/components/headings/four', text: testimonial[:heading][:text] %>
+  </div>
+<% end %>
+
+<div class="govuk-grid-row">
+  <%= render 'layouts/components/paragraph', text: testimonial[:before_quote][:text] %>
+  <hr />
+</div>
+
+<div class="govuk-grid-row">
+  <%= render 'layouts/components/quote', text: testimonial[:quote][:text] %>
+</div>
+
+<div class="govuk-grid-row padding-top-m">
+  <%= render 'layouts/components/small', text: testimonial[:author][:text] %>
+</div>

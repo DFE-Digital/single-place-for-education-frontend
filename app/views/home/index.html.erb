@@ -15,10 +15,25 @@
           <%= render 'layouts/components/headings/four', text: 'Example heading four' %>
         </div>
         <div class="govuk-grid-row">
-          <%= render 'layouts/components/full_bleed_image', alt_text: 'example image', image_src: asset_url('full-width-example.png') %>
+          <%= render 'layouts/components/paragraph', text: 'Example paragraph' %>
+          <%= render 'layouts/components/paragraph', text: 'And another example paragraph' %>
+          <%= render 'layouts/components/paragraph', text: 'Yet another example' %>
         </div>
         <div class="govuk-grid-row">
-          Some other text
+          <%= render 'layouts/components/small', text: 'Example small' %>
+          <%= render 'layouts/components/small', text: 'And another example small' %>
+          <%= render 'layouts/components/small', text: 'Yet another example' %>
+        </div>
+        <div class="govuk-grid-row">
+          <%= render 'layouts/components/link', text: 'Example link' %><br />
+          <%= render 'layouts/components/link', text: 'And another link' %><br />
+          <%= render 'layouts/components/link', text: 'Yet another link' %>
+        </div>
+        <div class="govuk-grid-row">
+          <%= render 'layouts/components/full_bleed_image', alt_text: 'example image', image_src: asset_url('full-width-example.png') %>
+        </div>
+        <div class="govuk-grid-row width-s padding-top-m">
+          <%= render 'layouts/components/testimonial', testimonial: { heading: { text: 'Testimonials', level: :heading_three, bold: true }, before_quote: { text: 'Example said of Example Two and the role she plays in his school:'}, quote: { text: 'This is an example quote. Quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote quote.' }, author: { text: 'Headteacher, Example' } } %>
         </div>
       </div>
     </div>

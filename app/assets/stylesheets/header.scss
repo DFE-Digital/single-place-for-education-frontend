@@ -1,5 +1,5 @@
 .dfe-header__container {
-  margin-bottom: 5px;
+  margin-bottom: 0;
   border-bottom: none;
 }
 
@@ -12,4 +12,12 @@
 
 .dfe-header__logo {
   background-image: image-url('header-logo.png')
+}
+
+.govuk-header {
+  border-bottom: none;
+}
+
+.govuk-header__link:visited {
+  color: transparent;
 }
