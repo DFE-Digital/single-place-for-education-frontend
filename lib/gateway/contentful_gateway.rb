@@ -20,6 +20,14 @@ class Gateway::ContentfulGateway
     build_case_study_from_response(case_study_response)
   end
 
+  def get_category(slug:)
+    category_response = get_content(slug: slug, content_type: 'category')
+
+    return nil if category_response.nil?
+
+    build_category_from_response(category_response)
+  end
+
   def get_sub_category(slug:)
     sub_category_response = get_content(slug: slug, content_type: 'subCategory')
 
@@ -46,6 +54,13 @@ private
       case_study.slug = case_study_response.slug
       case_study.hero_image = case_study_response.hero_image.file.url
       case_study.content = build_content_type_array(case_study_response.content)
+    end
+  end
+
+  def build_category_from_response(category_response)
+    Domain::Category.new.tap do |category|
+      category.title = category_response.title
+      category.slug = category_response.slug
     end
   end
 
@@ -101,7 +116,7 @@ private
           text: content.quote.text
         },
         author: {
-          text:  content.author.text
+          text: content.author.text
         }
       }
     }
