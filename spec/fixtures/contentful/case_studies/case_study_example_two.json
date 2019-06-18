@@ -273,7 +273,9 @@
                 "fields": {
                     "text": "This is a test Meow heading",
                     "level": "H2",
-                    "bold": false
+                    "bold": false,
+                    "alignment": "Left"
+
                 }
             },
             {

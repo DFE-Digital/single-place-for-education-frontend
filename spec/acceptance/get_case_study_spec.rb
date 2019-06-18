@@ -63,7 +63,9 @@ describe 'Get Case Study' do
             data: {
               text: "School leader transforms Grantham primary school",
               level: :heading_one,
-              bold: true
+              bold: true,
+              alignment: "Left"
+
             }
           },
           {
@@ -78,7 +80,9 @@ describe 'Get Case Study' do
               heading: {
                 text: 'Testimonial',
                 level: :heading_two,
-                bold: true
+                bold: true,
+                alignment: "Left"
+
               },
               before_quote: {
                 text: 'Test testimonial text'
