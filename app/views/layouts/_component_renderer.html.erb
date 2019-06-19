@@ -1,42 +1,42 @@
 <% contents.each do |content| %>
-    <% case content[:type] %>
-     <% when :heading %>
-      <% case content[:data][:level] %>
-      <% when :heading_one %>
-        <div class="govuk-grid-row">
-          <%= render 'layouts/components/headings/one', text: content[:data][:text], alignment: content[:data][:alignment] %>
-        </div>
-      <% when :heading_two %>
-        <div class="govuk-grid-row">
-          <%= render 'layouts/components/headings/two', text: content[:data][:text], alignment: content[:data][:alignment] %>
-        </div>
-      <% when :heading_three %>
-        <div class="govuk-grid-row govuk-!-padding-top-9 heavy">
-          <%= render 'layouts/components/headings/three', text: content[:data][:text], alignment: content[:data][:alignment] %>
-        </div>
-      <% when :heading_four %>
-        <div class="govuk-grid-row">
-          <%= render 'layouts/components/headings/four', text: content[:data][:text], alignment: content[:data][:alignment] %>
-        </div>
+  <% case content[:type] %>
+  <% when :heading %>
+    <% case content[:data][:level] %>
+    <% when :heading_one %>
+      <div class="govuk-grid-row">
+        <%= render 'layouts/components/headings/one', text: content[:data][:text], alignment: content[:data][:alignment], bold: content[:data][:bold] %>
+      </div>
+    <% when :heading_two %>
+      <div class="govuk-grid-row">
+        <%= render 'layouts/components/headings/two', text: content[:data][:text], alignment: content[:data][:alignment], bold: content[:data][:bold] %>
+      </div>
+    <% when :heading_three %>
+      <div class="govuk-grid-row govuk-!-padding-top-9">
+        <%= render 'layouts/components/headings/three', text: content[:data][:text], alignment: content[:data][:alignment], bold: content[:data][:bold] %>
+      </div>
+    <% when :heading_four %>
+      <div class="govuk-grid-row">
+        <%= render 'layouts/components/headings/four', text: content[:data][:text], alignment: content[:data][:alignment], bold: content[:data][:bold] %>
+      </div>
     <% end %>
-    <% when :paragraph %>
+  <% when :paragraph %>
     <div class="govuk-grid-row">
-        <%= render 'layouts/components/paragraph', text: content[:data][:text] %>
+      <%= render 'layouts/components/paragraph', text: content[:data][:text] %>
     </div>
-    <% when :image %>
+  <% when :image %>
     <% case content[:data][:width] %>
     <% when :full_bleed %>
-        <div class="govuk-grid-row govuk-!-padding-top-9">
+      <div class="govuk-grid-row govuk-!-padding-top-9">
         <%= render 'layouts/components/images/full_bleed_image', alt_text: 'example image', image_src: content[:data][:url] %>
-        </div>
+      </div>
     <% end %>
-    <% when :testimonial %>
+  <% when :testimonial %>
     <div class="govuk-grid-row govuk-!-padding-top-9">
-        <%= render 'layouts/components/testimonial', testimonial: content[:data] %>
+      <%= render 'layouts/components/testimonial', testimonial: content[:data] %>
     </div>
-    <% when :small %>
+  <% when :small %>
     <div class="govuk-grid-row text-align-center">
-        <%= render 'layouts/components/small', text: content[:data][:text] %>
+      <%= render 'layouts/components/small', text: content[:data][:text] %>
     </div>
-    <% end %>
+  <% end %>
 <% end %>
