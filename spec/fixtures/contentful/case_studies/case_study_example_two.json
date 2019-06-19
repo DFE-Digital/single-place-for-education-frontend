@@ -81,6 +81,13 @@
                             "linkType": "Entry",
                             "id": "1J1jWeX03NZypd4bomiv8n"
                         }
+                    },
+                    {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Entry",
+                            "id": "4g3h4GKR86sEARRckHYxYr"
+                        }
                     }
                 ]
             }
@@ -540,6 +547,42 @@
                 "fields": {
                     "text": "Jim the cat",
                     "alignment": "Center"
+                }
+            },
+            {
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "gfzscr0ovdsz"
+                        }
+                    },
+                    "id": "4g3h4GKR86sEARRckHYxYr",
+                    "type": "Entry",
+                    "createdAt": "2019-06-07T08:43:14.747Z",
+                    "updatedAt": "2019-06-19T14:52:39.273Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 3,
+                    "contentType": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "ContentType",
+                            "id": "link"
+                        }
+                    },
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "text": "Linkee",
+                    "type": "External",
+                    "url": "linkee.com"
                 }
             }
         ],
