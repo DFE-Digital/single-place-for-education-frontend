@@ -78,7 +78,7 @@ describe Gateway::ContentfulGateway do
           type: :image,
           data: {
             url: "//images.ctfassets.net/dog/school-corridor.jpeg",
-            width: :full_bleed
+            width: "full-bleed"
           }
         },
         {
@@ -191,7 +191,7 @@ describe Gateway::ContentfulGateway do
           type: :image,
           data: {
             url: "//images.ctfassets.net/wolf/school-corridor.jpeg",
-            width: :full_bleed
+            width: "full-bleed"
           }
         },
         {

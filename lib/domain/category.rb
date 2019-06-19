@@ -1,3 +1,3 @@
 class Domain::Category
-  attr_accessor :title, :slug, :description
+  attr_accessor :title, :slug, :description, :content
 end

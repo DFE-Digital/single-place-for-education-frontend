@@ -1,0 +1,22 @@
+<% contents.each do |content| %>
+  <% case content[:type] %>
+  <% when :heading %>
+    <%= render 'layouts/renderers/headings_renderer.html.erb', heading: content[:data] %>
+  <% when :paragraph %>
+    <div class="govuk-grid-row">
+      <%= render 'layouts/components/paragraph', text: content[:data][:text] %>
+    </div>
+  <% when :image %>
+    <div class="govuk-grid-row govuk-!-padding-top-9">
+      <%= render 'layouts/components/images/image', alt_text: 'example image', image_src: content[:data][:url], image_width: content[:data][:width]%>
+    </div>
+  <% when :testimonial %>
+    <div class="govuk-grid-row">
+      <%= render 'layouts/components/testimonial', testimonial: content[:data] %>
+    </div>
+  <% when :small %>
+    <div class="govuk-grid-row text-align-center">
+      <%= render 'layouts/components/small', text: content[:data][:text] %>
+    </div>
+  <% end %>
+<% end %>
