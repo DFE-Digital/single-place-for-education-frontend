@@ -55,7 +55,7 @@ describe 'Get Case Study' do
             type: :image,
             data: {
               url: "//images.ctfassets.net/grantham-hero-image.png",
-              width: :full_bleed
+              width: "full-bleed"
             }
           },
           {

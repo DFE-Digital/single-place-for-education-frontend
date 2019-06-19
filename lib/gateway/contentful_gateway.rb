@@ -127,13 +127,13 @@ private
   def create_image(content)
     case content.width
     when 'Full Bleed'
-      image_type = :full_bleed
-    when 'Half Width'
-      image_type = :half_width
-    when 'Third Width'
-      image_type = :thid_width
-    when 'Quarter Width'
-      image_type = :quarter_width
+      image_type = 'full-bleed'
+    when 'Default'
+      image_type = 'default'
+    when 'Thumbnail'
+      image_type = 'thumbnail'
+    when 'Icon'
+      image_type = 'icon'
     end
 
     {

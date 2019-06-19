@@ -56,12 +56,12 @@
               <p class="govuk-body">Get involved and help us test out new policy thinking and initiatives</p>
               <div class="govuk-row">
                 <div class="govuk-grid-column-one-half">
-                  <%= render 'layouts/components/images/thumbnail', image_src: asset_url('phone.jpg') %>
+                  <%= render 'layouts/components/images/image', image_src: asset_url('phone.jpg'), image_width: 'thumbnail' %>
                   <p class="govuk-body govuk-!-margin-bottom-6">Relationships and Sex Education (RSE) and Health Education</p>
                   <%= render 'layouts/components/link', text: 'Register to be an early adopter school' %>
                 </div>
                 <div class="govuk-grid-column-one-half">
-                  <%= render 'layouts/components/images/thumbnail', image_src: asset_url('phone2.jpg') %>
+                  <%= render 'layouts/components/images/image', image_src: asset_url('phone2.jpg'), image_width: 'thumbnail' %>
                   <p class="govuk-body govuk-!-margin-bottom-9">Curriculum Materials Beta testers wanted!</p>
                   <%= render 'layouts/components/link', text: 'Help us develop our new curriculum materials platform' %>
                 </div>
@@ -86,7 +86,7 @@
               <%= render 'layouts/components/buttons/secondary_button', link: 'https://teaching-vacancies.service.gov.uk/', text: 'Advertise a job' %>
             </div>
             <div class="govuk-grid-column-one-half">
-              <%= render 'layouts/components/images/default', image_src: asset_url('teacher2.png') %>
+              <%= render 'layouts/components/images/image', image_src: asset_url('teacher2.png'), image_width: 'default' %>
             </div>
           </div>
         </div>
@@ -109,7 +109,7 @@
         </div>
         <div class="govuk-grid-row govuk-!-padding-top-9 govuk-!-padding-bottom-5">
           <%= render 'layouts/components/headings/three', text: 'Resources' %>
-          <%= render 'layouts/components/images/default', image_src: asset_url('cartoon-people.png') %>
+          <%= render 'layouts/components/images/image', image_src: asset_url('cartoon-people.png'), image_width: 'default' %>
           <div class="govuk-grid-row govuk-!-padding-top-9">
             <div class="govuk-grid-column-two-thirds">
               <%= render 'layouts/components/link', text: 'Workload reduction toolkit' %>
@@ -118,7 +118,7 @@
           </div>
           <div class="govuk-grid-row govuk-!-padding-top-9 align-items-center">
             <div class="govuk-grid-column-one-half">
-              <%= render 'layouts/components/images/default', image_src: asset_url('teacher.png') %>
+              <%= render 'layouts/components/images/image', image_src: asset_url('teacher.png'), image_width: 'default' %>
             </div>
             <div class="govuk-grid-column-one-half">
               <%= render 'layouts/components/link', text: 'Safeguarding & mental health in schools' %>
@@ -131,15 +131,15 @@
           <%= render 'layouts/components/headings/three', text: 'What\'s new?' %>
           <div class="govuk-grid-row govuk-!-padding-top-5">
             <div class="govuk-grid-column-one-third govuk-!-margin-bottom-9">
-              <%= render 'layouts/components/images/thumbnail', image_src: asset_url('teacher-effect.png') %>
+              <%= render 'layouts/components/images/image', image_src: asset_url('teacher-effect.png'), image_width: 'thumbnail' %>
               <%= render 'layouts/components/link', text: 'Watch Lizzie\'s #TeacherEffect story unfold here' %>
             </div>
             <div class="govuk-grid-column-one-third govuk-!-margin-bottom-9">
-              <%= render 'layouts/components/images/thumbnail', image_src: asset_url('life-lessons.png') %>
+              <%= render 'layouts/components/images/image', image_src: asset_url('life-lessons.png'), image_width: 'thumbnail' %>
               <%= render 'layouts/components/link', text: 'Stacia\'s teacher gave her courage and taught her to believe in herself. #LifeLessons' %>
             </div>
             <div class="govuk-grid-column-one-third">
-              <%= render 'layouts/components/images/thumbnail', image_src: asset_url('relationships-and-sex-education.png') %>
+              <%= render 'layouts/components/images/image', image_src: asset_url('relationships-and-sex-education.png'), image_width: 'thumbnail' %>
               <%= render 'layouts/components/link', text: 'The way we\'re teaching relationships, sex and health education is changing' %>
             </div>
           </div>

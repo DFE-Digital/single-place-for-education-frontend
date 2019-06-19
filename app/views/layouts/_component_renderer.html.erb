@@ -24,12 +24,9 @@
       <%= render 'layouts/components/paragraph', text: content[:data][:text] %>
     </div>
   <% when :image %>
-    <% case content[:data][:width] %>
-    <% when :full_bleed %>
-      <div class="govuk-grid-row govuk-!-padding-top-9">
-        <%= render 'layouts/components/images/full_bleed_image', alt_text: 'example image', image_src: content[:data][:url] %>
-      </div>
-    <% end %>
+    <div class="govuk-grid-row govuk-!-padding-top-9">
+      <%= render 'layouts/components/images/image', alt_text: 'example image', image_src: content[:data][:url], image_width: content[:data][:width]%>
+    </div>
   <% when :testimonial %>
     <div class="govuk-grid-row govuk-!-padding-top-9">
       <%= render 'layouts/components/testimonial', testimonial: content[:data] %>
