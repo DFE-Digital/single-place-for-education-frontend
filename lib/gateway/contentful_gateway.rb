@@ -117,7 +117,8 @@ private
     {
       type: :small,
       data: {
-        text: content.text
+        text: content.text,
+        alignment: content.alignment.downcase
       }
     }
   end
@@ -134,7 +135,8 @@ private
           text: content.quote.text
         },
         author: {
-          text: content.author.text
+          text: content.author.text,
+          alignment: content.author.alignment.downcase
         }
       }
     }

@@ -23,7 +23,7 @@ describe 'Get Case Study' do
     "https://cdn.contentful.com/spaces/#{space_id}/environments/master/entries?content_type=caseStudy&include=10&fields.slug=#{slug}"
   end
 
-  context '#when the case study has content'do
+  context '#when the case study has content' do
     before do
       response_with_no_items = File.open("#{fixtures_path}response_with_no_items.json", &:read)
       response_with_items = File.open("#{fixtures_path}case_study_acceptance.json", &:read)
@@ -54,24 +54,23 @@ describe 'Get Case Study' do
           {
             type: :image,
             data: {
-              url: "//images.ctfassets.net/grantham-hero-image.png",
-              width: "full-bleed"
+              url: '//images.ctfassets.net/grantham-hero-image.png',
+              width: 'full-bleed'
             }
           },
           {
             type: :heading,
             data: {
-              text: "School leader transforms Grantham primary school",
+              text: 'School leader transforms Grantham primary school',
               level: :heading_one,
               bold: true,
-              alignment: "Left"
-
+              alignment: 'Left'
             }
           },
           {
             type: :paragraph,
             data: {
-              text: "This is a paragraph"
+              text: 'This is a paragraph'
             }
           },
           {
@@ -81,8 +80,7 @@ describe 'Get Case Study' do
                 text: 'Testimonial',
                 level: :heading_two,
                 bold: true,
-                alignment: "Left"
-
+                alignment: 'Left'
               },
               before_quote: {
                 text: 'Test testimonial text'
@@ -91,14 +89,16 @@ describe 'Get Case Study' do
                 text: 'Cats are great'
               },
               author: {
-                text:  'Jim the cat'
+                text:  'Jim the cat',
+                alignment: 'left'
               }
             }
           },
           {
             type: :small,
             data: {
-              text: "Published 4th June 2019"
+              text: 'Published 4th June 2019',
+              alignment: 'left'
             }
           }
         ]

@@ -119,10 +119,10 @@
                     "locale": "en-US"
                 },
                 "fields": {
-                    "text": "Published 23th July 2077"
+                    "text": "Published 23th July 2077",
+                    "alignment": "Center"
                 }
             },
-         
             {
                 "sys": {
                     "space": {
@@ -538,7 +538,8 @@
                     "locale": "en-US"
                 },
                 "fields": {
-                    "text": "Jim the cat"
+                    "text": "Jim the cat",
+                    "alignment": "Center"
                 }
             }
         ],
