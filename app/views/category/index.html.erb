@@ -3,7 +3,7 @@
 <div class="govuk-width-container">
   <main class="govuk-main-wrapper govuk-!-padding-top-0" id="main-content" role="main">
     <div class="background-wide background-cream">
-      <div class="govuk-breadcrumbs govuk-!-margin-top-0 govuk-!-padding-top-9">
+      <div class="govuk-breadcrumbs govuk-!-margin-top-0 govuk-!-padding-top-9 govuk-grid-column-full">
         <ol class="govuk-breadcrumbs__list">
           <li class="govuk-breadcrumbs__list-item">
             <a class="govuk-breadcrumbs__link" href="/">Home</a>
@@ -11,7 +11,7 @@
         </ol>
       </div>
       <div class="govuk-grid-row govuk-!-padding-bottom-7">
-        <div class="govuk-grid-column-three-quarters govuk-!-padding-right-0 govuk-!-padding-left-0">
+        <div class="govuk-grid-column-full">
           <%= render 'layouts/components/small', text: @category[:collection_name] %>
           <%= render 'layouts/components/headings/one', text: @category[:title] %>
           <% @category[:description].each do |description| %>
@@ -20,7 +20,7 @@
         </div>
       </div>
     </div>
-    <div class="govuk-grid-row">
+    <div class="govuk-grid-row govuk-!-padding-top-9">
       <div class="govuk-grid-column-full">
         <%= render 'layouts/component_renderer', contents: @category[:content] %>
       </div>
