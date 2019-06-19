@@ -62,6 +62,8 @@ private
       category.title = category_response.title
       category.slug = category_response.slug
       category.description = build_content_type_array(category_response.description)
+      category.content = build_content_type_array(category_response.content)
+
     end
   end
 

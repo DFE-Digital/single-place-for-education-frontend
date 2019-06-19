@@ -12,7 +12,8 @@ class CategoryController < ApplicationController
     @category = {
       title: temp_category.title,
       slug: temp_category.slug,
-      description: temp_category.description
+      description: temp_category.description,
+      content: temp_category.content
     }
 
     render 'category/index'
