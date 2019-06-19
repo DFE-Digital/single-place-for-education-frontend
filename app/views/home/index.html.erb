@@ -6,26 +6,24 @@
         <div class="govuk-grid-row govuk-!-padding-top-5">
           <%= render 'layouts/components/headings/three', text: 'Information', bold: false %>
           <div class="govuk-grid-column-one-half">
-            <%= render 'layouts/components/buttons/secondary_button', link: '#', text: 'School strategy' %><br />
-            <%= render 'layouts/components/buttons/secondary_button', link: '#', text: 'Curriculum & accountability' %><br />
-            <%= render 'layouts/components/buttons/secondary_button', link: '#', text: 'News' %>
+            <%= render 'layouts/components/buttons/secondary_button', link: '/in-development', text: 'School strategy' %><br />
+            <%= render 'layouts/components/buttons/secondary_button', link: '/in-development', text: 'Curriculum & accountability' %><br />
+            <%= render 'layouts/components/buttons/secondary_button', link: '/in-development', text: 'News' %>
           </div>
           <div class="govuk-grid-column-one-half">
-            <%= render 'layouts/components/buttons/secondary_button', link: '#', text: 'Developing people' %><br />
-            <%= render 'layouts/components/buttons/secondary_button', link: '#', text: 'Reduce teacher workload' %>
+            <%= render 'layouts/components/buttons/secondary_button', link: '/in-development', text: 'Developing people' %><br />
+            <%= render 'layouts/components/buttons/secondary_button', link: '/in-development', text: 'Reduce teacher workload' %>
           </div>
         </div>
         <div class="govuk-grid-row govuk-!-padding-top-5 govuk-!-padding-bottom-9">
           <%= render 'layouts/components/headings/three', text: 'Services' %>
           <div class="govuk-grid-row">
             <div class="govuk-grid-column-one-half">
-              <%= render 'layouts/components/buttons/primary_button', text: 'Get school-to-school support', link: '#' %>
+              <%= render 'layouts/components/buttons/primary_button', text: 'Get school-to-school support', link: '/in-development' %>
               <%= render 'layouts/components/buttons/primary_button', text: 'Find a job in teaching', link: '/tvs' %>
-              <%= render 'layouts/components/buttons/primary_button', text: 'List a teaching job at your school', link: 'https://teaching-vacancies.service.gov.uk/' %>
             </div>
             <div class="govuk-grid-column-one-half">
-              <%= render 'layouts/components/buttons/primary_button', text: 'Lorem ipsum dolor sit amet', link: '#' %>
-              <%= render 'layouts/components/buttons/primary_button', text: 'Lorem ipsum dolor sit amet', link: '#' %>
+              <%= render 'layouts/components/buttons/primary_button', text: 'List a teaching job at your school', link: 'https://teaching-vacancies.service.gov.uk/' %>
             </div>
           </div>
         </div>
@@ -37,17 +35,17 @@
 
               <div class="govuk-row">
                 <%= render 'layouts/components/small', text: '1 update — 5 mins ago' %>
-                <%= render 'layouts/components/link', text: 'High needs strategic planning (guidance)' %>
+                <%= render 'layouts/components/links/external', link: "https://www.gov.uk/government/publications/high-needs-strategic-planning-fund", text: 'High needs strategic planning (guidance)' %>
                 <hr class="section-break-thin">
               </div>
               <div class="govuk-row">
                 <%= render 'layouts/components/small', text: '3 updates — 1 hour ago' %>
-                <%= render 'layouts/components/link', text: 'School census 2018 to 2019: technical information (guidance)' %>
+                <%= render 'layouts/components/links/external', link: "https://www.gov.uk/government/publications/school-census-2018-to-2019-guide-for-schools-and-las", text: 'School census 2018 to 2019: technical information (guidance)' %>
                 <hr class="section-break-thin">
               </div>
               <div class="govuk-row">
                 <%= render 'layouts/components/small', text: '7 updates — a week ago' %>
-                <%= render 'layouts/components/link', text: 'Regulating independent schools' %>
+                <%= render 'layouts/components/links/external', link: "https://www.gov.uk/government/publications/regulating-independent-schools", text: 'Regulating independent schools' %>
                 <hr class="section-break-thin">
               </div>
             </div>
@@ -58,16 +56,16 @@
                 <div class="govuk-grid-column-one-half">
                   <%= render 'layouts/components/images/thumbnail', image_src: asset_url('phone.jpg') %>
                   <p class="govuk-body govuk-!-margin-bottom-6">Relationships and Sex Education (RSE) and Health Education</p>
-                  <%= render 'layouts/components/link', text: 'Register to be an early adopter school' %>
+                  <%= render 'layouts/components/links/internal', link: "/in-development", text: 'Register to be an early adopter school' %>
                 </div>
                 <div class="govuk-grid-column-one-half">
                   <%= render 'layouts/components/images/thumbnail', image_src: asset_url('phone2.jpg') %>
                   <p class="govuk-body govuk-!-margin-bottom-9">Curriculum Materials Beta testers wanted!</p>
-                  <%= render 'layouts/components/link', text: 'Help us develop our new curriculum materials platform' %>
+                  <%= render 'layouts/components/links/internal', link: "/in-development", text: 'Help us develop our new curriculum materials platform' %>
                 </div>
                 <div class="govuk-row">
                   <div class="govuk-grid-column-full govuk-!-margin-top-9">
-                    <%= render 'layouts/components/buttons/secondary_button', link: '#', text: 'See other ways you can help out' %><br />
+                    <%= render 'layouts/components/buttons/secondary_button', link: '/in-development', text: 'See other ways you can help out' %><br />
                   </div>
                 </div>
               </div>
@@ -78,9 +76,9 @@
           <%= render 'layouts/components/headings/three', text: 'Find and advertise a job' %>
           <div class="govuk-grid-row govuk-!-padding-top-5">
             <div class="govuk-grid-column-one-half">
-              <%= render 'layouts/components/link', text: 'Assisstant head teacher' %>
+              <%= render 'layouts/components/links/internal', link: "/in-development", text: 'Assisstant head teacher' %>
               <p class="govuk-body">West Bromwich, West Midlands, B71 2QR</p>
-              <%= render 'layouts/components/link', text: 'Head of year' %>
+              <%= render 'layouts/components/links/internal', link: "/in-development", text: 'Head of year' %>
               <p class="govuk-body govuk-!-margin-bottom-9">Nottingham, Nottingham, NG11 8JW</p>
               <%= render 'layouts/components/buttons/secondary_button', link: '/tvs', text: 'See all jobs' %><br>
               <%= render 'layouts/components/buttons/secondary_button', link: 'https://teaching-vacancies.service.gov.uk/', text: 'Advertise a job' %>
@@ -97,14 +95,14 @@
             <%= render 'layouts/components/headings/four', text: 'Recently added apps' %>
             <div class="govuk-grid-row govuk-!-padding-bottom-5">
               <div class="govuk-grid-column-one-half">
-                <%= render 'layouts/components/resource_link_with_icon', image_src: asset_url('class-charts.png'), heading: 'ClassCharts', text: 'Behaviour management', link: '#' %>
-                <%= render 'layouts/components/resource_link_with_icon', image_src: asset_url('school-ping.png'), heading: 'SchoolPing', text: 'Staff and parent comms', link: '#' %>
+                <%= render 'layouts/components/resource_link_with_icon', image_src: asset_url('class-charts.png'), heading: 'ClassCharts', text: 'Behaviour management', link: '/in-development' %>
+                <%= render 'layouts/components/resource_link_with_icon', image_src: asset_url('school-ping.png'), heading: 'SchoolPing', text: 'Staff and parent comms', link: '/in-development' %>
               </div>
               <div class="govuk-grid-column-one-half">
-                <%= render 'layouts/components/resource_link_with_icon', image_src: asset_url('frog.png'), heading: 'Frog', text: 'Improve pupil outcomes', link: '#' %>
+                <%= render 'layouts/components/resource_link_with_icon', image_src: asset_url('frog.png'), heading: 'Frog', text: 'Improve pupil outcomes', link: '/in-development' %>
               </div>
             </div>
-            <%= render 'layouts/components/buttons/secondary_button', link: '#', text: 'See all apps' %>
+            <%= render 'layouts/components/buttons/secondary_button', link: '/in-development', text: 'See all apps' %>
           </div>
         </div>
         <div class="govuk-grid-row govuk-!-padding-top-9 govuk-!-padding-bottom-5">
@@ -112,7 +110,7 @@
           <%= render 'layouts/components/images/default', image_src: asset_url('cartoon-people.png') %>
           <div class="govuk-grid-row govuk-!-padding-top-9">
             <div class="govuk-grid-column-two-thirds">
-              <%= render 'layouts/components/link', text: 'Workload reduction toolkit' %>
+              <%= render 'layouts/components/links/external', link: "https://www.gov.uk/government/collections/workload-reduction-toolkit", text: 'Workload reduction toolkit' %>
               <p class="govuk-body govuk-!-margin-top-5">Practical advice and tools for school leaders and teachers to help review and reduce workload</p>
             </div>
           </div>
@@ -121,7 +119,7 @@
               <%= render 'layouts/components/images/default', image_src: asset_url('teacher.png') %>
             </div>
             <div class="govuk-grid-column-one-half">
-              <%= render 'layouts/components/link', text: 'Safeguarding & mental health in schools' %>
+              <%= render 'layouts/components/links/external', link: "https://www.gov.uk/government/publications/mental-health-and-behaviour-in-schools--2", text: 'Safeguarding & mental health in schools' %>
               <p class="govuk-body govuk-!-margin-top-5">Support on wellbeing for teachers in schools and colleges</p>
             </div>
           </div>
@@ -132,15 +130,15 @@
           <div class="govuk-grid-row govuk-!-padding-top-5">
             <div class="govuk-grid-column-one-third govuk-!-margin-bottom-9">
               <%= render 'layouts/components/images/thumbnail', image_src: asset_url('teacher-effect.png') %>
-              <%= render 'layouts/components/link', text: 'Watch Lizzie\'s #TeacherEffect story unfold here' %>
+              <%= render 'layouts/components/links/external', link: "https://www.youtube.com/watch?v=1gxrGaqw7Rk", text: 'Watch Lizzie\'s #TeacherEffect story unfold here' %>
             </div>
             <div class="govuk-grid-column-one-third govuk-!-margin-bottom-9">
               <%= render 'layouts/components/images/thumbnail', image_src: asset_url('life-lessons.png') %>
-              <%= render 'layouts/components/link', text: 'Stacia\'s teacher gave her courage and taught her to believe in herself. #LifeLessons' %>
+              <%= render 'layouts/components/links/external', link: "https://www.youtube.com/watch?v=yiz_Sl2zvuU", text: 'Stacia\'s teacher gave her courage and taught her to believe in herself. #LifeLessons' %>
             </div>
             <div class="govuk-grid-column-one-third">
               <%= render 'layouts/components/images/thumbnail', image_src: asset_url('relationships-and-sex-education.png') %>
-              <%= render 'layouts/components/link', text: 'The way we\'re teaching relationships, sex and health education is changing' %>
+              <%= render 'layouts/components/links/external', link: "/in-development", text: 'The way we\'re teaching relationships, sex and health education is changing' %>
             </div>
           </div>
         </div>

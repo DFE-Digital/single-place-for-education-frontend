@@ -8,6 +8,8 @@
   line-height: 30px;
   margin-right: 30px;
   white-space: nowrap;
+  text-decoration: none;
+  color: inherit;
 }
 
 .dfe-header__logo {
@@ -16,6 +18,7 @@
 
 .govuk-header {
   border-bottom: none;
+  padding-bottom: 10px;
 }
 
 .govuk-header__link:visited {
