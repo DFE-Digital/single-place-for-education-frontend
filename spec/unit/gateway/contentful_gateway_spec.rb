@@ -77,23 +77,23 @@ describe Gateway::ContentfulGateway do
         {
           type: :image,
           data: {
-            url: "//images.ctfassets.net/dog/school-corridor.jpeg",
-            width: "full-bleed"
+            url: '//images.ctfassets.net/dog/school-corridor.jpeg',
+            width: 'full-bleed'
           }
         },
         {
           type: :heading,
           data: {
-            text: "This is a test Woof heading",
+            text: 'This is a test Woof heading',
             level: :heading_one,
             bold: true,
-            alignment: "Left"
+            alignment: 'Left'
           }
         },
         {
           type: :paragraph,
           data: {
-            text: "This is a Woof paragraph woof woof"
+            text: 'This is a Woof paragraph woof woof'
           }
         },
         {
@@ -103,8 +103,7 @@ describe Gateway::ContentfulGateway do
               text: 'Testimonial',
               level: :heading_two,
               bold: true,
-              alignment: "Left"
-
+              alignment: 'Left'
             },
             before_quote: {
               text: 'Test wolf testimonial text'
@@ -113,21 +112,23 @@ describe Gateway::ContentfulGateway do
               text: 'Wolves are great'
             },
             author: {
-              text: 'Edd the wolf'
+              text: 'Edd the wolf',
+              alignment: 'left'
             }
           }
         },
         {
           type: :small,
           data: {
-            text: "Published 20th June 1999"
+            text: 'Published 20th June 1999',
+            alignment: 'left'
           }
         }
       ])
     end
 
     it 'can log when a content type is not supported' do
-      expect(logger).to have_received(:warn).with("Content unimplemented not supported")
+      expect(logger).to have_received(:warn).with('Content unimplemented not supported')
     end
   end
 
@@ -190,24 +191,23 @@ describe Gateway::ContentfulGateway do
         {
           type: :image,
           data: {
-            url: "//images.ctfassets.net/wolf/school-corridor.jpeg",
-            width: "full-bleed"
+            url: '//images.ctfassets.net/wolf/school-corridor.jpeg',
+            width: 'full-bleed'
           }
         },
         {
           type: :heading,
           data: {
-            text: "This is a test Meow heading",
+            text: 'This is a test Meow heading',
             level: :heading_two,
             bold: false,
-            alignment: "Left"
-
+            alignment: 'Left'
           }
         },
         {
           type: :paragraph,
           data: {
-            text: "This is a Meow paragraph meow meow"
+            text: 'This is a Meow paragraph meow meow'
           }
         },
         {
@@ -217,7 +217,7 @@ describe Gateway::ContentfulGateway do
               text: 'Testimonial',
               level: :heading_two,
               bold: true,
-              alignment: "Left"
+              alignment: 'Left'
 
             },
             before_quote: {
@@ -227,14 +227,16 @@ describe Gateway::ContentfulGateway do
               text: 'Cats are great'
             },
             author: {
-              text: 'Jim the cat'
+              text: 'Jim the cat',
+              alignment: 'center'
             }
           }
         },
         {
           type: :small,
           data: {
-            text: "Published 23th July 2077"
+            text: 'Published 23th July 2077',
+            alignment: 'center'
           }
         }
       ])
