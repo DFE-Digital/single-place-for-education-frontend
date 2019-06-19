@@ -1,24 +1,7 @@
 <% contents.each do |content| %>
   <% case content[:type] %>
   <% when :heading %>
-    <% case content[:data][:level] %>
-    <% when :heading_one %>
-      <div class="govuk-grid-row">
-        <%= render 'layouts/components/headings/one', text: content[:data][:text], alignment: content[:data][:alignment], bold: content[:data][:bold] %>
-      </div>
-    <% when :heading_two %>
-      <div class="govuk-grid-row">
-        <%= render 'layouts/components/headings/two', text: content[:data][:text], alignment: content[:data][:alignment], bold: content[:data][:bold] %>
-      </div>
-    <% when :heading_three %>
-      <div class="govuk-grid-row govuk-!-padding-top-9">
-        <%= render 'layouts/components/headings/three', text: content[:data][:text], alignment: content[:data][:alignment], bold: content[:data][:bold] %>
-      </div>
-    <% when :heading_four %>
-      <div class="govuk-grid-row">
-        <%= render 'layouts/components/headings/four', text: content[:data][:text], alignment: content[:data][:alignment], bold: content[:data][:bold] %>
-      </div>
-    <% end %>
+    <%= render 'layouts/renderers/headings_renderer.html.erb', heading: content[:data] %>
   <% when :paragraph %>
     <div class="govuk-grid-row">
       <%= render 'layouts/components/paragraph', text: content[:data][:text] %>
@@ -28,7 +11,7 @@
       <%= render 'layouts/components/images/image', alt_text: 'example image', image_src: content[:data][:url], image_width: content[:data][:width]%>
     </div>
   <% when :testimonial %>
-    <div class="govuk-grid-row govuk-!-padding-top-9">
+    <div class="govuk-grid-row">
       <%= render 'layouts/components/testimonial', testimonial: content[:data] %>
     </div>
   <% when :small %>

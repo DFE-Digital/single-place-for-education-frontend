@@ -1,7 +1,8 @@
 <% content_for :title, @case_study[:name] %>
+
 <div class="govuk-width-container">
   <%= render 'layouts/components/images/hero', image_src: @case_study[:hero_image] %>
-  <main class="govuk-main-wrapper" id="main-content" role="main">
+  <main class="govuk-main-wrapper case-study" id="main-content" role="main">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-full width-s" style="float:none;">
         <%= render 'layouts/component_renderer', contents: @case_study[:content] %>
