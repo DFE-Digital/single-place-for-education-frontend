@@ -90,11 +90,27 @@ private
         content_type_array << create_small(content)
       when 'testimonial'
         content_type_array << create_testimonial(content)
+      when 'multipleColumns'
+        content_type_array << create_columns(content)
       else
         @logger.warn("Content #{content.sys[:content_type].id} not supported")
       end
     end
     content_type_array
+  end
+
+  def create_columns(content)
+    columns_array = []
+    content.columns.each do |column|
+      columns_array << build_content_type_array(column.content)
+    end
+    {
+      type: :columns,
+      data: {
+        heading: content.heading.text,
+        columns: columns_array
+      }
+    }
   end
 
   def create_small(content)
