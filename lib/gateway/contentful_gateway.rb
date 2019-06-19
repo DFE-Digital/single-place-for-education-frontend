@@ -92,6 +92,8 @@ private
         content_type_array << create_testimonial(content)
       when 'multipleColumns'
         content_type_array << create_columns(content)
+      when 'link'
+        content_type_array << create_link(content)
       else
         @logger.warn("Content #{content.sys[:content_type].id} not supported")
       end
@@ -191,6 +193,17 @@ private
       type: :paragraph,
       data: {
         text: content.text
+      }
+    }
+  end
+
+  def create_link(content)
+    {
+      type: :link,
+      data: {
+        text: content.text,
+        type: content.type == 'Internal' ? :internal : :external,
+        url: content.url
       }
     }
   end

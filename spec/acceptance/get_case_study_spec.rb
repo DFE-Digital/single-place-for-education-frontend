@@ -89,7 +89,7 @@ describe 'Get Case Study' do
                 text: 'Cats are great'
               },
               author: {
-                text:  'Jim the cat',
+                text: 'Jim the cat',
                 alignment: 'left'
               }
             }
@@ -99,6 +99,14 @@ describe 'Get Case Study' do
             data: {
               text: 'Published 4th June 2019',
               alignment: 'left'
+            }
+          },
+          {
+            type: :link,
+            data: {
+              text: 'Link is the main protagonist of...',
+              type: :internal,
+              url: 'link-is-the-main-protagonist'
             }
           }
         ]

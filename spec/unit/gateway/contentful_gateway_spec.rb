@@ -123,6 +123,14 @@ describe Gateway::ContentfulGateway do
             text: 'Published 20th June 1999',
             alignment: 'left'
           }
+        },
+        {
+          type: :link,
+          data: {
+            text: 'Linkin Park',
+            type: :internal,
+            url: 'linkin-park'
+          }
         }
       ])
     end
@@ -218,7 +226,6 @@ describe Gateway::ContentfulGateway do
               level: :heading_two,
               bold: true,
               alignment: 'Left'
-
             },
             before_quote: {
               text: 'Test testimonial text'
@@ -237,6 +244,14 @@ describe Gateway::ContentfulGateway do
           data: {
             text: 'Published 23th July 2077',
             alignment: 'center'
+          }
+        },
+        {
+          type: :link,
+          data: {
+            text: 'Linkee',
+            type: :external,
+            url: 'linkee.com'
           }
         }
       ])
