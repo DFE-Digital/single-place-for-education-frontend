@@ -279,7 +279,8 @@
                 "fields": {
                     "text": "This is a test Woof heading",
                     "level": "H1",
-                    "bold": true
+                    "bold": true,
+                    "alignment": "Left"
                 }
             },
             {

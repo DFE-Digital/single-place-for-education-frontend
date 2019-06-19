@@ -2,21 +2,23 @@
     <% case content[:type] %>
     <% when :heading %>
     <% case content[:data][:level] %>
+     <% when :heading %>
+    <% case content[:data][:level] %>
     <% when :heading_one %>
-        <div class="govuk-grid-row text-align-center">
-        <%= render 'layouts/components/headings/one', text: content[:data][:text] %>
+        <div class="govuk-grid-row">
+        <%= render 'layouts/components/headings/one', text: content[:data][:text], alignment: content[:data][:alignment] %>
         </div>
     <% when :heading_two %>
-        <div class="govuk-grid-row text-align-center">
-        <%= render 'layouts/components/headings/two', text: content[:data][:text] %>
+        <div class="govuk-grid-row width-s">
+        <%= render 'layouts/components/headings/two', text: content[:data][:text], alignment: content[:data][:alignment] %>
         </div>
     <% when :heading_three %>
-        <div class="govuk-grid-row govuk-!-padding-top-9 heavy">
-        <%= render 'layouts/components/headings/three', text: content[:data][:text] %>
+        <div class="govuk-grid-row govuk-!-padding-top-9 width-s heavy">
+        <%= render 'layouts/components/headings/three', text: content[:data][:text], alignment: content[:data][:alignment] %>
         </div>
     <% when :heading_four %>
-        <div class="govuk-grid-row text-align-left">
-        <%= render 'layouts/components/headings/four', text: content[:data][:text] %>
+        <div class="govuk-grid-row">
+        <%= render 'layouts/components/headings/four', text: content[:data][:text], alignment: content[:data][:alignment] %>
         </div>
     <% end %>
     <% when :paragraph %>

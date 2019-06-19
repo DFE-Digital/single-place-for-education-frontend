@@ -61,6 +61,7 @@ private
     Domain::Category.new.tap do |category|
       category.title = category_response.title
       category.slug = category_response.slug
+      category.description = build_content_type_array(category_response.description)
     end
   end
 
@@ -160,7 +161,8 @@ private
       data: {
         text: content.text,
         level: level,
-        bold: content.bold
+        bold: content.bold,
+        alignment: content.alignment
       }
     }
   end
