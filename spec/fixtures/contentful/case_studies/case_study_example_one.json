@@ -126,7 +126,8 @@
                     "locale": "en-US"
                 },
                 "fields": {
-                    "text": "Published 20th June 1999"
+                    "text": "Published 20th June 1999",
+                    "alignment": "Left"
                 }
             },
             {
@@ -543,7 +544,8 @@
                     "locale": "en-US"
                 },
                 "fields": {
-                    "text": "Edd the wolf"
+                    "text": "Edd the wolf",
+                    "alignment": "Left"
                 }
             },
             {

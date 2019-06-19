@@ -119,7 +119,8 @@
                     "locale": "en-US"
                 },
                 "fields": {
-                    "text": "Published 4th June 2019"
+                    "text": "Published 4th June 2019",
+                    "alignment": "Left"
                 }
             },
             {
@@ -475,7 +476,8 @@
                     "locale": "en-US"
                 },
                 "fields": {
-                    "text": "Jim the cat"
+                    "text": "Jim the cat",
+                    "alignment": "Left"
                 }
             }
         ],
