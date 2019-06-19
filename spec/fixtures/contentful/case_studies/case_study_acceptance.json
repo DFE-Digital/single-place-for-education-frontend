@@ -272,7 +272,9 @@
                 "fields": {
                     "text": "School leader transforms Grantham primary school",
                     "level": "H1",
-                    "bold": true
+                    "bold": true,
+                    "alignment": "Left"
+
                 }
             },
             {

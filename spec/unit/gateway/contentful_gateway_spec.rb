@@ -86,7 +86,8 @@ describe Gateway::ContentfulGateway do
           data: {
             text: "This is a test Woof heading",
             level: :heading_one,
-            bold: true
+            bold: true,
+            alignment: "Left"
           }
         },
         {
@@ -101,7 +102,9 @@ describe Gateway::ContentfulGateway do
             heading: {
               text: 'Testimonial',
               level: :heading_two,
-              bold: true
+              bold: true,
+              alignment: "Left"
+
             },
             before_quote: {
               text: 'Test wolf testimonial text'
@@ -196,7 +199,9 @@ describe Gateway::ContentfulGateway do
           data: {
             text: "This is a test Meow heading",
             level: :heading_two,
-            bold: false
+            bold: false,
+            alignment: "Left"
+
           }
         },
         {
@@ -211,7 +216,9 @@ describe Gateway::ContentfulGateway do
             heading: {
               text: 'Testimonial',
               level: :heading_two,
-              bold: true
+              bold: true,
+              alignment: "Left"
+
             },
             before_quote: {
               text: 'Test testimonial text'

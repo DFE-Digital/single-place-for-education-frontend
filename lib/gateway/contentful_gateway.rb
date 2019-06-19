@@ -161,7 +161,8 @@ private
       data: {
         text: content.text,
         level: level,
-        bold: content.bold
+        bold: content.bold,
+        alignment: content.alignment
       }
     }
   end
