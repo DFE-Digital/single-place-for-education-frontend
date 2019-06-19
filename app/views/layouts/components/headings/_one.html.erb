@@ -1,1 +1,1 @@
-<h1 class="govuk-heading-xl text-align-<%= alignment.downcase %>"><%= text %></h1>
+<h1 class="govuk-heading-xl <%= "text-align-#{alignment.downcase}" if defined?(alignment) %>"><%= text %></h1>
