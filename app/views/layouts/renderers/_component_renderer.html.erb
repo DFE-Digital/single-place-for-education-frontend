@@ -37,6 +37,13 @@
   <% when :bullet_list %>
     <div class="govuk-grid-row">
       <%= render 'layouts/renderers/bullet_list_renderer', bullet_list: content[:data] %>
+  <% when :resource_link_with_icon %>
+    <div class="govuk-grid-row">
+      <%= render 'layouts/components/resource_link_with_icon', 
+        image_src: content[:data][:icon_url], 
+        heading: content[:data][:heading], 
+        text: content[:data][:text], 
+        link: content[:data][:url] %>
     </div>
   <% end %>
 <% end %>
