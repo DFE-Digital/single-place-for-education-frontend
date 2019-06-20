@@ -131,6 +131,27 @@ describe Gateway::ContentfulGateway do
             type: :internal,
             url: 'linkin-park'
           }
+        },
+        {
+          type: :bullet_list,
+          data: {
+            name: 'List of Cats',
+            type: :unordered,
+            items: [
+              {
+                type: :paragraph,
+                data: {
+                  text: 'Garfield'
+                }
+              },
+              {
+                type: :paragraph,
+                data: {
+                  text: 'Meowth'
+                }
+              }
+            ]
+          }
         }
       ])
     end
@@ -252,6 +273,27 @@ describe Gateway::ContentfulGateway do
             text: 'Linkee',
             type: :external,
             url: 'linkee.com'
+          }
+        },
+        {
+          type: :bullet_list,
+          data: {
+            name: 'List of Dogs',
+            type: :ordered,
+            items: [
+              {
+                type: :paragraph,
+                data: {
+                  text: 'Krypto the Superdog'
+                }
+              },
+              {
+                type: :paragraph,
+                data: {
+                  text: 'Clifford'
+                }
+              }
+            ]
           }
         }
       ])

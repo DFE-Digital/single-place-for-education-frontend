@@ -94,11 +94,25 @@ private
         content_type_array << create_columns(content)
       when 'link'
         content_type_array << create_link(content)
+      when 'bulletList'
+        content_type_array << create_bullet_list(content)
       else
         @logger.warn("Content #{content.sys[:content_type].id} not supported")
       end
     end
     content_type_array
+  end
+
+  def create_bullet_list(content)
+    items_array = build_content_type_array(content.items)
+    {
+      type: :bullet_list,
+      data: {
+        name: content.name,
+        type: content.type == 'Unordered' ? :unordered : :ordered,
+        items: items_array
+      }
+    }
   end
 
   def create_columns(content)
