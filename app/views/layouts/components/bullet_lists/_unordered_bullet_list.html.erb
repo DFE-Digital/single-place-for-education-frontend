@@ -1,0 +1,10 @@
+<ul class="govuk-list govuk-list--bullet">
+  <% items.each do |item| %>
+    <% case item[:type] %>
+    <% when :paragraph %>
+      <li><%= item[:data][:text] %></li>
+    <% when :bullet_list %>
+      <%= render 'layouts/renderers/bullet_list_renderer', bullet_list: item[:data] %>
+    <% end %>
+  <% end %>
+</ul>
