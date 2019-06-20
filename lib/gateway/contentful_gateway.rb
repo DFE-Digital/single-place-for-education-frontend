@@ -96,12 +96,25 @@ private
         content_type_array << create_link(content)
       when 'button'
         content_type_array << create_button(content)
-
+      when 'resourceWithIcon'
+        content_type_array << create_resource_link_with_icon(content)
       else
         @logger.warn("Content #{content.sys[:content_type].id} not supported")
       end
     end
     content_type_array
+  end
+
+  def create_resource_link_with_icon(content)
+    {
+      type: :resource_link_with_icon,
+      data: {
+        heading: content.heading,
+        text: content.text,
+        icon_url: content.icon.url,
+        url: content.url
+      }
+    }
   end
 
   def create_button(content)
