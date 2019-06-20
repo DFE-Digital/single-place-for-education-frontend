@@ -1,0 +1,67 @@
+<% content_for :title, 'Teaching voices' %>
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper govuk-!-padding-top-0" id="main-content" role="main">
+    <div class="background-wide background-cream">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+          <div class="govuk-breadcrumbs govuk-!-margin-top-0 govuk-!-padding-top-9">
+            <ol class="govuk-breadcrumbs__list">
+              <li class="govuk-breadcrumbs__list-item">
+                <a class="govuk-breadcrumbs__link" href="/">Home</a>
+              </li>
+            </ol>
+          </div>
+          <div class="govuk-grid-row govuk-!-padding-bottom-7">
+            <div class="govuk-grid-column-three-quarters govuk-!-padding-right-0 govuk-!-padding-left-0">
+              <%= render 'layouts/components/headings/one', text: 'Teaching voices' %>
+              <%= render 'layouts/components/paragraph', text: 'Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore.' %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="govuk-grid-row govuk-!-padding-top-9">
+      <div class="govuk-grid-column-two-thirds">
+        <div class="govuk-grid-row">
+          <img class="dfe-image__default" src="<%= asset_url('home-hero-lady.jpg') %>"/>
+          <div class="govuk-grid-column-full">
+            <div class="govuk-grid-row govuk-!-padding-top-4 govuk-!-padding-left-3 govuk-!-padding-right-3 dfe-grid-row-overlap background-white">
+              <div class="govuk-grid-column-full">
+                <div class="govuk-!-margin-bottom-3">
+                  <a class="govuk-link govuk-!-font-size-48" href="/in-development">
+                    Engaging extracurricular activity providers in your community
+                  </a>
+                </div>
+                <div class="govuk-grid-row">
+                  <%= render 'layouts/components/small', text: 'Content to help leaders understand what a vision for a school could be like, how do create one and a way to link up with another school leader to help you....' %>
+                  <%= render 'layouts/components/links/internal', text: 'Read more', link: '/in-development' %>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="govuk-grid-row">
+          <img class="dfe-image__default" src="<%= asset_url('home-hero-lady.jpg') %>"/>
+          <div class="govuk-grid-column-full">
+            <div class="govuk-grid-row govuk-!-padding-top-4 govuk-!-padding-left-3 govuk-!-padding-right-3 dfe-grid-row-overlap background-white" >
+              <div class="govuk-grid-column-full">
+                <div class="govuk-!-margin-bottom-3">
+                  <a class="govuk-link govuk-!-font-size-48" href="/in-development">
+                    Engaging extracurricular activity providers in your community
+                  </a>
+                </div>
+                <div class="govuk-grid-row">
+                  <%= render 'layouts/components/small', text: 'Content to help leaders understand what a vision for a school could be like, how do create one and a way to link up with another school leader to help you....' %>
+                  <%= render 'layouts/components/links/internal', text: 'Read more', link: '/in-development' %>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <%= render 'layouts/bottom_nav' %>
+</div>
+

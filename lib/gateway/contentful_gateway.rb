@@ -96,6 +96,8 @@ private
         content_type_array << create_link(content)
       when 'bulletList'
         content_type_array << create_bullet_list(content)
+      when 'button'
+        content_type_array << create_button(content)
       else
         @logger.warn("Content #{content.sys[:content_type].id} not supported")
       end
@@ -111,6 +113,17 @@ private
         name: content.name,
         type: content.type == 'Unordered' ? :unordered : :ordered,
         items: items_array
+      }
+    }
+  end
+
+  def create_button(content)
+    {
+      type: :button,
+      data: {
+        text: content.button_text,
+        type: content.button_type == 'Primary' ? :primary : :secondary,
+        url: content.url
       }
     }
   end

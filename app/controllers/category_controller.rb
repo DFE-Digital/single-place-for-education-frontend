@@ -1,4 +1,12 @@
 class CategoryController < ApplicationController
+  def hiring; end
+
+  def get_a_job
+    @response = JSON.parse(HTTParty.get('https://teaching-vacancies.service.gov.uk/api/v1/jobs.json').body)['data']
+  end
+
+  def staff_voices; end
+
   def index
     contentful_gateway = Gateway::ContentfulGateway.new(
       space_id: ENV['CONTENTFUL_SPACE_ID'],

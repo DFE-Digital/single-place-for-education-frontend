@@ -1,0 +1,10 @@
+<% case button[:type] %>
+<% when :primary %>
+  <div class="govuk-grid-row">
+    <%= render 'layouts/components/buttons/primary_button', text: button[:text], link: button[:url] %>
+  </div>
+<% when :secondary %>
+  <div class="govuk-grid-row">
+    <%= render 'layouts/components/buttons/secondary_button', text: button[:text], link: button[:url] %>
+  </div>
+<% end %>
