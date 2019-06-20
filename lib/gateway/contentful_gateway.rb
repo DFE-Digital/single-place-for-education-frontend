@@ -94,11 +94,25 @@ private
         content_type_array << create_columns(content)
       when 'link'
         content_type_array << create_link(content)
+      when 'button'
+        content_type_array << create_button(content)
+
       else
         @logger.warn("Content #{content.sys[:content_type].id} not supported")
       end
     end
     content_type_array
+  end
+
+  def create_button(content)
+    {
+      type: :button,
+      data: {
+        text: content.button_text,
+        type: content.button_type == 'Primary' ? :primary : :secondary,
+        url: content.url
+      }
+    }
   end
 
   def create_columns(content)
