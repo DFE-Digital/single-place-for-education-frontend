@@ -1,0 +1,10 @@
+<% case link[:type] %>
+<% when :internal %>
+  <div class="govuk-grid-row">
+    <%= render 'layouts/components/links/internal', text: link[:text], link: link[:url] %>
+  </div>
+<% when :external %>
+  <div class="govuk-grid-row">
+    <%= render 'layouts/components/links/external', text: link[:text], link: link[:url] %>
+  </div>
+<% end %>
