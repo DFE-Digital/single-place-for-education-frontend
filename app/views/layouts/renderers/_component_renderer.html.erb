@@ -34,7 +34,7 @@
     <div class="govuk-grid-row">
       <%= render 'layouts/renderers/button_renderer', button: content[:data] %>
     </div>
- <% when :resource %>
+ <% when :resource_link_with_icon %>
     <div class="govuk-grid-row">
       <%= render 'layouts/components/resource_link_with_icon', 
         image_src: content[:data][:icon_url], 
