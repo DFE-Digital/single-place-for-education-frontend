@@ -95,7 +95,7 @@ private
       when 'link'
         content_type_array << create_link(content)
       when 'button'
-        create_button(content)
+        content_type_array << create_button(content)
       
       else
         @logger.warn("Content #{content.sys[:content_type].id} not supported")
