@@ -1,0 +1,14 @@
+<% case bullet_list[:type] %>
+<% when :unordered %>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <%= render 'layouts/components/bullet_lists/unordered_bullet_list', items: bullet_list[:items] %>
+    </div>
+  </div>
+<% when :ordered %>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <%= render 'layouts/components/bullet_lists/ordered_bullet_list', items: bullet_list[:items] %>
+    </div>
+  </div>
+<% end %>

@@ -19,13 +19,13 @@
       <%= render 'layouts/components/small', text: content[:data][:text], alignment: content[:data][:alignment] %>
     </div>
   <% when :columns %>
-      <div class="govuk-grid-row">
-        <% content[:data][:columns].each do |column| %>
-          <div class="<%= content[:data][:columns].count == 2 ? 'govuk-grid-column-one-half' : 'govuk-grid-column-one-third'%>">
-              <%= render 'layouts/renderers/component_renderer', contents: column %>
-          </div>
-        <% end %>
-      </div>
+    <div class="govuk-grid-row">
+      <% content[:data][:columns].each do |column| %>
+        <div class="<%= content[:data][:columns].count == 2 ? 'govuk-grid-column-one-half' : 'govuk-grid-column-one-third'%>">
+            <%= render 'layouts/renderers/component_renderer', contents: column %>
+        </div>
+      <% end %>
+    </div>
   <% when :link %>
     <div class="govuk-grid-row">
       <%= render 'layouts/renderers/link_renderer', link: content[:data] %>
@@ -34,7 +34,9 @@
     <div class="govuk-grid-row">
       <%= render 'layouts/renderers/button_renderer', button: content[:data] %>
     </div>
- <% when :resource_link_with_icon %>
+  <% when :bullet_list %>
+    <%= render 'layouts/renderers/bullet_list_renderer', bullet_list: content[:data] %>
+  <% when :resource_link_with_icon %>
     <div class="govuk-grid-row">
       <%= render 'layouts/components/resource_link_with_icon', 
         image_src: content[:data][:icon_url], 
