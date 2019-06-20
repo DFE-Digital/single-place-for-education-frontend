@@ -1,0 +1,56 @@
+<% content_for :title, "Hiring and development" %>
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper govuk-!-padding-top-0" id="main-content" role="main">
+    <div class="background-wide background-cream">
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+          <div class="govuk-breadcrumbs govuk-!-margin-top-0 govuk-!-padding-top-9">
+            <ol class="govuk-breadcrumbs__list">
+              <li class="govuk-breadcrumbs__list-item">
+                <a class="govuk-breadcrumbs__link" href="/">Home</a>
+              </li>
+            </ol>
+          </div>
+          <div class="govuk-grid-row govuk-!-padding-bottom-7">
+            <div class="govuk-grid-column-three-quarters govuk-!-padding-right-0 govuk-!-padding-left-0">
+              <%= render 'layouts/components/headings/one', text: 'Hiring and development' %>
+              <%= render 'layouts/components/paragraph', text: 'Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore.' %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="govuk-grid-row govuk-!-padding-top-9">
+      <div class="govuk-grid-column-one-half">
+        <img class="dfe-image__default" src="<%= asset_url('teacher-hiring-1.png') %>"/>
+        <%= render 'layouts/components/links/internal', text: 'Supporting early career teachers', link: '/in-development' %>
+        <%= render 'layouts/components/small', text: 'Meow woof quack meow woof quack meow woof quack meow woof quack moo' %>
+      </div>
+      <div class="govuk-grid-column-one-half">
+        <img class="dfe-image__default" src="<%= asset_url('teacher-hiring-2.jpg') %>"/>
+        <%= render 'layouts/components/links/internal', text: 'Recruiters retention strategy', link: '/in-development' %>
+        <%= render 'layouts/components/small', text: 'Meow woof quack meow woof quack meow woof quack meow woof quack moo' %>
+      </div>
+    </div>
+
+    <div class="govuk-grid-row govuk-!-padding-top-9">
+      <%= render 'layouts/components/headings/three', text: 'Find and advertise a job' %>
+      <div class="govuk-grid-row govuk-!-padding-top-5">
+        <div class="govuk-grid-column-one-half">
+          <%= render 'layouts/components/links/internal', link: "/in-development", text: 'Assisstant head teacher' %>
+          <p class="govuk-body">West Bromwich, West Midlands, B71 2QR</p>
+          <%= render 'layouts/components/links/internal', link: "/in-development", text: 'Head of year' %>
+          <p class="govuk-body govuk-!-margin-bottom-9">Nottingham, Nottingham, NG11 8JW</p>
+          <%= render 'layouts/components/buttons/secondary_button', link: '/category/hiring', text: 'See all jobs' %><br>
+          <%= render 'layouts/components/buttons/secondary_button', link: 'https://teaching-vacancies.service.gov.uk/', text: 'Advertise a job' %>
+        </div>
+        <div class="govuk-grid-column-one-half">
+          <%= render 'layouts/components/images/default', image_src: asset_url('teacher2.png') %>
+        </div>
+      </div>
+    </div>
+  </main>
+  <%= render 'layouts/bottom_nav' %>
+</div>
+
