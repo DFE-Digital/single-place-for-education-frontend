@@ -89,7 +89,7 @@ describe 'Get Case Study' do
                 text: 'Cats are great'
               },
               author: {
-                text:  'Jim the cat',
+                text: 'Jim the cat',
                 alignment: 'left'
               }
             }
@@ -99,6 +99,62 @@ describe 'Get Case Study' do
             data: {
               text: 'Published 4th June 2019',
               alignment: 'left'
+            }
+          },
+          {
+            type: :link,
+            data: {
+              text: 'Link is the main protagonist of...',
+              type: :internal,
+              url: 'link-is-the-main-protagonist'
+            }
+          },
+          {
+            type: :bullet_list,
+            data: {
+              name: 'Unordered Bullet List',
+              type: :unordered,
+              items: [
+                {
+                  type: :paragraph,
+                  data: {
+                    text: 'This is a noice bullet item.'
+                  }
+                },
+                {
+                  type: :paragraph,
+                  data: {
+                    text: 'This is another noice bullet item.'
+                  }
+                },
+                {
+                  type: :paragraph,
+                  data: {
+                    text: 'This is the last noice bullet item.'
+                  }
+                },
+                {
+                  type: :bullet_list,
+                  data: {
+                    name: 'Nested Unordered Bullet List',
+                    type: :unordered,
+                    items: [
+                      {
+                        type: :paragraph,
+                        data: {
+                          text: 'This is a nested noice bullet item.'
+                        }
+                      },
+                      {
+                        type: :paragraph,
+                        data: {
+                          text: 'This is another nested noice bullet item.'
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
             }
           }
         ]

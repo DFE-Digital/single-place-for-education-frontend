@@ -123,6 +123,35 @@ describe Gateway::ContentfulGateway do
             text: 'Published 20th June 1999',
             alignment: 'left'
           }
+        },
+        {
+          type: :link,
+          data: {
+            text: 'Linkin Park',
+            type: :internal,
+            url: 'linkin-park'
+          }
+        },
+        {
+          type: :bullet_list,
+          data: {
+            name: 'List of Cats',
+            type: :unordered,
+            items: [
+              {
+                type: :paragraph,
+                data: {
+                  text: 'Garfield'
+                }
+              },
+              {
+                type: :paragraph,
+                data: {
+                  text: 'Meowth'
+                }
+              }
+            ]
+          }
         }
       ])
     end
@@ -218,7 +247,6 @@ describe Gateway::ContentfulGateway do
               level: :heading_two,
               bold: true,
               alignment: 'Left'
-
             },
             before_quote: {
               text: 'Test testimonial text'
@@ -237,6 +265,35 @@ describe Gateway::ContentfulGateway do
           data: {
             text: 'Published 23th July 2077',
             alignment: 'center'
+          }
+        },
+        {
+          type: :link,
+          data: {
+            text: 'Linkee',
+            type: :external,
+            url: 'linkee.com'
+          }
+        },
+        {
+          type: :bullet_list,
+          data: {
+            name: 'List of Dogs',
+            type: :ordered,
+            items: [
+              {
+                type: :paragraph,
+                data: {
+                  text: 'Krypto the Superdog'
+                }
+              },
+              {
+                type: :paragraph,
+                data: {
+                  text: 'Clifford'
+                }
+              }
+            ]
           }
         }
       ])

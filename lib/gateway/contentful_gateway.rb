@@ -92,11 +92,54 @@ private
         content_type_array << create_testimonial(content)
       when 'multipleColumns'
         content_type_array << create_columns(content)
+      when 'link'
+        content_type_array << create_link(content)
+      when 'bulletList'
+        content_type_array << create_bullet_list(content)
+      when 'button'
+        content_type_array << create_button(content)
+      when 'resourceWithIcon'
+        content_type_array << create_resource_link_with_icon(content)
       else
         @logger.warn("Content #{content.sys[:content_type].id} not supported")
       end
     end
     content_type_array
+  end
+
+  def create_bullet_list(content)
+    items_array = build_content_type_array(content.items)
+    {
+      type: :bullet_list,
+      data: {
+        name: content.name,
+        type: content.type == 'Unordered' ? :unordered : :ordered,
+        items: items_array
+      }
+    }
+  end
+
+  def create_resource_link_with_icon(content)
+    {
+      type: :resource_link_with_icon,
+      data: {
+        heading: content.heading,
+        text: content.text,
+        icon_url: content.icon.url,
+        url: content.url
+      }
+    }
+  end
+
+  def create_button(content)
+    {
+      type: :button,
+      data: {
+        text: content.button_text,
+        type: content.button_type == 'Primary' ? :primary : :secondary,
+        url: content.url
+      }
+    }
   end
 
   def create_columns(content)
@@ -191,6 +234,17 @@ private
       type: :paragraph,
       data: {
         text: content.text
+      }
+    }
+  end
+
+  def create_link(content)
+    {
+      type: :link,
+      data: {
+        text: content.text,
+        type: content.type == 'Internal' ? :internal : :external,
+        url: content.url
       }
     }
   end
