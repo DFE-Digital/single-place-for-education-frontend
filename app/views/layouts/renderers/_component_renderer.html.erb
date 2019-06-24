@@ -46,5 +46,9 @@
         text: content[:data][:text], 
         link: content[:data][:url] %>
     </div>
+  <% when :container %>
+    <div class="govuk-grid-row">
+      <%= render 'layouts/components/container', background_colour: content[:data][:background_colour], content: content[:data][:content] %>
+    </div>
   <% end %>
 <% end %>

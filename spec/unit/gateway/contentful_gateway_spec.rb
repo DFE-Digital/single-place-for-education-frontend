@@ -156,6 +156,23 @@ describe Gateway::ContentfulGateway do
                                                }
                                              ]
                                            }
+                                         },
+                                         {
+                                          type: :container,
+                                          data: {
+                                            background_colour: 'grey',
+                                            content: [
+                                              {
+                                                type: :heading,
+                                                data: {
+                                                  text: 'I am a Heading of a Container',
+                                                  level: :heading_three,
+                                                  bold: true,
+                                                  alignment: 'Left'
+                                                }
+                                              }
+                                            ]
+                                          }
                                          }
                                        ])
     end
@@ -299,6 +316,23 @@ describe Gateway::ContentfulGateway do
                                                }
                                              ]
                                            }
+                                         },
+                                         {
+                                          type: :container,
+                                          data: {
+                                            background_colour: 'cream',
+                                            content: [
+                                              {
+                                                type: :heading,
+                                                data: {
+                                                  text: 'I am a Heading of Another Container',
+                                                  level: :heading_three,
+                                                  bold: false,
+                                                  alignment: 'Left'
+                                                }
+                                              }
+                                            ]
+                                          }
                                          }
                                        ])
     end
