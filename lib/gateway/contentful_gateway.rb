@@ -111,6 +111,8 @@ private
       create_resource_link_with_icon(content)
     when 'richText'
       create_rich_text(content)
+    when 'container'
+      create_container(content)
     else
       @logger.warn("Content #{content.sys[:content_type].id} not supported")
       nil
@@ -264,6 +266,16 @@ private
       type: :rich_text,
       data: {
         html_content: @renderer.render(content.content)
+      }
+    }
+  end
+
+  def create_container(content)
+    {
+      type: :container,
+      data: {
+        background_colour: content.background_colour.downcase,
+        content: build_content_type_array(content.content)
       }
     }
   end
