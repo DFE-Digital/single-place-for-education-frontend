@@ -367,7 +367,7 @@ describe Gateway::ContentfulGateway do
       case_study
     end
 
-    it 'can return nil when a Contentful case study is not found' do
+    it 'can return a case study with rich text' do
       content = case_study.content[0]
       expected_html = "<p class='govuk-body'>Here is some text <a class='govuk-link' href=http://meow.cat>with a link</a></p>"
       expect(content[:type]).to eq(:rich_text)
