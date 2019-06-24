@@ -738,7 +738,7 @@
                 "fields": {
                     "title": "School Corridor",
                     "file": {
-                        "url": "//images.ctfassets.net/wolf/school-corridor.jpeg",
+                        "url": "https://a-url-to-an-image",
                         "details": {
                             "size": 166901,
                             "image": {

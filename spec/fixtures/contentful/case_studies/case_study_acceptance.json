@@ -843,7 +843,7 @@
                 "fields": {
                     "title": "School Corridor",
                     "file": {
-                        "url": "//images.ctfassets.net/grantham-hero-image.png",
+                        "url": "https://some-image-somewhere",
                         "details": {
                             "size": 166901,
                             "image": {
