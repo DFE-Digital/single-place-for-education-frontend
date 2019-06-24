@@ -160,7 +160,6 @@ private
     {
       type: :columns,
       data: {
-        heading: content.heading.text,
         columns: columns_array
       }
     }
