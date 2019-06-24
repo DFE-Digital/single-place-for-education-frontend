@@ -1,3 +1,5 @@
+require 'rich_text_renderer'
+
 class Gateway::ContentfulGateway
   def initialize(space_id:, access_token:, logger: nil)
     @logger = logger
@@ -9,6 +11,11 @@ class Gateway::ContentfulGateway
       space: @space_id,
       dynamic_entries: :auto,
       raise_errors: true
+    )
+
+    @renderer = RichTextRenderer::Renderer.new(
+      'hyperlink' => HyperlinkRenderer,
+      'paragraph' => ParagraphRenderer
     )
   end
 
@@ -77,34 +84,37 @@ private
   end
 
   def build_content_type_array(response_content)
-    content_type_array = []
-    response_content.each do |content|
-      case content.sys[:content_type].id
-      when 'image'
-        content_type_array << create_image(content)
-      when 'heading'
-        content_type_array << create_heading(content)
-      when 'paragraph'
-        content_type_array << create_paragraph(content)
-      when 'small'
-        content_type_array << create_small(content)
-      when 'testimonial'
-        content_type_array << create_testimonial(content)
-      when 'multipleColumns'
-        content_type_array << create_columns(content)
-      when 'link'
-        content_type_array << create_link(content)
-      when 'bulletList'
-        content_type_array << create_bullet_list(content)
-      when 'button'
-        content_type_array << create_button(content)
-      when 'resourceWithIcon'
-        content_type_array << create_resource_link_with_icon(content)
-      else
-        @logger.warn("Content #{content.sys[:content_type].id} not supported")
-      end
+    response_content.map(&method(:parse_content)).compact
+  end
+
+  def parse_content(content)
+    case content.sys[:content_type].id
+    when 'image'
+      create_image(content)
+    when 'heading'
+      create_heading(content)
+    when 'paragraph'
+      create_paragraph(content)
+    when 'small'
+      create_small(content)
+    when 'testimonial'
+      create_testimonial(content)
+    when 'multipleColumns'
+      create_columns(content)
+    when 'link'
+      create_link(content)
+    when 'bulletList'
+      create_bullet_list(content)
+    when 'button'
+      create_button(content)
+    when 'resourceWithIcon'
+      create_resource_link_with_icon(content)
+    when 'richText'
+      create_rich_text(content)
+    else
+      @logger.warn("Content #{content.sys[:content_type].id} not supported")
+      nil
     end
-    content_type_array
   end
 
   def create_bullet_list(content)
@@ -247,5 +257,46 @@ private
         url: content.url
       }
     }
+  end
+
+  def create_rich_text(content)
+    {
+      type: :rich_text,
+      data: {
+        html_content: @renderer.render(content.content)
+      }
+    }
+  end
+
+  class ParagraphRenderer < RichTextRenderer::BaseNodeRenderer
+    def render(node)
+      "<p class='govuk-body'>#{render_content(node)}</p>"
+    end
+
+    def render_content(node)
+      content = node['content'].each_with_object([]) do |content_node, result|
+        renderer = find_renderer(content_node)
+        result << renderer.render(content_node)
+      end
+
+      content.join
+    end
+  end
+
+  class HyperlinkRenderer < RichTextRenderer::BaseNodeRenderer
+    def render(node)
+      uri = node['data']['uri']
+
+      "<a class='govuk-link' href=#{uri}>#{render_content(node)}</a>"
+    end
+
+    def render_content(node)
+      content = node['content'].each_with_object([]) do |content_node, result|
+        renderer = find_renderer(content_node)
+        result << renderer.render(content_node)
+      end
+
+      content.join
+    end
   end
 end

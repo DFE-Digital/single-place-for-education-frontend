@@ -49,12 +49,12 @@ describe 'Get Case Study' do
       expect(response).to eq(
         name: 'Case Study - Grantham Primary School',
         slug: 'case-study-grantham-primary-school',
-        hero_image: '//images.ctfassets.net/grantham-hero-image.png',
+        hero_image: 'https://some-image-somewhere',
         content: [
           {
             type: :image,
             data: {
-              url: '//images.ctfassets.net/grantham-hero-image.png',
+              url: 'https://some-image-somewhere',
               width: 'full-bleed'
             }
           },

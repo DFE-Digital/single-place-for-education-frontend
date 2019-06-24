@@ -1,0 +1,219 @@
+{
+  "sys": {
+    "type": "Array"
+  },
+  "total": 1,
+  "skip": 0,
+  "limit": 100,
+  "items": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "gfzscr0ovdsz"
+          }
+        },
+        "id": "55ISF6GMTGueUEwRTMKuYS",
+        "type": "Entry",
+        "createdAt": "2019-06-24T08:24:36.470Z",
+        "updatedAt": "2019-06-24T08:24:36.470Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 1,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "caseStudy"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "name": "Test case study",
+        "slug": "test-case-study",
+        "heroImage": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Entry",
+            "id": "4NSN5Mw0UjgVqs8KObVyde"
+          }
+        },
+        "content": [
+          {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "41CHYGWzA1Qp3ZoLG1AdNu"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "includes": {
+    "Entry": [
+      {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "gfzscr0ovdsz"
+            }
+          },
+          "id": "41CHYGWzA1Qp3ZoLG1AdNu",
+          "type": "Entry",
+          "createdAt": "2019-06-24T08:19:31.252Z",
+          "updatedAt": "2019-06-24T08:19:31.252Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "contentType": {
+            "sys": {
+              "type": "Link",
+              "linkType": "ContentType",
+              "id": "richText"
+            }
+          },
+          "locale": "en-US"
+        },
+        "fields": {
+          "content": {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": "Here is some text ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                      "uri": "http://meow.cat"
+                    },
+                    "content": [
+                      {
+                        "data": {},
+                        "marks": [],
+                        "value": "with a link",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "hyperlink"
+                  },
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": "",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        }
+      },
+      {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "gfzscr0ovdsz"
+            }
+          },
+          "id": "4NSN5Mw0UjgVqs8KObVyde",
+          "type": "Entry",
+          "createdAt": "2019-06-20T14:14:59.261Z",
+          "updatedAt": "2019-06-20T14:14:59.261Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "contentType": {
+            "sys": {
+              "type": "Link",
+              "linkType": "ContentType",
+              "id": "heroImage"
+            }
+          },
+          "locale": "en-US"
+        },
+        "fields": {
+          "name": "Happy person in meeting",
+          "file": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5t6LH0f5htWyTQ8YdpIYXz"
+            }
+          }
+        }
+      }
+    ],
+    "Asset": [
+      {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "gfzscr0ovdsz"
+            }
+          },
+          "id": "5t6LH0f5htWyTQ8YdpIYXz",
+          "type": "Asset",
+          "createdAt": "2019-06-20T14:14:39.328Z",
+          "updatedAt": "2019-06-20T14:14:56.444Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 2,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "happy-in-meeting",
+          "description": "Happy person in meeting",
+          "file": {
+            "url": "https://a-url-to-an-image",
+            "details": {
+              "size": 1303022,
+              "image": {
+                "width": 1920,
+                "height": 1280
+              }
+            },
+            "fileName": "happy-in-meeting.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    ]
+  }
+}

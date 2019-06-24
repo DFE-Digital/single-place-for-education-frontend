@@ -779,7 +779,7 @@
                 "fields": {
                     "title": "School Corridor",
                     "file": {
-                        "url": "//images.ctfassets.net/dog/school-corridor.jpeg",
+                        "url": "https://some-image-somewhere",
                         "details": {
                             "size": 166901,
                             "image": {

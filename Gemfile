@@ -13,6 +13,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'turbolinks', '~> 5'
 gem 'uglifier', '>= 1.3.0'
 gem 'httparty', '~> 0.17.0'
+gem 'rich_text_renderer'
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]

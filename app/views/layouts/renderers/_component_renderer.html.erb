@@ -1,5 +1,7 @@
 <% contents.each do |content| %>
   <% case content[:type] %>
+  <% when :rich_text %>
+    <%= render inline: content[:data][:html_content] %>
   <% when :heading %>
     <%= render 'layouts/renderers/headings_renderer.html.erb', heading: content[:data] %>
   <% when :paragraph %>

@@ -18,6 +18,10 @@ describe Gateway::ContentfulGateway do
     File.open("#{fixtures_path}response_with_no_items.json", &:read)
   end
 
+  let(:response_with_rich_text) do
+    File.open("#{fixtures_path}case_study_with_rich_text.json", &:read)
+  end
+
   context '#get_case_study (example one)' do
     let(:space_id) { 'dog' }
     let(:access_token) { 'woof' }
@@ -69,91 +73,91 @@ describe Gateway::ContentfulGateway do
     end
 
     it 'can return a case study with an image' do
-      expect(case_study.hero_image).to eq('//images.ctfassets.net/dog/school-corridor.jpeg')
+      expect(case_study.hero_image).to eq('https://some-image-somewhere')
     end
 
     it 'can return a case study with content' do
       expect(case_study.content).to eq([
-        {
-          type: :image,
-          data: {
-            url: '//images.ctfassets.net/dog/school-corridor.jpeg',
-            width: 'full-bleed'
-          }
-        },
-        {
-          type: :heading,
-          data: {
-            text: 'This is a test Woof heading',
-            level: :heading_one,
-            bold: true,
-            alignment: 'Left'
-          }
-        },
-        {
-          type: :paragraph,
-          data: {
-            text: 'This is a Woof paragraph woof woof'
-          }
-        },
-        {
-          type: :testimonial,
-          data: {
-            heading: {
-              text: 'Testimonial',
-              level: :heading_two,
-              bold: true,
-              alignment: 'Left'
-            },
-            before_quote: {
-              text: 'Test wolf testimonial text'
-            },
-            quote: {
-              text: 'Wolves are great'
-            },
-            author: {
-              text: 'Edd the wolf',
-              alignment: 'left'
-            }
-          }
-        },
-        {
-          type: :small,
-          data: {
-            text: 'Published 20th June 1999',
-            alignment: 'left'
-          }
-        },
-        {
-          type: :link,
-          data: {
-            text: 'Linkin Park',
-            type: :internal,
-            url: 'linkin-park'
-          }
-        },
-        {
-          type: :bullet_list,
-          data: {
-            name: 'List of Cats',
-            type: :unordered,
-            items: [
-              {
-                type: :paragraph,
-                data: {
-                  text: 'Garfield'
-                }
-              },
-              {
-                type: :paragraph,
-                data: {
-                  text: 'Meowth'
-                }
-              }
-            ]
-          }
-        }
-      ])
+                                         {
+                                           type: :image,
+                                           data: {
+                                             url: 'https://some-image-somewhere',
+                                             width: 'full-bleed'
+                                           }
+                                         },
+                                         {
+                                           type: :heading,
+                                           data: {
+                                             text: 'This is a test Woof heading',
+                                             level: :heading_one,
+                                             bold: true,
+                                             alignment: 'Left'
+                                           }
+                                         },
+                                         {
+                                           type: :paragraph,
+                                           data: {
+                                             text: 'This is a Woof paragraph woof woof'
+                                           }
+                                         },
+                                         {
+                                           type: :testimonial,
+                                           data: {
+                                             heading: {
+                                               text: 'Testimonial',
+                                               level: :heading_two,
+                                               bold: true,
+                                               alignment: 'Left'
+                                             },
+                                             before_quote: {
+                                               text: 'Test wolf testimonial text'
+                                             },
+                                             quote: {
+                                               text: 'Wolves are great'
+                                             },
+                                             author: {
+                                               text: 'Edd the wolf',
+                                               alignment: 'left'
+                                             }
+                                           }
+                                         },
+                                         {
+                                           type: :small,
+                                           data: {
+                                             text: 'Published 20th June 1999',
+                                             alignment: 'left'
+                                           }
+                                         },
+                                         {
+                                           type: :link,
+                                           data: {
+                                             text: 'Linkin Park',
+                                             type: :internal,
+                                             url: 'linkin-park'
+                                           }
+                                         },
+                                         {
+                                           type: :bullet_list,
+                                           data: {
+                                             name: 'List of Cats',
+                                             type: :unordered,
+                                             items: [
+                                               {
+                                                 type: :paragraph,
+                                                 data: {
+                                                   text: 'Garfield'
+                                                 }
+                                               },
+                                               {
+                                                 type: :paragraph,
+                                                 data: {
+                                                   text: 'Meowth'
+                                                 }
+                                               }
+                                             ]
+                                           }
+                                         }
+                                       ])
     end
 
     it 'can log when a content type is not supported' do
@@ -212,91 +216,91 @@ describe Gateway::ContentfulGateway do
     end
 
     it 'can return a case study with an image' do
-      expect(case_study.hero_image).to eq('//images.ctfassets.net/wolf/school-corridor.jpeg')
+      expect(case_study.hero_image).to eq('https://a-url-to-an-image')
     end
 
     it 'can return a case study with content' do
       expect(case_study.content).to eq([
-        {
-          type: :image,
-          data: {
-            url: '//images.ctfassets.net/wolf/school-corridor.jpeg',
-            width: 'full-bleed'
-          }
-        },
-        {
-          type: :heading,
-          data: {
-            text: 'This is a test Meow heading',
-            level: :heading_two,
-            bold: false,
-            alignment: 'Left'
-          }
-        },
-        {
-          type: :paragraph,
-          data: {
-            text: 'This is a Meow paragraph meow meow'
-          }
-        },
-        {
-          type: :testimonial,
-          data: {
-            heading: {
-              text: 'Testimonial',
-              level: :heading_two,
-              bold: true,
-              alignment: 'Left'
-            },
-            before_quote: {
-              text: 'Test testimonial text'
-            },
-            quote: {
-              text: 'Cats are great'
-            },
-            author: {
-              text: 'Jim the cat',
-              alignment: 'center'
-            }
-          }
-        },
-        {
-          type: :small,
-          data: {
-            text: 'Published 23th July 2077',
-            alignment: 'center'
-          }
-        },
-        {
-          type: :link,
-          data: {
-            text: 'Linkee',
-            type: :external,
-            url: 'linkee.com'
-          }
-        },
-        {
-          type: :bullet_list,
-          data: {
-            name: 'List of Dogs',
-            type: :ordered,
-            items: [
-              {
-                type: :paragraph,
-                data: {
-                  text: 'Krypto the Superdog'
-                }
-              },
-              {
-                type: :paragraph,
-                data: {
-                  text: 'Clifford'
-                }
-              }
-            ]
-          }
-        }
-      ])
+                                         {
+                                           type: :image,
+                                           data: {
+                                             url: 'https://a-url-to-an-image',
+                                             width: 'full-bleed'
+                                           }
+                                         },
+                                         {
+                                           type: :heading,
+                                           data: {
+                                             text: 'This is a test Meow heading',
+                                             level: :heading_two,
+                                             bold: false,
+                                             alignment: 'Left'
+                                           }
+                                         },
+                                         {
+                                           type: :paragraph,
+                                           data: {
+                                             text: 'This is a Meow paragraph meow meow'
+                                           }
+                                         },
+                                         {
+                                           type: :testimonial,
+                                           data: {
+                                             heading: {
+                                               text: 'Testimonial',
+                                               level: :heading_two,
+                                               bold: true,
+                                               alignment: 'Left'
+                                             },
+                                             before_quote: {
+                                               text: 'Test testimonial text'
+                                             },
+                                             quote: {
+                                               text: 'Cats are great'
+                                             },
+                                             author: {
+                                               text: 'Jim the cat',
+                                               alignment: 'center'
+                                             }
+                                           }
+                                         },
+                                         {
+                                           type: :small,
+                                           data: {
+                                             text: 'Published 23th July 2077',
+                                             alignment: 'center'
+                                           }
+                                         },
+                                         {
+                                           type: :link,
+                                           data: {
+                                             text: 'Linkee',
+                                             type: :external,
+                                             url: 'linkee.com'
+                                           }
+                                         },
+                                         {
+                                           type: :bullet_list,
+                                           data: {
+                                             name: 'List of Dogs',
+                                             type: :ordered,
+                                             items: [
+                                               {
+                                                 type: :paragraph,
+                                                 data: {
+                                                   text: 'Krypto the Superdog'
+                                                 }
+                                               },
+                                               {
+                                                 type: :paragraph,
+                                                 data: {
+                                                   text: 'Clifford'
+                                                 }
+                                               }
+                                             ]
+                                           }
+                                         }
+                                       ])
     end
   end
 
@@ -331,6 +335,43 @@ describe Gateway::ContentfulGateway do
 
     it 'can return nil when a Contentful case study is not found' do
       expect(case_study).to eq(nil)
+    end
+  end
+
+  context '#get_case_study with rich text' do
+    let(:space_id) { 'owl' }
+    let(:access_token) { 'hoot' }
+    let(:slug) { 'hoot-primary-school-case-study' }
+    let(:contentful_gateway) do
+      described_class.new(space_id: space_id, access_token: access_token)
+    end
+    let(:initial_url) do
+      "https://cdn.contentful.com/spaces/#{space_id}/environments/master/content_types?limit=1000"
+    end
+    let(:case_study_url) do
+      "https://cdn.contentful.com/spaces/#{space_id}/environments/master/entries?content_type=caseStudy&include=10&fields.slug=#{slug}"
+    end
+    let(:case_study) { contentful_gateway.get_case_study(slug: slug) }
+
+    before do
+      headers['Authorization'] = "Bearer #{access_token}"
+
+      stub_request(:get, initial_url)
+        .with(headers: headers)
+        .to_return(status: 200, body: response_with_rich_text, headers: {})
+
+      stub_request(:get, case_study_url)
+        .with(headers: headers)
+        .to_return(status: 200, body: response_with_rich_text, headers: {})
+
+      case_study
+    end
+
+    it 'can return nil when a Contentful case study is not found' do
+      content = case_study.content[0]
+      expected_html = "<p class='govuk-body'>Here is some text <a class='govuk-link' href=http://meow.cat>with a link</a></p>"
+      expect(content[:type]).to eq(:rich_text)
+      expect(content[:data][:html_content]).to eq(expected_html)
     end
   end
 end
