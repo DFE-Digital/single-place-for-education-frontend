@@ -18,10 +18,6 @@ describe Gateway::ContentfulGateway do
     File.open("#{fixtures_path}response_with_no_items.json", &:read)
   end
 
-  let(:response_with_rich_text) do
-    File.open("#{fixtures_path}case_study_with_rich_text.json", &:read)
-  end
-
   context '#get_case_study (example one)' do
     let(:space_id) { 'dog' }
     let(:access_token) { 'woof' }
@@ -386,6 +382,12 @@ describe Gateway::ContentfulGateway do
       "https://cdn.contentful.com/spaces/#{space_id}/environments/master/entries?content_type=caseStudy&include=10&fields.slug=#{slug}"
     end
     let(:case_study) { contentful_gateway.get_case_study(slug: slug) }
+    let(:response_with_rich_text) do
+      File.open("#{fixtures_path}case_study_with_rich_text.json", &:read)
+    end
+    let(:expected_html_case_study_with_rich_text) do
+      File.open("#{fixtures_path}expected_html_case_study_with_rich_text.html", &:read).strip
+    end
 
     before do
       headers['Authorization'] = "Bearer #{access_token}"
@@ -403,9 +405,8 @@ describe Gateway::ContentfulGateway do
 
     it 'can return a case study with rich text' do
       content = case_study.content[0]
-      expected_html = "<p class='govuk-body'>Here is some text <a class='govuk-link' href=http://meow.cat>with a link</a></p>"
       expect(content[:type]).to eq(:rich_text)
-      expect(content[:data][:html_content]).to eq(expected_html)
+      expect(content[:data][:html_content]).to eq(expected_html_case_study_with_rich_text)
     end
   end
 end
