@@ -1,10 +1,16 @@
-<ol class="govuk-list govuk-list--number">
+<ol class="govuk-list govuk-list--number<%= " dfe-list__large-numbers" if large_numbers %>">
   <% items.each do |item| %>
     <% case item[:type] %>
     <% when :paragraph %>
       <li><%= item[:data][:text] %></li>
     <% when :bullet_list %>
       <%= render 'layouts/renderers/bullet_list_renderer', bullet_list: item[:data] %>
+    <% when :rich_text %>
+      <li>
+        <div class="dfe-list__item">
+          <%= render inline: item[:data][:html_content] %>
+        </div>
+      </li>
     <% end %>
   <% end %>
 </ol>
