@@ -6,7 +6,7 @@
     <%= render 'layouts/renderers/headings_renderer.html.erb', heading: content[:data] %>
   <% when :paragraph %>
     <div class="govuk-grid-row">
-      <%= render 'layouts/components/paragraph', text: content[:data][:text] %>
+      <%= render 'layouts/components/paragraph', text: content[:data][:text], alignment: content[:data][:alignment] %>
     </div>
   <% when :image %>
     <div class="govuk-grid-row govuk-!-padding-top-9">

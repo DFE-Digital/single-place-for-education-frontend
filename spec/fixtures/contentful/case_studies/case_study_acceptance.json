@@ -168,6 +168,7 @@
                     "locale": "en-US"
                 },
                 "fields": {
+                    "alignment": "Left",
                     "text": "This is a paragraph"
                 }
             },
@@ -421,6 +422,7 @@
                     "locale": "en-US"
                 },
                 "fields": {
+                    "alignment": "Left",
                     "text": "Test testimonial text"
                 }
             },
@@ -455,6 +457,7 @@
                     "locale": "en-US"
                 },
                 "fields": {
+                    "alignment": "Left",
                     "text": "Cats are great"
                 }
             },
@@ -676,6 +679,7 @@
                     "locale": "en-US"
                 },
                 "fields": {
+                    "alignment": "Left",
                     "text": "This is a noice bullet item."
                 }
             },
@@ -710,6 +714,7 @@
                     "locale": "en-US"
                 },
                 "fields": {
+                    "alignment": "Left",
                     "text": "This is another noice bullet item."
                 }
             },
@@ -744,6 +749,7 @@
                     "locale": "en-US"
                 },
                 "fields": {
+                    "alignment": "Left",
                     "text": "This is the last noice bullet item."
                 }
             },
@@ -778,6 +784,7 @@
                     "locale": "en-US"
                 },
                 "fields": {
+                    "alignment": "Left",
                     "text": "This is a nested noice bullet item."
                 }
             },
@@ -812,6 +819,7 @@
                     "locale": "en-US"
                 },
                 "fields": {
+                    "alignment": "Left",
                     "text": "This is another nested noice bullet item."
                 }
             }
