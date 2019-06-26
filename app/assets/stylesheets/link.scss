@@ -1,6 +1,6 @@
-.govuk-link, .govuk-breadcrumbs__link {
+.govuk-link {
   text-decoration: none;
-  font-weight: 150;
+  font-weight: 300;
 }
 
 .govuk-link {
@@ -26,3 +26,9 @@
   bottom: 0px;
   border-width: 2px 2px 0 0;
 }
+
+.dfe-breadcrumbs__current-page {
+  font-size: 18px;
+  line-height: 30px;
+}
+

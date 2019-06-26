@@ -12,6 +12,7 @@ class GuidanceController < ApplicationController
     @guidance = {
       title: temp_guidance.title,
       slug: temp_guidance.slug,
+      breadcrumbs: temp_guidance.breadcrumbs,
       last_updated: temp_guidance.last_updated,
       content: temp_guidance.content
     }

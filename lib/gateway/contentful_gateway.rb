@@ -1,3 +1,4 @@
+require 'pry'
 require 'rich_text_renderer'
 
 class Gateway::ContentfulGateway
@@ -92,6 +93,7 @@ private
       sub_category.title = sub_category_response.title
       sub_category.slug = sub_category_response.slug
       sub_category.collection_name = sub_category_response.collection_name
+      sub_category.breadcrumbs = build_breadcrumb_array(sub_category_response.breadcrumbs)
       sub_category.description = build_content_type_array(sub_category_response.description)
       sub_category.content = build_content_type_array(sub_category_response.content)
     end
@@ -101,6 +103,7 @@ private
     Domain::Guidance.new.tap do |guidance|
       guidance.title = guidance_response.title
       guidance.slug = guidance_response.slug
+      guidance.breadcrumbs = build_breadcrumb_array(guidance_response.breadcrumbs)
       guidance.last_updated = guidance_response.last_updated
       guidance.content = build_content_type_array(guidance_response.content)
     end
@@ -108,6 +111,15 @@ private
 
   def build_content_type_array(response_content)
     response_content.map(&method(:parse_content)).compact
+  end
+
+  def build_breadcrumb_array(breadcrumbs)
+    breadcrumbs.links.map do |link|
+      {
+        text: link.text,
+        url: link.url
+      }
+    end
   end
 
   def parse_content(content)
