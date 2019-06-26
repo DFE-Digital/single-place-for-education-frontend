@@ -17,6 +17,7 @@ gem 'rich_text_renderer'
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  gem 'pry'
   gem 'govuk-lint', '~> 3.11.0'
 end
 

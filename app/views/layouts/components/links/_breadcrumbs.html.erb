@@ -1,0 +1,12 @@
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <% breadcrumbs.each do |breadcrumb| %>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="<%= breadcrumb[:url] %>"><%= breadcrumb[:text] %></a>
+      </li>
+    <% end %>
+    <li class="govuk-breadcrumbs__list-item dfe-breadcrumbs__current-page" aria-current="page">
+      <%= current_page_title %>
+    </li>
+  </ol>
+</div>
