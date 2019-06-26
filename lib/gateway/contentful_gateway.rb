@@ -14,8 +14,14 @@ class Gateway::ContentfulGateway
     )
 
     @renderer = RichTextRenderer::Renderer.new(
+      'heading-1' => HeadingRenderer,
+      'heading-2' => HeadingRenderer,
+      'heading-3' => HeadingRenderer,
+      'heading-4' => HeadingRenderer,
+      'paragraph' => ParagraphRenderer,
       'hyperlink' => HyperlinkRenderer,
-      'paragraph' => ParagraphRenderer
+      'unordered-list' => UnorderedListRenderer,
+      'ordered-list' => OrderedListRenderer
     )
   end
 
@@ -279,11 +285,7 @@ private
     }
   end
 
-  class ParagraphRenderer < RichTextRenderer::BaseNodeRenderer
-    def render(node)
-      "<p class='govuk-body'>#{render_content(node)}</p>"
-    end
-
+  class DefaultRenderer < RichTextRenderer::BaseNodeRenderer
     def render_content(node)
       content = node['content'].each_with_object([]) do |content_node, result|
         renderer = find_renderer(content_node)
@@ -294,20 +296,47 @@ private
     end
   end
 
-  class HyperlinkRenderer < RichTextRenderer::BaseNodeRenderer
+  class HeadingRenderer < DefaultRenderer
+    def render(node)
+      heading_level, css_class =
+        case node['nodeType']
+        when 'heading-1'
+          ['h1', 'govuk-heading-xl']
+        when 'heading-2'
+          ['h2', 'govuk-heading-l']
+        when 'heading-3'
+          ['h3', 'govuk-heading-m']
+        when 'heading-4'
+          ['h4', 'govuk-heading-s']
+        end
+
+      "<#{heading_level} class=\"#{css_class}\">#{render_content(node)}</#{heading_level}>"
+    end
+  end
+
+  class ParagraphRenderer < DefaultRenderer
+    def render(node)
+      "<p class=\"govuk-body\">#{render_content(node)}</p>"
+    end
+  end
+
+  class HyperlinkRenderer < DefaultRenderer
     def render(node)
       uri = node['data']['uri']
 
-      "<a class='govuk-link' href=#{uri}>#{render_content(node)}</a>"
+      "<a class=\"govuk-link\" href=\"#{uri}\">#{render_content(node)}</a>"
     end
+  end
 
-    def render_content(node)
-      content = node['content'].each_with_object([]) do |content_node, result|
-        renderer = find_renderer(content_node)
-        result << renderer.render(content_node)
-      end
+  class UnorderedListRenderer < DefaultRenderer
+    def render(node)
+      "<ul class=\"govuk-list govuk-list--bullet\">#{render_content(node)}</ul>"
+    end
+  end
 
-      content.join
+  class OrderedListRenderer < DefaultRenderer
+    def render(node)
+      "<ol class=\"govuk-list govuk-list--number\">#{render_content(node)}</ol>"
     end
   end
 end
