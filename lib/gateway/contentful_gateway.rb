@@ -149,6 +149,8 @@ private
       create_rich_text(content)
     when 'container'
       create_container(content)
+    when 'imageLinkWithDescription'
+      create_image_link_with_description(content)
     else
       @logger.warn("Content #{content.sys[:content_type].id} not supported")
       nil
@@ -317,6 +319,17 @@ private
       data: {
         background_colour: content.background_colour.downcase,
         content: build_content_type_array(content.content)
+      }
+    }
+  end
+
+  def create_image_link_with_description(content)
+    {
+      type: :image_link_with_description,
+      data: {
+        image_src: content.image.file.url,
+        link: create_link(content.link),
+        description: create_rich_text(content.description)
       }
     }
   end
