@@ -1,0 +1,22 @@
+.dfe-list__large-numbers {
+  counter-reset: counter;
+  list-style: none;
+}
+
+.dfe-list__large-numbers li {
+  min-height: 70px;
+  margin: 0 0 0.5rem 0;
+  counter-increment: counter;
+  display: flex;
+}
+
+.dfe-list__large-numbers li::before {
+  content: counter(counter) ".";
+  font-size: 70px;
+  margin-right: 45px;
+  padding-top: 35px;
+}
+
+.dfe-list__item {
+  display: block;
+}

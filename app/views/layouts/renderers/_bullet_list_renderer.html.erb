@@ -8,7 +8,7 @@
 <% when :ordered %>
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-full">
-      <%= render 'layouts/components/bullet_lists/ordered_bullet_list', items: bullet_list[:items] %>
+      <%= render 'layouts/components/bullet_lists/ordered_bullet_list', items: bullet_list[:items], large_numbers: bullet_list[:large_numbers] %>
     </div>
   </div>
 <% end %>

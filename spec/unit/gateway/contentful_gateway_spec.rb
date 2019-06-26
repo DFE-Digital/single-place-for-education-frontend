@@ -140,6 +140,7 @@ describe Gateway::ContentfulGateway do
                                            data: {
                                              name: 'List of Cats',
                                              type: :unordered,
+                                             large_numbers: nil,
                                              items: [
                                                {
                                                  type: :paragraph,
@@ -305,6 +306,7 @@ describe Gateway::ContentfulGateway do
                                            data: {
                                              name: 'List of Dogs',
                                              type: :ordered,
+                                             large_numbers: nil,
                                              items: [
                                                {
                                                  type: :paragraph,

@@ -163,6 +163,7 @@ private
       data: {
         name: content.name,
         type: content.type == 'Unordered' ? :unordered : :ordered,
+        large_numbers: content.fields[:large_numbers],
         items: items_array
       }
     }

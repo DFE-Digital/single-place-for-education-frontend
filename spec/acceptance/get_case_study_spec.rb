@@ -117,6 +117,7 @@ describe 'Get Case Study' do
             data: {
               name: 'Unordered Bullet List',
               type: :unordered,
+              large_numbers: nil,
               items: [
                 {
                   type: :paragraph,
@@ -144,6 +145,7 @@ describe 'Get Case Study' do
                   data: {
                     name: 'Nested Unordered Bullet List',
                     type: :unordered,
+                    large_numbers: nil,
                     items: [
                       {
                         type: :paragraph,
