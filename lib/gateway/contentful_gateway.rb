@@ -1,4 +1,3 @@
-require 'pry'
 require 'rich_text_renderer'
 
 class Gateway::ContentfulGateway
