@@ -49,6 +49,14 @@ class Gateway::ContentfulGateway
     build_sub_category_from_response(sub_category_response)
   end
 
+  def get_guidance(slug:)
+    guidance_response = get_content(slug: slug, content_type: 'guidance')
+
+    return nil if guidance_response.nil?
+
+    build_guidance_from_response(guidance_response)
+  end
+
 private
 
   def get_content(slug:, content_type:)
@@ -86,6 +94,15 @@ private
       sub_category.collection_name = sub_category_response.collection_name
       sub_category.description = build_content_type_array(sub_category_response.description)
       sub_category.content = build_content_type_array(sub_category_response.content)
+    end
+  end
+
+  def build_guidance_from_response(guidance_response)
+    Domain::Guidance.new.tap do |guidance|
+      guidance.title = guidance_response.title
+      guidance.slug = guidance_response.slug
+      guidance.last_updated = guidance_response.last_updated
+      guidance.content = build_content_type_array(guidance_response.content)
     end
   end
 
