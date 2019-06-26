@@ -70,7 +70,8 @@ describe 'Get Case Study' do
           {
             type: :paragraph,
             data: {
-              text: 'This is a paragraph'
+              text: 'This is a paragraph',
+              alignment: 'left'
             }
           },
           {
@@ -83,10 +84,12 @@ describe 'Get Case Study' do
                 alignment: 'Left'
               },
               before_quote: {
-                text: 'Test testimonial text'
+                text: 'Test testimonial text',
+                alignment: 'left'
               },
               quote: {
-                text: 'Cats are great'
+                text: 'Cats are great',
+                alignment: 'left'
               },
               author: {
                 text: 'Jim the cat',
@@ -119,19 +122,22 @@ describe 'Get Case Study' do
                 {
                   type: :paragraph,
                   data: {
-                    text: 'This is a noice bullet item.'
+                    text: 'This is a noice bullet item.',
+                    alignment: 'left'
                   }
                 },
                 {
                   type: :paragraph,
                   data: {
-                    text: 'This is another noice bullet item.'
+                    text: 'This is another noice bullet item.',
+                    alignment: 'left'
                   }
                 },
                 {
                   type: :paragraph,
                   data: {
-                    text: 'This is the last noice bullet item.'
+                    text: 'This is the last noice bullet item.',
+                    alignment: 'left'
                   }
                 },
                 {
@@ -144,13 +150,15 @@ describe 'Get Case Study' do
                       {
                         type: :paragraph,
                         data: {
-                          text: 'This is a nested noice bullet item.'
+                          text: 'This is a nested noice bullet item.',
+                          alignment: 'left'
                         }
                       },
                       {
                         type: :paragraph,
                         data: {
-                          text: 'This is another nested noice bullet item.'
+                          text: 'This is another nested noice bullet item.',
+                          alignment: 'left'
                         }
                       }
                     ]

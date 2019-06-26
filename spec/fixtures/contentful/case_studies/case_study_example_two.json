@@ -175,6 +175,7 @@
                     "locale": "en-US"
                 },
                 "fields": {
+                    "alignment": "Left",
                     "text": "This is a Meow paragraph meow meow"
                 }
             },
@@ -490,6 +491,7 @@
                     "locale": "en-US"
                 },
                 "fields": {
+                    "alignment": "Left",
                     "text": "Test testimonial text"
                 }
             },
@@ -524,6 +526,7 @@
                     "locale": "en-US"
                 },
                 "fields": {
+                    "alignment": "Left",
                     "text": "Cats are great"
                 }
             },
@@ -680,6 +683,7 @@
                     "locale": "en-US"
                 },
                 "fields": {
+                    "alignment": "Left",
                     "text": "Krypto the Superdog"
                 }
             },
@@ -714,6 +718,7 @@
                     "locale": "en-US"
                 },
                 "fields": {
+                    "alignment": "Left",
                     "text": "Clifford"
                 }
             },

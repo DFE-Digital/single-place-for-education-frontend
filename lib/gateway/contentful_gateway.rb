@@ -10,7 +10,8 @@ class Gateway::ContentfulGateway
       access_token: @access_token,
       space: @space_id,
       dynamic_entries: :auto,
-      raise_errors: true
+      raise_errors: true,
+      raise_for_empty_fields: false
     )
 
     @renderer = RichTextRenderer::Renderer.new(
@@ -92,6 +93,7 @@ private
       sub_category.title = sub_category_response.title
       sub_category.slug = sub_category_response.slug
       sub_category.collection_name = sub_category_response.collection_name
+      sub_category.breadcrumbs = build_breadcrumb_array(sub_category_response.breadcrumbs)
       sub_category.description = build_content_type_array(sub_category_response.description)
       sub_category.content = build_content_type_array(sub_category_response.content)
     end
@@ -101,6 +103,7 @@ private
     Domain::Guidance.new.tap do |guidance|
       guidance.title = guidance_response.title
       guidance.slug = guidance_response.slug
+      guidance.breadcrumbs = build_breadcrumb_array(guidance_response.breadcrumbs)
       guidance.last_updated = guidance_response.last_updated
       guidance.content = build_content_type_array(guidance_response.content)
     end
@@ -108,6 +111,15 @@ private
 
   def build_content_type_array(response_content)
     response_content.map(&method(:parse_content)).compact
+  end
+
+  def build_breadcrumb_array(breadcrumbs)
+    breadcrumbs.links.map do |link|
+      {
+        text: link.text,
+        url: link.url
+      }
+    end
   end
 
   def parse_content(content)
@@ -136,6 +148,8 @@ private
       create_rich_text(content)
     when 'container'
       create_container(content)
+    when 'imageLinkWithDescription'
+      create_image_link_with_description(content)
     else
       @logger.warn("Content #{content.sys[:content_type].id} not supported")
       nil
@@ -202,15 +216,19 @@ private
   end
 
   def create_testimonial(content)
+    before_quote_alignment = content.before_quote.alignment.nil? ? 'left' : content.before_quote.alignment.downcase
+    quote_alignment = content.quote.alignment.nil? ? 'left' : content.quote.alignment.downcase
     {
       type: :testimonial,
       data: {
         heading: create_heading(content.heading)[:data],
         before_quote: {
-          text: content.before_quote.text
+          text: content.before_quote.text,
+          alignment: before_quote_alignment
         },
         quote: {
-          text: content.quote.text
+          text: content.quote.text,
+          alignment: quote_alignment
         },
         author: {
           text: content.author.text,
@@ -265,10 +283,12 @@ private
   end
 
   def create_paragraph(content)
+    alignment = content.alignment.nil? ? 'left' : content.alignment.downcase
     {
       type: :paragraph,
       data: {
-        text: content.text
+        text: content.text,
+        alignment: alignment
       }
     }
   end
@@ -299,6 +319,17 @@ private
       data: {
         background_colour: content.background_colour.downcase,
         content: build_content_type_array(content.content)
+      }
+    }
+  end
+
+  def create_image_link_with_description(content)
+    {
+      type: :image_link_with_description,
+      data: {
+        image_src: content.image.file.url,
+        link: create_link(content.link),
+        description: create_rich_text(content.description)
       }
     }
   end

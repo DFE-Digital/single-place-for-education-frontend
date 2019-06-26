@@ -30,15 +30,17 @@
   <meta property="og:image" content="/assets/images/govuk-opengraph-image.png">
 </head>
 
-<body class="govuk-template__body dfe__body">
-<%= render 'layouts/header' %>
+  <body class="govuk-template__body">
+    <div class="dfe__body">
+      <%= render 'layouts/header' %>
 
-<script>
-    document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
-</script>
-<div class="govuk-width-container">
-  <%= yield %>
-</div>
-<%= render 'layouts/footer' %>
-</body>
+      <script>
+          document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
+      </script>
+      <div class="govuk-width-container">
+        <%= yield %>
+      </div>
+      <%= render 'layouts/footer' %>
+    </div>
+  </body>
 </html>

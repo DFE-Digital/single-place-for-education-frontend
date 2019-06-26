@@ -13,6 +13,7 @@ class SubCategoryController < ApplicationController
       title: temp_sub_category.title,
       slug: temp_sub_category.slug,
       collection_name: temp_sub_category.collection_name,
+      breadcrumbs: temp_sub_category.breadcrumbs,
       description: temp_sub_category.description,
       content: temp_sub_category.content
     }

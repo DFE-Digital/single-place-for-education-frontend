@@ -6,7 +6,7 @@
     <%= render 'layouts/renderers/headings_renderer.html.erb', heading: content[:data] %>
   <% when :paragraph %>
     <div class="govuk-grid-row">
-      <%= render 'layouts/components/paragraph', text: content[:data][:text] %>
+      <%= render 'layouts/components/paragraph', text: content[:data][:text], alignment: content[:data][:alignment] %>
     </div>
   <% when :image %>
     <div class="govuk-grid-row govuk-!-padding-top-9">
@@ -50,5 +50,7 @@
     <div class="govuk-grid-row">
       <%= render 'layouts/components/container', background_colour: content[:data][:background_colour], content: content[:data][:content] %>
     </div>
+  <% when :image_link_with_description %>
+    <%= render 'layouts/components/image_link_with_description', image_src: content[:data][:image_src], link: content[:data][:link][:data][:url], description: content[:data][:description][:data][:html_content] %>
   <% end %>
 <% end %>

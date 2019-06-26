@@ -1,3 +1,3 @@
 class Domain::Guidance
-  attr_accessor :title, :slug, :last_updated, :content
+  attr_accessor :title, :slug, :breadcrumbs, :last_updated, :content
 end
