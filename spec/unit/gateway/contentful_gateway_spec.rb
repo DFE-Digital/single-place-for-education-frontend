@@ -93,7 +93,8 @@ describe Gateway::ContentfulGateway do
                                          {
                                            type: :paragraph,
                                            data: {
-                                             text: 'This is a Woof paragraph woof woof'
+                                             text: 'This is a Woof paragraph woof woof',
+                                             alignment: 'left'
                                            }
                                          },
                                          {
@@ -106,10 +107,12 @@ describe Gateway::ContentfulGateway do
                                                alignment: 'Left'
                                              },
                                              before_quote: {
-                                               text: 'Test wolf testimonial text'
+                                               text: 'Test wolf testimonial text',
+                                               alignment: 'left'
                                              },
                                              quote: {
-                                               text: 'Wolves are great'
+                                               text: 'Wolves are great',
+                                               alignment: 'left'
                                              },
                                              author: {
                                                text: 'Edd the wolf',
@@ -141,13 +144,15 @@ describe Gateway::ContentfulGateway do
                                                {
                                                  type: :paragraph,
                                                  data: {
-                                                   text: 'Garfield'
+                                                   text: 'Garfield',
+                                                   alignment: 'left'
                                                  }
                                                },
                                                {
                                                  type: :paragraph,
                                                  data: {
-                                                   text: 'Meowth'
+                                                   text: 'Meowth',
+                                                   alignment: 'left'
                                                  }
                                                }
                                              ]
@@ -253,7 +258,8 @@ describe Gateway::ContentfulGateway do
                                          {
                                            type: :paragraph,
                                            data: {
-                                             text: 'This is a Meow paragraph meow meow'
+                                             text: 'This is a Meow paragraph meow meow',
+                                             alignment: 'left'
                                            }
                                          },
                                          {
@@ -266,10 +272,12 @@ describe Gateway::ContentfulGateway do
                                                alignment: 'Left'
                                              },
                                              before_quote: {
-                                               text: 'Test testimonial text'
+                                               text: 'Test testimonial text',
+                                               alignment: 'left'
                                              },
                                              quote: {
-                                               text: 'Cats are great'
+                                               text: 'Cats are great',
+                                               alignment: 'left'
                                              },
                                              author: {
                                                text: 'Jim the cat',
@@ -301,13 +309,15 @@ describe Gateway::ContentfulGateway do
                                                {
                                                  type: :paragraph,
                                                  data: {
-                                                   text: 'Krypto the Superdog'
+                                                   text: 'Krypto the Superdog',
+                                                   alignment: 'left'
                                                  }
                                                },
                                                {
                                                  type: :paragraph,
                                                  data: {
-                                                   text: 'Clifford'
+                                                   text: 'Clifford',
+                                                   alignment: 'left'
                                                  }
                                                }
                                              ]

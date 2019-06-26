@@ -182,6 +182,7 @@
                     "locale": "en-US"
                 },
                 "fields": {
+                    "alignment": "Left",
                     "text": "This is a Woof paragraph woof woof"
                 }
             },
@@ -497,6 +498,7 @@
                     "locale": "en-US"
                 },
                 "fields": {
+                    "alignment": "Left",
                     "text": "Test wolf testimonial text"
                 }
             },
@@ -531,6 +533,7 @@
                     "locale": "en-US"
                 },
                 "fields": {
+                    "alignment": "Left",
                     "text": "Wolves are great"
                 }
             },
@@ -721,6 +724,7 @@
                     "locale": "en-US"
                 },
                 "fields": {
+                    "alignment": "Left",
                     "text": "Garfield"
                 }
             },
@@ -755,6 +759,7 @@
                     "locale": "en-US"
                 },
                 "fields": {
+                    "alignment": "Left",
                     "text": "Meowth"
                 }
             },

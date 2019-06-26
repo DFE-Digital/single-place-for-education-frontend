@@ -10,7 +10,8 @@ class Gateway::ContentfulGateway
       access_token: @access_token,
       space: @space_id,
       dynamic_entries: :auto,
-      raise_errors: true
+      raise_errors: true,
+      raise_for_empty_fields: false
     )
 
     @renderer = RichTextRenderer::Renderer.new(
@@ -201,15 +202,19 @@ private
   end
 
   def create_testimonial(content)
+    before_quote_alignment = content.before_quote.alignment.nil? ? 'left' : content.before_quote.alignment.downcase
+    quote_alignment = content.quote.alignment.nil? ? 'left' : content.quote.alignment.downcase
     {
       type: :testimonial,
       data: {
         heading: create_heading(content.heading)[:data],
         before_quote: {
-          text: content.before_quote.text
+          text: content.before_quote.text,
+          alignment: before_quote_alignment
         },
         quote: {
-          text: content.quote.text
+          text: content.quote.text,
+          alignment: quote_alignment
         },
         author: {
           text: content.author.text,
@@ -264,10 +269,12 @@ private
   end
 
   def create_paragraph(content)
+    alignment = content.alignment.nil? ? 'left' : content.alignment.downcase
     {
       type: :paragraph,
       data: {
-        text: content.text
+        text: content.text,
+        alignment: alignment
       }
     }
   end
