@@ -37,9 +37,7 @@
       <script>
           document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
       </script>
-      <div class="govuk-width-container">
-        <%= yield %>
-      </div>
+      <%= yield %>
       <%= render 'layouts/footer' %>
     </div>
   </body>
