@@ -2,11 +2,11 @@
   <% items.each do |item| %>
     <% case item[:type] %>
     <% when :paragraph %>
-      <li><%= item[:data][:text] %></li>
+      <li class="<%= " dfe-list__large-numbers-item" if large_numbers %>"><%= item[:data][:text] %></li>
     <% when :bullet_list %>
       <%= render 'layouts/renderers/bullet_list_renderer', bullet_list: item[:data] %>
     <% when :rich_text %>
-      <li>
+      <li class="<%= " dfe-list__large-numbers-item" if large_numbers %>">
         <div class="dfe-list__item">
           <%= render inline: item[:data][:html_content] %>
         </div>
