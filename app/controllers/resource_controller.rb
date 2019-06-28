@@ -1,5 +1,3 @@
 class ResourceController < ApplicationController
-  def retro
-    
-  end
+  def retro; end
 end
