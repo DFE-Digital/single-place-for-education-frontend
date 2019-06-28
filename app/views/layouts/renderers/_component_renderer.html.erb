@@ -5,21 +5,13 @@
   <% when :heading %>
     <%= render 'layouts/renderers/headings_renderer.html.erb', heading: content[:data] %>
   <% when :paragraph %>
-    <div class="govuk-grid-row">
-      <%= render 'layouts/components/paragraph', text: content[:data][:text], alignment: content[:data][:alignment] %>
-    </div>
+    <%= render 'layouts/components/paragraph', text: content[:data][:text], alignment: content[:data][:alignment] %>
   <% when :image %>
-    <div class="govuk-grid-row govuk-!-padding-top-9">
-      <%= render 'layouts/components/images/image', alt_text: 'example image', image_src: content[:data][:url], image_width: content[:data][:width]%>
-    </div>
+    <%= render 'layouts/components/images/image', alt_text: 'example image', image_src: content[:data][:url], image_width: content[:data][:width]%>
   <% when :testimonial %>
-    <div class="govuk-grid-row">
-      <%= render 'layouts/components/testimonial', testimonial: content[:data] %>
-    </div>
+    <%= render 'layouts/components/testimonial', testimonial: content[:data] %>
   <% when :small %>
-    <div class="govuk-grid-row">
-      <%= render 'layouts/components/small', text: content[:data][:text], alignment: content[:data][:alignment] %>
-    </div>
+    <%= render 'layouts/components/small', text: content[:data][:text], alignment: content[:data][:alignment] %>
   <% when :columns %>
     <div class="govuk-grid-row">
       <% content[:data][:columns].each do |column| %>
@@ -29,27 +21,19 @@
       <% end %>
     </div>
   <% when :link %>
-    <div class="govuk-grid-row">
-      <%= render 'layouts/renderers/link_renderer', link: content[:data] %>
-    </div>
+    <%= render 'layouts/renderers/link_renderer', link: content[:data] %>
   <% when :button %>
-    <div class="govuk-grid-row">
-      <%= render 'layouts/renderers/button_renderer', button: content[:data] %>
-    </div>
+    <%= render 'layouts/renderers/button_renderer', button: content[:data] %>
   <% when :bullet_list %>
     <%= render 'layouts/renderers/bullet_list_renderer', bullet_list: content[:data] %>
   <% when :resource_link_with_icon %>
-    <div class="govuk-grid-row">
-      <%= render 'layouts/components/resource_link_with_icon', 
-        image_src: content[:data][:icon_url], 
-        heading: content[:data][:heading], 
-        text: content[:data][:text], 
-        link: content[:data][:url] %>
-    </div>
+    <%= render 'layouts/components/resource_link_with_icon', 
+      image_src: content[:data][:icon_url], 
+      heading: content[:data][:heading], 
+      text: content[:data][:text], 
+      link: content[:data][:url] %>
   <% when :container %>
-    <div class="govuk-grid-row">
-      <%= render 'layouts/components/container', background_colour: content[:data][:background_colour], content: content[:data][:content] %>
-    </div>
+    <%= render 'layouts/components/container', background_colour: content[:data][:background_colour], content: content[:data][:content] %>
   <% when :image_link_with_description %>
     <%= render 'layouts/components/image_link_with_description', image_src: content[:data][:image_src], link: content[:data][:link][:data][:url], description: content[:data][:description][:data][:html_content] %>
   <% end %>

@@ -1,18 +1,10 @@
 <% case heading[:level] %>
 <% when :heading_one %>
-  <div class="govuk-grid-row">
-    <%= render 'layouts/components/headings/one', text: heading[:text], alignment: heading[:alignment], bold: heading[:bold] %>
-  </div>
+  <%= render 'layouts/components/headings/one', text: heading[:text], alignment: heading[:alignment], bold: heading[:bold] %>
 <% when :heading_two %>
-  <div class="govuk-grid-row">
-    <%= render 'layouts/components/headings/two', text: heading[:text], alignment: heading[:alignment], bold: heading[:bold] %>
-  </div>
+  <%= render 'layouts/components/headings/two', text: heading[:text], alignment: heading[:alignment], bold: heading[:bold] %>
 <% when :heading_three %>
-  <div class="govuk-grid-row">
-    <%= render 'layouts/components/headings/three', text: heading[:text], alignment: heading[:alignment], bold: heading[:bold] %>
-  </div>
+  <%= render 'layouts/components/headings/three', text: heading[:text], alignment: heading[:alignment], bold: heading[:bold] %>
 <% when :heading_four %>
-  <div class="govuk-grid-row">
-    <%= render 'layouts/components/headings/four', text: heading[:text], alignment: heading[:alignment], bold: heading[:bold] %>
-  </div>
+  <%= render 'layouts/components/headings/four', text: heading[:text], alignment: heading[:alignment], bold: heading[:bold] %>
 <% end %>

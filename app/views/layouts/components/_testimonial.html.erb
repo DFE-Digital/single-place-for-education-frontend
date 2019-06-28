@@ -1,14 +1,5 @@
 <%= render 'layouts/renderers/headings_renderer.html.erb', heading: testimonial[:heading] %>
-
-<div class="govuk-grid-row">
-  <%= render 'layouts/components/paragraph', text: testimonial[:before_quote][:text] %>
-  <hr />
-</div>
-
-<div class="govuk-grid-row">
-  <%= render 'layouts/components/quote', text: testimonial[:quote][:text] %>
-</div>
-
-<div class="govuk-grid-row govuk-!-padding-top-9">
-  <%= render 'layouts/components/small', text: testimonial[:author][:text], alignment: testimonial[:author][:alignment] %>
-</div>
+<%= render 'layouts/components/paragraph', text: testimonial[:before_quote][:text] %>
+<hr />
+<%= render 'layouts/components/quote', text: testimonial[:quote][:text] %>
+<%= render 'layouts/components/small', text: testimonial[:author][:text], alignment: testimonial[:author][:alignment] %>
