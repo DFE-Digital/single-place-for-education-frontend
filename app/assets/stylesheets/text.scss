@@ -1,7 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap');
 
-.govuk-heading-xl, .govuk-heading-l, .govuk-heading-m, .govuk-heading-s, .govuk-body, .govuk-body-s, .govuk-link, .govuk-button, .govuk-breadcrumbs__link, .govuk-list, .govuk-breadcrumbs__list-item {
+html {
+  font-size: 125%;
+}
+
+.govuk-heading-xl, .govuk-heading-l, .govuk-heading-m, .govuk-heading-s, .govuk-body, .govuk-body-s, .govuk-link, .govuk-button, .govuk-breadcrumbs__link, .govuk-list, .govuk-breadcrumbs__list-item, .govuk-caption-xl, .govuk-caption-l, .govuk-caption-m, .govuk-caption-s, .govuk-summary-list__row{
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
+  font-weight: 200;
+}
+
+.govuk-link {
+  font-size: 125%;
+}
+
+p a.govuk-link {
+  font-size: inherit;
 }
 
 .text-align-left {
