@@ -28,26 +28,18 @@
     <div class="govuk-grid-row govuk-!-padding-top-9">
       <div class="govuk-grid-column-full">
         <div class="govuk-grid-column-one-half">
-          <img class="dfe-image__default" src="<%= asset_url('teacher-hiring-1.png') %>" alt="teacher smiling"/>
-          <%= render 'layouts/components/links/internal', text: 'Supporting early career teachers', link: '/sub-category/supporting-early-career-teachers' %>
-          <%= render 'layouts/components/small', text: 'As a mentor you need to support teachers and make sure they get the best start to their career. Find out what skills and principles they need to apply in the classroom.' %>
+          <%= render 'layouts/components/image_link_with_description', image_src: asset_url('teacher-hiring-1.png'), link: '/sub-category/supporting-early-career-teachers', description: "<p class='govuk-body'><a href='/sub-category/supporting-early-career-teachers' class='govuk-link'>Supporting early career teachers</a></p><p class='govuk-body'>As a mentor you need to support teachers and make sure they get the best start to their career. Find out what skills and principles they need to apply in the classroom.</p>", link_type: :internal %>
         </div>
         <div class="govuk-grid-column-one-half">
-          <img class="dfe-image__default" src="<%= asset_url('teacher-hiring-2.jpg') %>" alt="person walking through door"/>
-          <%= render 'layouts/components/links/external', text: 'Teacher recruitment and retention strategy', link: 'https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/786856/DFE_Teacher_Retention_Strategy_Report.pdf' %>
-          <%= render 'layouts/components/small', text: 'Proven methods you can use to make sure you keep your staff and teachers stay happy and committed.' %>
+          <%= render 'layouts/components/image_link_with_description', image_src: asset_url('teacher-hiring-2.jpg'), link: 'https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/786856/DFE_Teacher_Retention_Strategy_Report.pdf', description: "<p class='govuk-body'><a href='https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/786856/DFE_Teacher_Retention_Strategy_Report.pdf' class='govuk-link'>Teacher recruitment and retention strategy</a></p><p class='govuk-body'>Proven methods you can use to make sure you keep your staff and teachers stay happy and committed.</p>", link_type: :external %>
         </div>
       </div>
       <div class="govuk-grid-column-full">
         <div class="govuk-grid-column-one-half">
-          <img class="dfe-image__default" src="<%= asset_url('person-with-glasses-behind-glass.jpg') %>" alt="person with glasses"/>
-          <%= render 'layouts/components/links/internal', text: 'Continuous professional development (CPD)', link: '/in-development' %>
-          <%= render 'layouts/components/small', text: 'Access a range of professional development options for teachers, regardless of their level of experience or training or school subject.' %>
+          <%= render 'layouts/components/image_link_with_description', image_src: asset_url('person-with-glasses-behind-glass.jpg'), link: '/in-development', description: "<p class='govuk-body'><a href='/in-development' class='govuk-link'>Continuous professional development (CPD)</a></p><p class='govuk-body'>Access a range of professional development options for teachers, regardless of their level of experience or training or school subject.</p>", link_type: :internal %>
         </div>
         <div class="govuk-grid-column-one-half">
-          <img class="dfe-image__default" src="<%= asset_url('person-in-chair.jpg') %>" alt="person in chair"/>
-          <%= render 'layouts/components/links/external', text: 'National professional qualification (NPQs)', link: 'https://www.gov.uk/government/publications/national-professional-qualifications-frameworks' %>
-          <%= render 'layouts/components/small', text: 'Gain a qualification that gives you national recognition of your leadership development and professional achievement within a school setting.' %>
+          <%= render 'layouts/components/image_link_with_description', image_src: asset_url('person-in-chair.jpg'), link: 'https://www.gov.uk/government/publications/national-professional-qualifications-frameworks', description: "<p class='govuk-body'><a href='/in-development' class='govuk-link'>National professional qualification (NPQs)</a></p><p class='govuk-body'>Gain a qualification that gives you national recognition of your leadership development and professional achievement within a school setting.</p>", link_type: :external %>
         </div>
       </div>
     </div>
@@ -77,4 +69,3 @@
   </main>
   <%= render 'layouts/bottom_nav' %>
 </div>
-
