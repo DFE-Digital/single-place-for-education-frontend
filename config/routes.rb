@@ -10,6 +10,6 @@ Rails.application.routes.draw do
   get 'sub-category/:slug', to: 'sub_category#index'
   get 'tvs', to: 'tvs#index'
   get 'in-development', to: 'home#placeholder'
-
+  get 'resource/how-to-run-a-retro', to: 'resource#retro'
   get 'guidance/:slug', to: 'guidance#show'
 end
