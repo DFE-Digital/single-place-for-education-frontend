@@ -5,16 +5,16 @@
 
 .dfe-list__large-numbers-item {
   min-height: 70px;
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 2rem 0 !important;
   counter-increment: counter;
   display: flex;
+  
 }
 
 .dfe-list__large-numbers-item::before {
   content: counter(counter) ".";
   font-size: 70px;
   margin-right: 45px;
-  padding-top: 35px;
 }
 
 .dfe-list__item {
