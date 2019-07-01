@@ -105,6 +105,7 @@ private
       guidance.slug = guidance_response.slug
       guidance.breadcrumbs = build_breadcrumb_array(guidance_response.breadcrumbs)
       guidance.last_updated = guidance_response.last_updated
+      guidance.contents_list = build_content_type_array(guidance_response.contents_list)
       guidance.content = build_content_type_array(guidance_response.content)
     end
   end
@@ -114,6 +115,8 @@ private
   end
 
   def build_breadcrumb_array(breadcrumbs)
+    return [] if breadcrumbs.nil?
+
     breadcrumbs.links.map do |link|
       {
         text: link.text,
@@ -359,7 +362,9 @@ private
           ['h4', 'govuk-heading-s']
         end
 
-      "<#{heading_level} class=\"#{css_class}\">#{render_content(node)}</#{heading_level}>"
+      id = node['content'][0]['value'].gsub(' ', '-').downcase
+
+      "<#{heading_level} class=\"#{css_class}\" id=\"#{id}\">#{render_content(node)}</#{heading_level}>"
     end
   end
 

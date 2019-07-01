@@ -14,6 +14,7 @@ class GuidanceController < ApplicationController
       slug: temp_guidance.slug,
       breadcrumbs: temp_guidance.breadcrumbs,
       last_updated: temp_guidance.last_updated,
+      contents_list: temp_guidance.contents_list,
       content: temp_guidance.content
     }
 

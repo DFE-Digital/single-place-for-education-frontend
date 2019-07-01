@@ -421,4 +421,68 @@ describe Gateway::ContentfulGateway do
       expect(content[:data][:html_content]).to eq(expected_html_case_study_with_rich_text)
     end
   end
+
+  context '#get_guidance' do
+    let(:space_id) { 'hee-haw' }
+    let(:access_token) { 'donkey' }
+    let(:slug) { 'fulfil-wider-professional-responsibilities' }
+    let(:contentful_gateway) do
+      described_class.new(space_id: space_id, access_token: access_token)
+    end
+    let(:initial_url) do
+      "https://cdn.contentful.com/spaces/#{space_id}/environments/master/content_types?limit=1000"
+    end
+    let(:guidance_url) do
+      "https://cdn.contentful.com/spaces/#{space_id}/environments/master/entries?content_type=guidance&include=10&fields.slug=#{slug}"
+    end
+    let(:guidance) { contentful_gateway.get_guidance(slug: slug) }
+    let(:response_with_contents_list) do
+      File.open("#{__dir__}/../../fixtures/contentful/guidance/contents_list.json", &:read)
+    end
+
+    before do
+      headers['Authorization'] = "Bearer #{access_token}"
+
+      stub_request(:get, initial_url)
+        .with(headers: headers)
+        .to_return(status: 200, body: response_with_no_items, headers: {})
+
+      stub_request(:get, guidance_url)
+        .with(headers: headers)
+        .to_return(status: 200, body: response_with_contents_list, headers: {})
+
+      guidance
+    end
+
+    it 'can return a guidance with a contents list' do
+      guidance = contentful_gateway.get_guidance(slug: 'fulfil-wider-professional-responsibilities')
+
+      expect(guidance.contents_list).to eq([
+        {
+          type: :link,
+          data: {
+            text: 'Principles to learn',
+            type: :internal,
+            url: '#what-a-newly-qualified-teacher-(nqt)-needs-to-learn'
+          }
+        },
+        {
+          type: :link,
+          data: {
+            text: 'Skills to develop',
+            type: :internal,
+            url: '#what-skills-an-nqt-needs-to-develop'
+          }
+        },
+        {
+          type: :link,
+          data: {
+            text: 'Case studies',
+            type: :internal,
+            url: '#case-studies'
+          }
+        }
+      ])
+    end
+  end
 end

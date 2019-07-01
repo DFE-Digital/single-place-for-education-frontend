@@ -14,7 +14,13 @@
       </div>
     </div>
     <div class="govuk-grid-row govuk-!-padding-top-9 govuk-!-padding-bottom-5">
-      <div class="govuk-grid-column-full">
+      <div class="govuk-grid-column-one-third">
+        <%= render 'layouts/components/paragraph', text: 'Contents' %>
+        <% @guidance[:contents_list].each do |content_item| %>
+          <p><%= render 'layouts/renderers/link_renderer', link: content_item[:data] %></p>
+        <% end %>
+      </div>
+      <div class="govuk-grid-column-two-thirds">
         <%= render 'layouts/renderers/component_renderer', contents: @guidance[:content] %>
       </div>
     </div>
