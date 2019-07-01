@@ -1,6 +1,8 @@
 require 'webmock/rspec'
 
 RSpec.configure do |config|
+  RSpec::Support::ObjectFormatter.default_instance.max_formatted_output_length = 99_999_999_999
+
   config.expect_with :rspec do |expectations|
     expectations.include_chain_clauses_in_custom_matcher_descriptions = true
   end
