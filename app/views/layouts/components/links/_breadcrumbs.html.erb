@@ -2,7 +2,7 @@
   <ol class="govuk-breadcrumbs__list">
     <% breadcrumbs.each do |breadcrumb| %>
       <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="<%= breadcrumb[:url] %>"><%= breadcrumb[:text] %></a>
+        <a class="govuk-breadcrumbs__link" href="<%= breadcrumb[:url] %>" <%= 'onclick=link_alert(event)' if breadcrumb[:text] == 'Home' ||  breadcrumb[:text] == 'Hiring and development' %>><%= breadcrumb[:text] %></a>
       </li>
     <% end %>
     <li class="govuk-breadcrumbs__list-item dfe-breadcrumbs__current-page" aria-current="page">
