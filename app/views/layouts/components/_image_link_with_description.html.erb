@@ -1,7 +1,7 @@
-<% if defined?(link_type) && link_type == :internal %>
-  <a href="<%= defined?(link) ? link : '#' %>">
-<% else %>
+<% if defined?(link_type) && link_type == :external %>
   <a target="_blank" rel="nofollow noopener" href="<%= defined?(link) ? link : '#' %>">
+<% else %>
+  <a href="<%= defined?(link) ? link : '#' %>">
 <% end %>
   <img class="dfe-image__default govuk-!-margin-top-5 govuk-!-margin-bottom-5" alt="image" src="<%= image_src %>"/>
 </a>
