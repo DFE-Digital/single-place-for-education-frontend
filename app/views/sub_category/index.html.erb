@@ -12,11 +12,11 @@
         <div class="govuk-grid-column-three-quarters">
           <%= render 'layouts/components/small', text: @sub_category[:collection_name] %>
           <%= render 'layouts/components/headings/one', text: @sub_category[:title] %>
-          <% @sub_category[:description].each do |description| %>
-            <%= render 'layouts/components/paragraph', text: description[:data][:text] %>
-          <% end %>
         </div>
       </div>
+    </div>
+    <div class="govuk-grid-column-three-quarters govuk-!-padding-top-9 govuk-!-padding-bottom-7">
+      <%= render 'layouts/renderers/component_renderer', contents: @sub_category[:description] %>
     </div>
     <div class="govuk-grid-row govuk-!-padding-top-9 govuk-!-padding-bottom-5">
       <div class="govuk-grid-column-full">
