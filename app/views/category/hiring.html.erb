@@ -15,7 +15,7 @@
               </li>
             </ol>
           </div>
-          <div class="govuk-grid-row govuk-!-padding-bottom-7">
+          <div class="govuk-grid-row govuk-!-padding-top-5 govuk-!-padding-bottom-5">
             <div class="govuk-grid-column-three-quarters govuk-!-padding-right-0 govuk-!-padding-left-0">
               <%= render 'layouts/components/headings/one', text: 'Hiring and development' %>
               <%= render 'layouts/components/paragraph', text: 'Find everything you need for you to build a strong workforce.' %>
@@ -26,7 +26,7 @@
       </div>
     </div>
     <div class="govuk-grid-row govuk-!-padding-top-9">
-      <div class="govuk-grid-column-full">
+      <div class="govuk-grid-row">
         <div class="govuk-grid-column-one-half">
           <%= render 'layouts/components/image_link_with_description', image_src: asset_url('teacher-hiring-1.png'), link: '/sub-category/supporting-early-career-teachers', description: "<p class='govuk-body'><a href='/sub-category/supporting-early-career-teachers' class='govuk-link'>Supporting early career teachers</a></p><p class='govuk-body'>As a mentor you need to support teachers and make sure they get the best start to their career. Find out what skills and principles they need to apply in the classroom.</p>", link_type: :internal %>
         </div>
@@ -34,7 +34,7 @@
           <%= render 'layouts/components/image_link_with_description', image_src: asset_url('teacher-hiring-2.jpg'), link: 'https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/786856/DFE_Teacher_Retention_Strategy_Report.pdf', description: "<p class='govuk-body'><a href='https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/786856/DFE_Teacher_Retention_Strategy_Report.pdf' class='govuk-link'>Teacher recruitment and retention strategy</a></p><p class='govuk-body'>Proven methods you can use to make sure you keep your staff and teachers stay happy and committed.</p>", link_type: :external %>
         </div>
       </div>
-      <div class="govuk-grid-column-full">
+      <div class="govuk-grid-row">
         <div class="govuk-grid-column-one-half">
           <%= render 'layouts/components/image_link_with_description', image_src: asset_url('person-with-glasses-behind-glass.jpg'), link: '/in-development', description: "<p class='govuk-body'><a href='/in-development' class='govuk-link'>Continuous professional development (CPD)</a></p><p class='govuk-body'>Access a range of professional development options for teachers, regardless of their level of experience or training or school subject.</p>", link_type: :internal %>
         </div>
@@ -45,7 +45,9 @@
     </div>
 
     <div class="govuk-grid-row govuk-!-padding-top-9">
-      <%= render 'layouts/components/headings/three', text: 'Find and advertise a job' %>
+      <div class="govuk-grid-column-full">
+        <%= render 'layouts/components/headings/two', text: 'Find and advertise a job' %>
+      </div>
       <div class="govuk-grid-row govuk-!-padding-top-5">
         <div class="govuk-grid-column-one-half">
           <%= render 'layouts/components/links/internal', link: "/in-development", text: 'Assisstant head teacher' %>
