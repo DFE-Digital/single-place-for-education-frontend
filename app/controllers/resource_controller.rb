@@ -4,4 +4,6 @@ class ResourceController < ApplicationController
   def respect_and_trust; end
 
   def structured_questions; end
+
+  def teaching_assistants; end
 end
