@@ -1,1 +1,1 @@
-<a target="_blank" rel="nofollow noopener" href="<%= defined?(link) ? link : '#' %>" class="govuk-link"><%= text %></a>
+<a target="_blank" rel="nofollow noopener" href="<%= defined?(link) ? link : '#' %>" class="govuk-link" <%= 'onclick=link_alert(event)' if defined?(disabled) %>><%= text %></a>
