@@ -7,13 +7,13 @@
         <%= render 'layouts/components/links/breadcrumbs', breadcrumbs: @guidance[:breadcrumbs], current_page_title: @guidance[:title] %>
       </div>
     </div>
-    <div class="govuk-grid-row govuk-!-padding-top-4 govuk-!-padding-bottom-5">
+    <div class="govuk-grid-row govuk-!-padding-top-9 govuk-!-padding-bottom-5">
       <div class="govuk-grid-column-full">
         <%= render 'layouts/components/headings/one', text: @guidance[:title] %>
         <%= render 'layouts/components/small', text: @guidance[:last_updated].strftime("Last updated on %A %d %B %Y") %>
       </div>
     </div>
-    <div class="govuk-grid-row govuk-!-padding-top-9 govuk-!-padding-bottom-5">
+    <div class="govuk-grid-row govuk-!-padding-top-4 govuk-!-padding-bottom-5">
       <div class="govuk-grid-column-one-third">
         <%= render 'layouts/components/paragraph', text: 'Contents' %>
         <% @guidance[:contents_list].each do |content_item| %>
