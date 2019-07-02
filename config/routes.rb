@@ -10,7 +10,10 @@ Rails.application.routes.draw do
   get 'sub-category/:slug', to: 'sub_category#index'
   get 'tvs', to: 'tvs#index'
   get 'in-development', to: 'home#placeholder'
-  get 'resource/how-to-run-a-retro', to: 'resource#retro'
-  get 'resource/answer-questions-using-scaffold', to: 'resource#structured_questions'
+
   get 'guidance/:slug', to: 'guidance#show'
+
+  get 'resource/how-to-run-a-retro', to: 'resource#retro'
+  get 'resource/how-to-create-a-culture-of-respect-and-trust', to: 'resource#respect_and_trust'
+  get 'resource/answer-questions-using-scaffold', to: 'resource#structured_questions'
 end
