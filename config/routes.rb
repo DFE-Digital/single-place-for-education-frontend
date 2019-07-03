@@ -16,5 +16,6 @@ Rails.application.routes.draw do
   get 'resource/how-to-run-a-retro', to: 'resource#retro'
   get 'resource/how-to-create-a-culture-of-respect-and-trust', to: 'resource#respect_and_trust'
   get 'resource/answer-questions-using-scaffold', to: 'resource#structured_questions'
+  get 'resource/making-effective-use-of-teaching-assistants', to: 'resource#teaching_assistants'
   get 'resource/get-children-to-think-for-themselves', to: 'resource#manage_behaviour'
 end
