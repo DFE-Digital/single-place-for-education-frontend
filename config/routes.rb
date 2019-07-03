@@ -18,4 +18,5 @@ Rails.application.routes.draw do
   get 'resource/answer-questions-using-scaffold', to: 'resource#structured_questions'
   get 'resource/making-effective-use-of-teaching-assistants', to: 'resource#teaching_assistants'
   get 'resource/get-children-to-think-for-themselves', to: 'resource#manage_behaviour'
+  get 'resource/ecf-roll-out', to: 'resource#ecf_rollout'
 end
