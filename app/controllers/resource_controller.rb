@@ -8,4 +8,6 @@ class ResourceController < ApplicationController
   def teaching_assistants; end
 
   def manage_behaviour; end
+
+  def ecf_rollout; end
 end
