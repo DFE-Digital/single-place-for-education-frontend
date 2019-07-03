@@ -29,6 +29,14 @@
   margin-bottom: 25px;
 }
 
+.govuk-grid-column-two-thirds .govuk-grid-row .govuk-grid-column-one-half a .dfe-image__default {
+  min-height: 10rem;
+}
+
+.govuk-grid-row .govuk-grid-column-one-half a .dfe-image__default {
+  min-height: 15rem;
+}
+
 .dfe-image__download-thumbnail {
   width: 150px;
   box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);

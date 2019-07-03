@@ -1,1 +1,1 @@
-<a href="<%= defined?(link) ? link : '#' %>" class="govuk-link"><%= text %></a>
+<a href="<%= defined?(link) ? link : '#' %>" class="govuk-link" <%= 'onclick=link_alert(event)' if defined?(disabled) %>><%= text %></a>
