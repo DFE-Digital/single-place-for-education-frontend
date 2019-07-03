@@ -1,0 +1,111 @@
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper" id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-full">
+        <div class="govuk-breadcrumbs">
+          <ol class="govuk-breadcrumbs__list">
+              <li class="govuk-breadcrumbs__list-item">
+                <a class="govuk-breadcrumbs__link" href="/">Home</a>
+              </li>
+              <li class="govuk-breadcrumbs__list-item">
+                <a class="govuk-breadcrumbs__link" href="/category/hiring">Hiring and development</a>
+              </li>
+              <li class="govuk-breadcrumbs__list-item">
+                <a class="govuk-breadcrumbs__link" href="/sub-category/supporting-early-career-teachers">Supporting early career teachers</a>
+              </li>
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="/guidance/plan-and-teach-well-structured-lessons">Plan and teach well structured lessons</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item dfe-breadcrumbs__current-page" aria-current="page">
+              Making effective use of teaching assistants
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="govuk-grid-row govuk-!-padding-top-9">
+      <div class="govuk-grid-column-two-thirds">
+        <%= render 'layouts/components/headings/one', text: 'Making effective use of teaching assistants' %>
+      </div>
+    </div>
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <p class="govuk-body">
+          NQTs need to know how to establish good relationships with teaching assistants. A solid relationship will not only improve learning outcomes for pupils but also:
+        </p>
+        <br>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>improve behaviour</li>
+          <li>create a more stable environment for students</li>
+          <li>increase morale</li>
+        </ul>
+        <br>
+        <p class="govuk-body">
+          Use our poster in your staffroom to:
+        </p>
+        <br>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>highlight ways in which teachers can improve their relationship with a TA</li>
+          <li>improve the morale of TAs</li>
+        </ul>
+      </div>
+    </div>
+    <div class="govuk-grid-row govuk-!-padding-top-9">
+      <div class="govuk-grid-column-two-thirds">
+        <%= render 'layouts/components/headings/two', text: 'Downloads' %>
+      </div>
+    </div>
+    <div class="govuk-grid-row govuk-!-padding-top-5">
+      <div class="govuk-grid-column-two-thirds">
+        <a href="<%= asset_url('empower.jpg') %>" class="govuk-link">
+          <%= render 'layouts/components/images/image', alt_text: 'empower', image_src: asset_url('empower.jpg'), image_width: 'download-thumbnail' %>
+        </a>
+        <p class="govuk-body">
+          <a href="<%= asset_url('empower.jpg') %>" class="govuk-link">
+            Making effective use of teaching assistants - poster: Empower yourself and others
+          </a>
+        </p>
+        <p class="govuk-body">JPG</p>
+      </div>
+    </div>
+    <div class="govuk-grid-row govuk-!-padding-top-9">
+      <div class="govuk-grid-column-two-thirds">
+        <a href="<%= asset_url('chat.jpg') %>" class="govuk-link">
+          <%= render 'layouts/components/images/image', alt_text: 'chat', image_src: asset_url('chat.jpg'), image_width: 'download-thumbnail' %>
+        </a>
+        <p class="govuk-body">
+          <a href="<%= asset_url('chat.jpg') %>" class="govuk-link">
+            Making effective use of teaching assistants - poster: Chat regularly
+          </a>
+        </p>
+        <p class="govuk-body">JPG</p>
+      </div>
+    </div>
+    <div class="govuk-grid-row govuk-!-padding-top-9">
+      <div class="govuk-grid-column-two-thirds">
+        <a href="<%= asset_url('celebrate.jpg') %>" class="govuk-link">
+          <%= render 'layouts/components/images/image', alt_text: 'celebrate', image_src: asset_url('celebrate.jpg'), image_width: 'download-thumbnail' %>
+        </a>
+        <p class="govuk-body">
+          <a href="<%= asset_url('celebrate.jpg') %>" class="govuk-link">
+            Making effective use of teaching assistants - poster: Celebrate success
+          </a>
+        </p>
+        <p class="govuk-body">JPG</p>
+      </div>
+    </div>
+    <div class="govuk-grid-row govuk-!-padding-top-9 govuk-!-padding-bottom-9">
+      <div class="govuk-grid-column-two-thirds">
+        <a href="<%= asset_url('paperwork.jpg') %>" class="govuk-link">
+          <%= render 'layouts/components/images/image', alt_text: 'paperwork', image_src: asset_url('paperwork.jpg'), image_width: 'download-thumbnail' %>
+        </a>
+        <p class="govuk-body">
+          <a href="<%= asset_url('paperwork.jpg') %>" class="govuk-link">
+            Making effective use of teaching assistants - poster: Help reduce paperwork
+          </a>
+        </p>
+        <p class="govuk-body">JPG</p>
+      </div>
+    </div>
+  </main>
+</div>

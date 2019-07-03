@@ -5,5 +5,7 @@ class ResourceController < ApplicationController
 
   def structured_questions; end
 
+  def teaching_assistants; end
+
   def manage_behaviour; end
 end
