@@ -5,3 +5,7 @@
 .heavy {
   font-weight: 500 !important;
 }
+
+ul + .govuk-heading-m {
+  margin: 3rem 0 1.25rem 0;
+}
