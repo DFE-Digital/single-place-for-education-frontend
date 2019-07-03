@@ -2,6 +2,10 @@
   margin-left: 1.5rem;
 }
 
+.dfe-container .govuk-list {
+  margin-left: 0;
+}
+
 .dfe-list__large-numbers {
   counter-reset: counter;
   list-style: none;
