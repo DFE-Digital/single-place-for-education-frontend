@@ -25,6 +25,8 @@
   content: counter(counter) ".";
   font-size: 70px;
   margin-right: 45px;
+  position: relative;
+  top: -15px;
 }
 
 .dfe-list__item {
