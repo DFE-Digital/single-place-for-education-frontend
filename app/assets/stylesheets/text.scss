@@ -4,9 +4,13 @@ html {
   font-size: 125%;
 }
 
-.govuk-heading-xl, .govuk-heading-l, .govuk-heading-m, .govuk-heading-s, .govuk-body, .govuk-body-s, .govuk-link, .govuk-button, .govuk-breadcrumbs__link, .govuk-list, .govuk-breadcrumbs__list-item, .govuk-caption-xl, .govuk-caption-l, .govuk-caption-m, .govuk-caption-s, .govuk-summary-list__row{
+.govuk-heading-xl, .govuk-heading-l, .govuk-heading-m, .govuk-heading-s, .govuk-body, .govuk-body-s, .govuk-link, .govuk-button, .govuk-breadcrumbs__link, .govuk-list, .govuk-breadcrumbs__list-item, .govuk-caption-xl, .govuk-caption-l, .govuk-caption-m, .govuk-caption-s, .govuk-summary-list__row, .govuk-header {
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
   font-weight: 200;
+}
+
+.govuk-header {
+  font-weight: 400;
 }
 
 .govuk-link {
