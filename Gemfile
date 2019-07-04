@@ -31,6 +31,7 @@ end
 group :test do
   gem 'capybara', '>= 2.15'
   gem 'chromedriver-helper'
+  gem 'guard-rspec', '~> 4.7.3'
   gem 'rspec'
   gem 'selenium-webdriver'
   gem 'webmock', '~> 3.6.0'
