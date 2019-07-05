@@ -1,0 +1,229 @@
+{
+  "sys": {
+    "type": "Array"
+  },
+  "total": 1,
+  "skip": 0,
+  "limit": 100,
+  "items": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "gfzscr0ovdsz"
+          }
+        },
+        "id": "55ISF6GMTGueUEwRTMKuYS",
+        "type": "Entry",
+        "createdAt": "2019-06-24T08:24:36.470Z",
+        "updatedAt": "2019-07-04T14:30:01.438Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 6,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "caseStudy"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "name": "Case Study - Meow Primary School",
+        "slug": "meow-primary-school-case-study",
+        "heroImage": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Entry",
+            "id": "4NSN5Mw0UjgVqs8KObVyde"
+          }
+        },
+        "content": [
+          {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "6oBMWnDV99vP5mjwbABUC2"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "includes": {
+    "Entry": [
+      {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "gfzscr0ovdsz"
+            }
+          },
+          "id": "4NSN5Mw0UjgVqs8KObVyde",
+          "type": "Entry",
+          "createdAt": "2019-06-20T14:14:59.261Z",
+          "updatedAt": "2019-06-20T14:14:59.261Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "contentType": {
+            "sys": {
+              "type": "Link",
+              "linkType": "ContentType",
+              "id": "heroImage"
+            }
+          },
+          "locale": "en-US"
+        },
+        "fields": {
+          "name": "Happy cat in meeting",
+          "file": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5t6LH0f5htWyTQ8YdpIYXz"
+            }
+          }
+        }
+      },
+      {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "gfzscr0ovdsz"
+            }
+          },
+          "id": "6oBMWnDV99vP5mjwbABUC2",
+          "type": "Entry",
+          "createdAt": "2019-06-26T09:50:54.178Z",
+          "updatedAt": "2019-06-26T09:50:54.178Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "contentType": {
+            "sys": {
+              "type": "Link",
+              "linkType": "ContentType",
+              "id": "image"
+            }
+          },
+          "locale": "en-US"
+        },
+        "fields": {
+          "name": "Some cat in a classroom",
+          "width": "Full Bleed",
+          "file": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "iEpqxIfcJC2QuMihZ7EfZ"
+            }
+          }
+        }
+      }
+    ],
+    "Asset": [
+      {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "gfzscr0ovdsz"
+            }
+          },
+          "id": "5t6LH0f5htWyTQ8YdpIYXz",
+          "type": "Asset",
+          "createdAt": "2019-06-20T14:14:39.328Z",
+          "updatedAt": "2019-06-20T14:14:56.444Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 2,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "happy-cat-in-meeting",
+          "description": "Happy cat in meeting",
+          "file": {
+            "url": "https://some-image-somewhere",
+            "details": {
+              "size": 1303022,
+              "image": {
+                "width": 1920,
+                "height": 1280
+              }
+            },
+            "fileName": "happy-cat-in-meeting.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      },
+      {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "gfzscr0ovdsz"
+            }
+          },
+          "id": "iEpqxIfcJC2QuMihZ7EfZ",
+          "type": "Asset",
+          "createdAt": "2019-06-26T09:50:41.889Z",
+          "updatedAt": "2019-06-26T09:50:41.889Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "Some cat in a classroom",
+          "file": {
+            "url": "https://some-image-somewhere",
+            "details": {
+              "size": 187664,
+              "image": {
+                "width": 1350,
+                "height": 901
+              }
+            },
+            "fileName": "some-cat-in-a-classroom.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    ]
+  }
+}

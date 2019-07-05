@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe 'Get Case Study' do
   let(:logger) { spy }
-  let(:fixtures_path) { "#{__dir__}/../fixtures/contentful/case_studies/" }
+  let(:fixtures_path) { "#{__dir__}/../fixtures/contentful/case_study/" }
   let(:headers) do
     {
       'Accept-Encoding' => 'gzip',
@@ -25,7 +25,7 @@ describe 'Get Case Study' do
 
   context '#when the case study has content' do
     before do
-      response_with_no_items = File.open("#{fixtures_path}response_with_no_items.json", &:read)
+      response_with_no_items = File.open("#{__dir__}/../fixtures/contentful/response_with_no_items.json", &:read)
       response_with_items = File.open("#{fixtures_path}case_study_acceptance.json", &:read)
       headers['Authorization'] = "Bearer #{access_token}"
 

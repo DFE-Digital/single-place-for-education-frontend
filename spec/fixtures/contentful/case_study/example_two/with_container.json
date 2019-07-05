@@ -1,0 +1,229 @@
+{
+  "sys": {
+    "type": "Array"
+  },
+  "total": 1,
+  "skip": 0,
+  "limit": 100,
+  "items": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "gfzscr0ovdsz"
+          }
+        },
+        "id": "55ISF6GMTGueUEwRTMKuYS",
+        "type": "Entry",
+        "createdAt": "2019-06-24T08:24:36.470Z",
+        "updatedAt": "2019-07-04T14:30:01.438Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 6,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "caseStudy"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "name": "Case Study - Woof Primary School",
+        "slug": "woof-primary-school-case-study",
+        "heroImage": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Entry",
+            "id": "4NSN5Mw0UjgVqs8KObVyde"
+          }
+        },
+        "content": [
+          {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "3KhadsajlTjilukmVZnGYV"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "includes": {
+    "Entry": [
+      {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "gfzscr0ovdsz"
+            }
+          },
+          "id": "4NSN5Mw0UjgVqs8KObVyde",
+          "type": "Entry",
+          "createdAt": "2019-06-20T14:14:59.261Z",
+          "updatedAt": "2019-06-20T14:14:59.261Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "contentType": {
+            "sys": {
+              "type": "Link",
+              "linkType": "ContentType",
+              "id": "heroImage"
+            }
+          },
+          "locale": "en-US"
+        },
+        "fields": {
+          "name": "Happy dog in meeting",
+          "file": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5t6LH0f5htWyTQ8YdpIYXz"
+            }
+          }
+        }
+      },
+      {
+        "sys": {
+            "space": {
+                "sys": {
+                    "type": "Link",
+                    "linkType": "Space",
+                    "id": "gfzscr0ovdsz"
+                }
+            },
+            "id": "3KhadsajlTjilukmVZnGYV",
+            "type": "Entry",
+            "createdAt": "2019-06-24T11:08:40.969Z",
+            "updatedAt": "2019-06-24T11:08:40.969Z",
+            "environment": {
+                "sys": {
+                    "id": "master",
+                    "type": "Link",
+                    "linkType": "Environment"
+                }
+            },
+            "revision": 1,
+            "contentType": {
+                "sys": {
+                    "type": "Link",
+                    "linkType": "ContentType",
+                    "id": "container"
+                }
+            },
+            "locale": "en-US"
+        },
+        "fields": {
+            "name": "Cattainer",
+            "backgroundColour": "Cream",
+            "content": [
+                {
+                    "sys": {
+                        "type": "Link",
+                        "linkType": "Entry",
+                        "id": "3pmzgY1nm0og0OOuFTBCBz"
+                    }
+                }
+            ]
+        }
+    },
+    {
+      "sys": {
+          "space": {
+              "sys": {
+                  "type": "Link",
+                  "linkType": "Space",
+                  "id": "gfzscr0ovdsz"
+              }
+          },
+          "id": "3pmzgY1nm0og0OOuFTBCBz",
+          "type": "Entry",
+          "createdAt": "2019-06-24T11:07:03.504Z",
+          "updatedAt": "2019-06-24T11:07:03.504Z",
+          "environment": {
+              "sys": {
+                  "id": "master",
+                  "type": "Link",
+                  "linkType": "Environment"
+              }
+          },
+          "revision": 1,
+          "contentType": {
+              "sys": {
+                  "type": "Link",
+                  "linkType": "ContentType",
+                  "id": "heading"
+              }
+          },
+          "locale": "en-US"
+      },
+      "fields": {
+          "text": "Dogtainer Heading",
+          "level": "H4",
+          "bold": false,
+          "alignment": "Left"
+      }
+    }
+    ],
+    "Asset": [
+      {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "gfzscr0ovdsz"
+            }
+          },
+          "id": "5t6LH0f5htWyTQ8YdpIYXz",
+          "type": "Asset",
+          "createdAt": "2019-06-20T14:14:39.328Z",
+          "updatedAt": "2019-06-20T14:14:56.444Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 2,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "happy-dog-in-meeting",
+          "description": "Happy dog in meeting",
+          "file": {
+            "url": "https://some-image-somewhere-else",
+            "details": {
+              "size": 1303022,
+              "image": {
+                "width": 1920,
+                "height": 1280
+              }
+            },
+            "fileName": "happy-dog-in-meeting.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    ]
+  }
+}

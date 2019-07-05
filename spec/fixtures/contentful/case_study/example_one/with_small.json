@@ -15,10 +15,10 @@
             "id": "gfzscr0ovdsz"
           }
         },
-        "id": "6i4qNeWfvxcWbpIWC0mqOo",
+        "id": "55ISF6GMTGueUEwRTMKuYS",
         "type": "Entry",
-        "createdAt": "2019-06-26T09:50:11.948Z",
-        "updatedAt": "2019-07-01T08:18:03.877Z",
+        "createdAt": "2019-06-24T08:24:36.470Z",
+        "updatedAt": "2019-07-04T14:30:01.438Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -26,45 +26,35 @@
             "linkType": "Environment"
           }
         },
-        "revision": 14,
+        "revision": 6,
         "contentType": {
           "sys": {
             "type": "Link",
             "linkType": "ContentType",
-            "id": "guidance"
+            "id": "caseStudy"
           }
         },
         "locale": "en-US"
       },
       "fields": {
-        "title": "Fulfil wider professional responsibilities",
-        "slug": "fulfil-wider-professional-responsibilities",
-        "lastUpdated": "2019-06-26",
-        "breadcrumbs": null,
-        "contentsList": [
+        "name": "Case Study - Meow Primary School",
+        "slug": "meow-primary-school-case-study",
+        "heroImage": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Entry",
+            "id": "4NSN5Mw0UjgVqs8KObVyde"
+          }
+        },
+        "content": [
           {
             "sys": {
               "type": "Link",
               "linkType": "Entry",
-              "id": "1KSzfT7mzJn6UGbPIJ4pFk"
-            }
-          },
-          {
-            "sys": {
-              "type": "Link",
-              "linkType": "Entry",
-              "id": "3uYhB3pNthMTsAlViQmubr"
-            }
-          },
-          {
-            "sys": {
-              "type": "Link",
-              "linkType": "Entry",
-              "id": "1R6MlHYF6kZzHBpm5hJInx"
+              "id": "4iBFm9S4OddRuqBBseoxbw"
             }
           }
-        ],
-        "content": []
+        ]
       }
     }
   ],
@@ -79,10 +69,10 @@
               "id": "gfzscr0ovdsz"
             }
           },
-          "id": "3uYhB3pNthMTsAlViQmubr",
+          "id": "4NSN5Mw0UjgVqs8KObVyde",
           "type": "Entry",
-          "createdAt": "2019-07-01T08:17:35.406Z",
-          "updatedAt": "2019-07-01T08:17:35.406Z",
+          "createdAt": "2019-06-20T14:14:59.261Z",
+          "updatedAt": "2019-06-20T14:14:59.261Z",
           "environment": {
             "sys": {
               "id": "master",
@@ -95,15 +85,20 @@
             "sys": {
               "type": "Link",
               "linkType": "ContentType",
-              "id": "link"
+              "id": "heroImage"
             }
           },
           "locale": "en-US"
         },
         "fields": {
-          "text": "Skills to develop",
-          "type": "Internal",
-          "url": "#what-skills-an-nqt-needs-to-develop"
+          "name": "Happy cat in meeting",
+          "file": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5t6LH0f5htWyTQ8YdpIYXz"
+            }
+          }
         }
       },
       {
@@ -115,10 +110,10 @@
               "id": "gfzscr0ovdsz"
             }
           },
-          "id": "1KSzfT7mzJn6UGbPIJ4pFk",
+          "id": "4iBFm9S4OddRuqBBseoxbw",
           "type": "Entry",
-          "createdAt": "2019-07-01T08:17:03.656Z",
-          "updatedAt": "2019-07-01T08:17:03.656Z",
+          "createdAt": "2019-07-04T15:07:41.854Z",
+          "updatedAt": "2019-07-04T15:07:41.854Z",
           "environment": {
             "sys": {
               "id": "master",
@@ -131,54 +126,58 @@
             "sys": {
               "type": "Link",
               "linkType": "ContentType",
-              "id": "link"
+              "id": "small"
             }
           },
           "locale": "en-US"
         },
         "fields": {
-          "text": "Principles to learn",
-          "type": "Internal",
-          "url": "#what-a-newly-qualified-teacher-(nqt)-needs-to-learn"
-        }
-      },
-      {
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "gfzscr0ovdsz"
-            }
-          },
-          "id": "1R6MlHYF6kZzHBpm5hJInx",
-          "type": "Entry",
-          "createdAt": "2019-07-01T08:17:50.245Z",
-          "updatedAt": "2019-07-01T08:17:50.245Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "revision": 1,
-          "contentType": {
-            "sys": {
-              "type": "Link",
-              "linkType": "ContentType",
-              "id": "link"
-            }
-          },
-          "locale": "en-US"
-        },
-        "fields": {
-          "text": "Case studies",
-          "type": "Internal",
-          "url": "#case-studies"
+          "text": "Meow. Meow. Meow. This is a smol.",
+          "alignment": "Left"
         }
       }
     ],
-    "Asset": []
+    "Asset": [
+      {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "gfzscr0ovdsz"
+            }
+          },
+          "id": "5t6LH0f5htWyTQ8YdpIYXz",
+          "type": "Asset",
+          "createdAt": "2019-06-20T14:14:39.328Z",
+          "updatedAt": "2019-06-20T14:14:56.444Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 2,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "happy-cat-in-meeting",
+          "description": "Happy cat in meeting",
+          "file": {
+            "url": "https://some-image-somewhere",
+            "details": {
+              "size": 1303022,
+              "image": {
+                "width": 1920,
+                "height": 1280
+              }
+            },
+            "fileName": "happy-cat-in-meeting.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    ]
   }
 }

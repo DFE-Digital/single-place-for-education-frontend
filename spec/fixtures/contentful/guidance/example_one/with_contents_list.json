@@ -1,0 +1,184 @@
+{
+  "sys": {
+    "type": "Array"
+  },
+  "total": 1,
+  "skip": 0,
+  "limit": 100,
+  "items": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "gfzscr0ovdsz"
+          }
+        },
+        "id": "6i4qNeWfvxcWbpIWC0mqOo",
+        "type": "Entry",
+        "createdAt": "2019-06-26T09:50:11.948Z",
+        "updatedAt": "2019-07-01T08:18:03.877Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 14,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "guidance"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "title": "Fulfil wider hee-haw responsibilities",
+        "slug": "fulfil-wider-hee-haw-responsibilities",
+        "lastUpdated": "2019-06-26",
+        "breadcrumbs": null,
+        "contentsList": [
+          {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "1KSzfT7mzJn6UGbPIJ4pFk"
+            }
+          },
+          {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "3uYhB3pNthMTsAlViQmubr"
+            }
+          },
+          {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "1R6MlHYF6kZzHBpm5hJInx"
+            }
+          }
+        ],
+        "content": []
+      }
+    }
+  ],
+  "includes": {
+    "Entry": [
+      {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "gfzscr0ovdsz"
+            }
+          },
+          "id": "3uYhB3pNthMTsAlViQmubr",
+          "type": "Entry",
+          "createdAt": "2019-07-01T08:17:35.406Z",
+          "updatedAt": "2019-07-01T08:17:35.406Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "contentType": {
+            "sys": {
+              "type": "Link",
+              "linkType": "ContentType",
+              "id": "link"
+            }
+          },
+          "locale": "en-US"
+        },
+        "fields": {
+          "text": "Skills to develop",
+          "type": "Internal",
+          "url": "#what-skills-an-nqt-needs-to-develop"
+        }
+      },
+      {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "gfzscr0ovdsz"
+            }
+          },
+          "id": "1KSzfT7mzJn6UGbPIJ4pFk",
+          "type": "Entry",
+          "createdAt": "2019-07-01T08:17:03.656Z",
+          "updatedAt": "2019-07-01T08:17:03.656Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "contentType": {
+            "sys": {
+              "type": "Link",
+              "linkType": "ContentType",
+              "id": "link"
+            }
+          },
+          "locale": "en-US"
+        },
+        "fields": {
+          "text": "Principles to learn",
+          "type": "Internal",
+          "url": "#what-a-newly-qualified-hee-haw-(nqt)-needs-to-learn"
+        }
+      },
+      {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "gfzscr0ovdsz"
+            }
+          },
+          "id": "1R6MlHYF6kZzHBpm5hJInx",
+          "type": "Entry",
+          "createdAt": "2019-07-01T08:17:50.245Z",
+          "updatedAt": "2019-07-01T08:17:50.245Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "contentType": {
+            "sys": {
+              "type": "Link",
+              "linkType": "ContentType",
+              "id": "link"
+            }
+          },
+          "locale": "en-US"
+        },
+        "fields": {
+          "text": "Case studies",
+          "type": "Internal",
+          "url": "#case-studies"
+        }
+      }
+    ],
+    "Asset": []
+  }
+}
