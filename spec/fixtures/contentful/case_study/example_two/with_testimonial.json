@@ -1,0 +1,387 @@
+{
+  "sys": {
+    "type": "Array"
+  },
+  "total": 1,
+  "skip": 0,
+  "limit": 100,
+  "items": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "gfzscr0ovdsz"
+          }
+        },
+        "id": "55ISF6GMTGueUEwRTMKuYS",
+        "type": "Entry",
+        "createdAt": "2019-06-24T08:24:36.470Z",
+        "updatedAt": "2019-07-04T14:30:01.438Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 6,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "caseStudy"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "name": "Case Study - Woof Primary School",
+        "slug": "woof-primary-school-case-study",
+        "heroImage": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Entry",
+            "id": "4NSN5Mw0UjgVqs8KObVyde"
+          }
+        },
+        "content": [
+          {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "3kW8wVo0mqM0dzy7O2w9TD"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "includes": {
+    "Entry": [
+      {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "gfzscr0ovdsz"
+            }
+          },
+          "id": "4NSN5Mw0UjgVqs8KObVyde",
+          "type": "Entry",
+          "createdAt": "2019-06-20T14:14:59.261Z",
+          "updatedAt": "2019-06-20T14:14:59.261Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "contentType": {
+            "sys": {
+              "type": "Link",
+              "linkType": "ContentType",
+              "id": "heroImage"
+            }
+          },
+          "locale": "en-US"
+        },
+        "fields": {
+          "name": "Happy dog in meeting",
+          "file": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5t6LH0f5htWyTQ8YdpIYXz"
+            }
+          }
+        }
+      },
+      {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "gfzscr0ovdsz"
+            }
+          },
+          "id": "3kW8wVo0mqM0dzy7O2w9TD",
+          "type": "Entry",
+          "createdAt": "2019-07-04T15:27:27.804Z",
+          "updatedAt": "2019-07-04T15:27:27.804Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "contentType": {
+            "sys": {
+              "type": "Link",
+              "linkType": "ContentType",
+              "id": "testimonial"
+            }
+          },
+          "locale": "en-US"
+        },
+        "fields": {
+          "name": "Testimonial",
+          "heading": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "mT6VxT2ngxGCgVLAfZfwK"
+            }
+          },
+          "beforeQuote": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "3NhR218netfFT3gkDI13WD"
+            }
+          },
+          "quote": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "13PUcjx2DSswfE9tHeysiv"
+            }
+          },
+          "author": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "jML7hsARoGkn4cGYXe0Ko"
+            }
+          }
+        }
+      },
+      {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "gfzscr0ovdsz"
+            }
+          },
+          "id": "jML7hsARoGkn4cGYXe0Ko",
+          "type": "Entry",
+          "createdAt": "2019-07-04T15:27:18.957Z",
+          "updatedAt": "2019-07-04T15:27:18.957Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "contentType": {
+            "sys": {
+              "type": "Link",
+              "linkType": "ContentType",
+              "id": "small"
+            }
+          },
+          "locale": "en-US"
+        },
+        "fields": {
+          "text": "Doge the Dog",
+          "alignment": "Left"
+        }
+      },
+      {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "gfzscr0ovdsz"
+            }
+          },
+          "id": "mT6VxT2ngxGCgVLAfZfwK",
+          "type": "Entry",
+          "createdAt": "2019-06-13T10:01:29.665Z",
+          "updatedAt": "2019-06-13T10:01:29.665Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "contentType": {
+            "sys": {
+              "type": "Link",
+              "linkType": "ContentType",
+              "id": "heading"
+            }
+          },
+          "locale": "en-US"
+        },
+        "fields": {
+          "text": "Testimonial",
+          "level": "H2",
+          "bold": true,
+          "alignment": "Left"
+        }
+      },
+      {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "gfzscr0ovdsz"
+            }
+          },
+          "id": "3NhR218netfFT3gkDI13WD",
+          "type": "Entry",
+          "createdAt": "2019-07-04T15:26:53.998Z",
+          "updatedAt": "2019-07-04T15:26:53.998Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "contentType": {
+            "sys": {
+              "type": "Link",
+              "linkType": "ContentType",
+              "id": "paragraph"
+            }
+          },
+          "locale": "en-US"
+        },
+        "fields": {
+          "text": "Woof. Woof. Woof. This is a before quote.",
+          "alignment": "Left"
+        }
+      },
+      {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "gfzscr0ovdsz"
+            }
+          },
+          "id": "13PUcjx2DSswfE9tHeysiv",
+          "type": "Entry",
+          "createdAt": "2019-07-04T15:27:06.175Z",
+          "updatedAt": "2019-07-04T15:27:06.175Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "contentType": {
+            "sys": {
+              "type": "Link",
+              "linkType": "ContentType",
+              "id": "paragraph"
+            }
+          },
+          "locale": "en-US"
+        },
+        "fields": {
+          "text": "Dogs are great.",
+          "alignment": "Left"
+        }
+      },
+      {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "gfzscr0ovdsz"
+            }
+          },
+          "id": "jML7hsARoGkn4cGYXe0Ko",
+          "type": "Entry",
+          "createdAt": "2019-07-04T15:27:18.957Z",
+          "updatedAt": "2019-07-04T15:27:18.957Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "contentType": {
+            "sys": {
+              "type": "Link",
+              "linkType": "ContentType",
+              "id": "small"
+            }
+          },
+          "locale": "en-US"
+        },
+        "fields": {
+          "text": "Doge the Dog",
+          "alignment": "Left"
+        }
+      }
+    ],
+    "Asset": [
+      {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "gfzscr0ovdsz"
+            }
+          },
+          "id": "5t6LH0f5htWyTQ8YdpIYXz",
+          "type": "Asset",
+          "createdAt": "2019-06-20T14:14:39.328Z",
+          "updatedAt": "2019-06-20T14:14:56.444Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 2,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "happy-dog-in-meeting",
+          "description": "Happy dog in meeting",
+          "file": {
+            "url": "https://some-image-somewhere-else",
+            "details": {
+              "size": 1303022,
+              "image": {
+                "width": 1920,
+                "height": 1280
+              }
+            },
+            "fileName": "happy-dog-in-meeting.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    ]
+  }
+}

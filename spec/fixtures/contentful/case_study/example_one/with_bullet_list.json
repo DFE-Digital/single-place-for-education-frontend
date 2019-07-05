@@ -1,0 +1,269 @@
+{
+  "sys": {
+    "type": "Array"
+  },
+  "total": 1,
+  "skip": 0,
+  "limit": 100,
+  "items": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "gfzscr0ovdsz"
+          }
+        },
+        "id": "55ISF6GMTGueUEwRTMKuYS",
+        "type": "Entry",
+        "createdAt": "2019-06-24T08:24:36.470Z",
+        "updatedAt": "2019-07-04T14:30:01.438Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 6,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "caseStudy"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "name": "Case Study - Meow Primary School",
+        "slug": "meow-primary-school-case-study",
+        "heroImage": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Entry",
+            "id": "4NSN5Mw0UjgVqs8KObVyde"
+          }
+        },
+        "content": [
+          {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "7vDdxKp7zARhatRKXgTIz6"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "includes": {
+    "Entry": [
+      {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "gfzscr0ovdsz"
+            }
+          },
+          "id": "4NSN5Mw0UjgVqs8KObVyde",
+          "type": "Entry",
+          "createdAt": "2019-06-20T14:14:59.261Z",
+          "updatedAt": "2019-06-20T14:14:59.261Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "contentType": {
+            "sys": {
+              "type": "Link",
+              "linkType": "ContentType",
+              "id": "heroImage"
+            }
+          },
+          "locale": "en-US"
+        },
+        "fields": {
+          "name": "Happy cat in meeting",
+          "file": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5t6LH0f5htWyTQ8YdpIYXz"
+            }
+          }
+        }
+      },
+      {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "gfzscr0ovdsz"
+            }
+          },
+          "id": "7vDdxKp7zARhatRKXgTIz6",
+          "type": "Entry",
+          "createdAt": "2019-06-20T09:54:55.917Z",
+          "updatedAt": "2019-06-20T10:16:52.061Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 2,
+          "contentType": {
+            "sys": {
+              "type": "Link",
+              "linkType": "ContentType",
+              "id": "bulletList"
+            }
+          },
+          "locale": "en-US"
+        },
+        "fields": {
+          "name": "List of Cats",
+          "type": "Unordered",
+          "items": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "72avLFBskyaHkAiHm5yt9m"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "JfbusDqpCK6MoAUlXj3m6"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "gfzscr0ovdsz"
+            }
+          },
+          "id": "72avLFBskyaHkAiHm5yt9m",
+          "type": "Entry",
+          "createdAt": "2019-06-20T09:54:02.419Z",
+          "updatedAt": "2019-06-20T09:54:10.973Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 2,
+          "contentType": {
+            "sys": {
+              "type": "Link",
+              "linkType": "ContentType",
+              "id": "paragraph"
+            }
+          },
+          "locale": "en-US"
+        },
+        "fields": {
+          "alignment": "Left",
+          "text": "Garfield"
+        }
+      },
+      {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "gfzscr0ovdsz"
+            }
+          },
+          "id": "JfbusDqpCK6MoAUlXj3m6",
+          "type": "Entry",
+          "createdAt": "2019-06-20T09:54:31.084Z",
+          "updatedAt": "2019-06-20T09:54:31.084Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "contentType": {
+            "sys": {
+              "type": "Link",
+              "linkType": "ContentType",
+              "id": "paragraph"
+            }
+          },
+          "locale": "en-US"
+        },
+        "fields": {
+          "alignment": "Left",
+          "text": "Meowth"
+        }
+      }
+    ],
+    "Asset": [
+      {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "gfzscr0ovdsz"
+            }
+          },
+          "id": "5t6LH0f5htWyTQ8YdpIYXz",
+          "type": "Asset",
+          "createdAt": "2019-06-20T14:14:39.328Z",
+          "updatedAt": "2019-06-20T14:14:56.444Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 2,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "happy-cat-in-meeting",
+          "description": "Happy cat in meeting",
+          "file": {
+            "url": "https://some-image-somewhere",
+            "details": {
+              "size": 1303022,
+              "image": {
+                "width": 1920,
+                "height": 1280
+              }
+            },
+            "fileName": "happy-cat-in-meeting.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    ]
+  }
+}
