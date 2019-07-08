@@ -1,0 +1,755 @@
+{
+  "sys": {
+    "type": "Array"
+  },
+  "total": 1,
+  "skip": 0,
+  "limit": 100,
+  "items": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "gfzscr0ovdsz"
+          }
+        },
+        "id": "55ISF6GMTGueUEwRTMKuYS",
+        "type": "Entry",
+        "createdAt": "2019-06-24T08:24:36.470Z",
+        "updatedAt": "2019-07-08T10:27:58.563Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "revision": 11,
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "caseStudy"
+          }
+        },
+        "locale": "en-US"
+      },
+      "fields": {
+        "name": "Case Study - Ssss Primary School",
+        "slug": "ssss-primary-school-case-study",
+        "heroImage": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Entry",
+            "id": "4NSN5Mw0UjgVqs8KObVyde"
+          }
+        },
+        "content": [
+          {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "67K9QO6CVNYBiZ2yHxtG7Q"
+            }
+          },
+          {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "4I36gtnHyKIichusb32UHe"
+            }
+          },
+          {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "78vmpGDENqZzx9cYjTtC5u"
+            }
+          },
+          {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "3zuQKlEKNm7wuofuF6e1yZ"
+            }
+          },
+          {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "ONUDUULCcLSnJKgwNYXae"
+            }
+          },
+          {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "7gDk7cPCND9JzQ84ucd8kK"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "includes": {
+    "Entry": [
+      {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "gfzscr0ovdsz"
+            }
+          },
+          "id": "2mK6EcXz2pDk37NLA1S0zg",
+          "type": "Entry",
+          "createdAt": "2019-07-08T10:27:20.296Z",
+          "updatedAt": "2019-07-08T10:27:20.296Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "contentType": {
+            "sys": {
+              "type": "Link",
+              "linkType": "ContentType",
+              "id": "small"
+            }
+          },
+          "locale": "en-US"
+        },
+        "fields": {
+          "text": "Headteacher, Professor Snek",
+          "alignment": "Left"
+        }
+      },
+      {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "gfzscr0ovdsz"
+            }
+          },
+          "id": "3b1XzRhZiLNtEzzgoBUzKY",
+          "type": "Entry",
+          "createdAt": "2019-07-08T10:25:53.576Z",
+          "updatedAt": "2019-07-08T10:25:53.576Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "contentType": {
+            "sys": {
+              "type": "Link",
+              "linkType": "ContentType",
+              "id": "paragraph"
+            }
+          },
+          "locale": "en-US"
+        },
+        "fields": {
+          "text": "Sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss.",
+          "alignment": "Left"
+        }
+      },
+      {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "gfzscr0ovdsz"
+            }
+          },
+          "id": "3zuQKlEKNm7wuofuF6e1yZ",
+          "type": "Entry",
+          "createdAt": "2019-06-25T08:05:24.387Z",
+          "updatedAt": "2019-06-25T08:05:24.387Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "contentType": {
+            "sys": {
+              "type": "Link",
+              "linkType": "ContentType",
+              "id": "image"
+            }
+          },
+          "locale": "en-US"
+        },
+        "fields": {
+          "name": "Big Snek",
+          "width": "Full Bleed",
+          "file": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "45nYdqcHx79UZaHefUp9Bv"
+            }
+          }
+        }
+      },
+      {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "gfzscr0ovdsz"
+            }
+          },
+          "id": "4I36gtnHyKIichusb32UHe",
+          "type": "Entry",
+          "createdAt": "2019-07-08T10:11:12.810Z",
+          "updatedAt": "2019-07-08T10:11:12.810Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "contentType": {
+            "sys": {
+              "type": "Link",
+              "linkType": "ContentType",
+              "id": "paragraph"
+            }
+          },
+          "locale": "en-US"
+        },
+        "fields": {
+          "text": "A school business professional secured £300,000 from a local authority to help a primary school build new classrooms and offer more school places.",
+          "alignment": "Center"
+        }
+      },
+      {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "gfzscr0ovdsz"
+            }
+          },
+          "id": "4NSN5Mw0UjgVqs8KObVyde",
+          "type": "Entry",
+          "createdAt": "2019-06-20T14:14:59.261Z",
+          "updatedAt": "2019-06-20T14:14:59.261Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "contentType": {
+            "sys": {
+              "type": "Link",
+              "linkType": "ContentType",
+              "id": "heroImage"
+            }
+          },
+          "locale": "en-US"
+        },
+        "fields": {
+          "name": "Happy snek in meeting",
+          "file": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5t6LH0f5htWyTQ8YdpIYXz"
+            }
+          }
+        }
+      },
+      {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "gfzscr0ovdsz"
+            }
+          },
+          "id": "67K9QO6CVNYBiZ2yHxtG7Q",
+          "type": "Entry",
+          "createdAt": "2019-07-08T10:10:12.764Z",
+          "updatedAt": "2019-07-08T10:10:12.764Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "contentType": {
+            "sys": {
+              "type": "Link",
+              "linkType": "ContentType",
+              "id": "heading"
+            }
+          },
+          "locale": "en-US"
+        },
+        "fields": {
+          "text": "Snek transforms Ssss primary school",
+          "level": "H1",
+          "bold": false,
+          "alignment": "Center"
+        }
+      },
+      {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "gfzscr0ovdsz"
+            }
+          },
+          "id": "78vmpGDENqZzx9cYjTtC5u",
+          "type": "Entry",
+          "createdAt": "2019-06-21T10:50:41.963Z",
+          "updatedAt": "2019-06-21T10:50:41.963Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "contentType": {
+            "sys": {
+              "type": "Link",
+              "linkType": "ContentType",
+              "id": "small"
+            }
+          },
+          "locale": "en-US"
+        },
+        "fields": {
+          "text": "Published 21 July 2018",
+          "alignment": "Center"
+        }
+      },
+      {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "gfzscr0ovdsz"
+            }
+          },
+          "id": "7gDk7cPCND9JzQ84ucd8kK",
+          "type": "Entry",
+          "createdAt": "2019-07-08T10:27:44.977Z",
+          "updatedAt": "2019-07-08T10:27:44.977Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "contentType": {
+            "sys": {
+              "type": "Link",
+              "linkType": "ContentType",
+              "id": "testimonial"
+            }
+          },
+          "locale": "en-US"
+        },
+        "fields": {
+          "name": "Ssss Primary School > Testimonial",
+          "heading": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "mT6VxT2ngxGCgVLAfZfwK"
+            }
+          },
+          "beforeQuote": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "bFbTjg0dZUskKAdGpWaCo"
+            }
+          },
+          "quote": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "3b1XzRhZiLNtEzzgoBUzKY"
+            }
+          },
+          "author": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "2mK6EcXz2pDk37NLA1S0zg"
+            }
+          }
+        }
+      },
+      {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "gfzscr0ovdsz"
+            }
+          },
+          "id": "ONUDUULCcLSnJKgwNYXae",
+          "type": "Entry",
+          "createdAt": "2019-07-08T10:24:26.079Z",
+          "updatedAt": "2019-07-08T10:59:35.526Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 4,
+          "contentType": {
+            "sys": {
+              "type": "Link",
+              "linkType": "ContentType",
+              "id": "richText"
+            }
+          },
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "Bacon Ipsum",
+          "content": {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": "Bacon Ipsum",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "heading-2"
+              },
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": "Bacon ipsum dolor amet chicken biltong corned beef ground round beef turducken jowl. Picanha capicola andouille pig buffalo beef. ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                      "uri": "/some-link-to-swine-doner-turducken-jerky-drumstick"
+                    },
+                    "content": [
+                      {
+                        "data": {},
+                        "marks": [],
+                        "value": "Swine doner turducken jerky drumstick",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "hyperlink"
+                  },
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": ".",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "content": [
+                      {
+                        "data": {},
+                        "content": [
+                          {
+                            "data": {},
+                            "marks": [],
+                            "value": "Pork chicken short loin shank, jerky pig tongue sausage beef filet mignon ribeye pastrami shoulder shankle.",
+                            "nodeType": "text"
+                          }
+                        ],
+                        "nodeType": "paragraph"
+                      }
+                    ],
+                    "nodeType": "list-item"
+                  },
+                  {
+                    "data": {},
+                    "content": [
+                      {
+                        "data": {},
+                        "content": [
+                          {
+                            "data": {},
+                            "marks": [],
+                            "value": "Landjaeger kielbasa strip steak picanha chicken, sausage cupim tail leberkas. Shank tenderloin chuck frankfurter, ball tip filet mignon sirloin.",
+                            "nodeType": "text"
+                          }
+                        ],
+                        "nodeType": "paragraph"
+                      }
+                    ],
+                    "nodeType": "list-item"
+                  }
+                ],
+                "nodeType": "unordered-list"
+              },
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "content": [
+                      {
+                        "data": {},
+                        "content": [
+                          {
+                            "data": {},
+                            "marks": [],
+                            "value": "Drumstick beef filet mignon bresaola, alcatra swine bacon salami meatloaf leberkas shankle ground round jowl.",
+                            "nodeType": "text"
+                          }
+                        ],
+                        "nodeType": "paragraph"
+                      }
+                    ],
+                    "nodeType": "list-item"
+                  },
+                  {
+                    "data": {},
+                    "content": [
+                      {
+                        "data": {},
+                        "content": [
+                          {
+                            "data": {},
+                            "marks": [],
+                            "value": "Brisket fatback pork chop meatball. Buffalo hamburger bresaola, venison t-bone picanha alcatra burgdoggen kevin porchetta sirloin brisket.",
+                            "nodeType": "text"
+                          }
+                        ],
+                        "nodeType": "paragraph"
+                      }
+                    ],
+                    "nodeType": "list-item"
+                  }
+                ],
+                "nodeType": "ordered-list"
+              },
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": "",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        }
+      },
+      {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "gfzscr0ovdsz"
+            }
+          },
+          "id": "bFbTjg0dZUskKAdGpWaCo",
+          "type": "Entry",
+          "createdAt": "2019-07-08T10:26:50.302Z",
+          "updatedAt": "2019-07-08T10:27:39.543Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 2,
+          "contentType": {
+            "sys": {
+              "type": "Link",
+              "linkType": "ContentType",
+              "id": "paragraph"
+            }
+          },
+          "locale": "en-US"
+        },
+        "fields": {
+          "text": "Professssor Snek said to Miss Snek:",
+          "alignment": "Left"
+        }
+      },
+      {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "gfzscr0ovdsz"
+            }
+          },
+          "id": "mT6VxT2ngxGCgVLAfZfwK",
+          "type": "Entry",
+          "createdAt": "2019-06-13T10:01:29.665Z",
+          "updatedAt": "2019-06-13T10:01:29.665Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "contentType": {
+            "sys": {
+              "type": "Link",
+              "linkType": "ContentType",
+              "id": "heading"
+            }
+          },
+          "locale": "en-US"
+        },
+        "fields": {
+          "text": "Testimonial",
+          "level": "H2",
+          "bold": true,
+          "alignment": "Left"
+        }
+      }
+    ],
+    "Asset": [
+      {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "gfzscr0ovdsz"
+            }
+          },
+          "id": "45nYdqcHx79UZaHefUp9Bv",
+          "type": "Asset",
+          "createdAt": "2019-06-25T08:05:21.560Z",
+          "updatedAt": "2019-06-25T08:05:21.560Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "Big Snek",
+          "file": {
+            "url": "https://some-full-bleed-image-somewhere",
+            "details": {
+              "size": 397443,
+              "image": {
+                "width": 1024,
+                "height": 680
+              }
+            },
+            "fileName": "big-snek.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      },
+      {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "gfzscr0ovdsz"
+            }
+          },
+          "id": "5t6LH0f5htWyTQ8YdpIYXz",
+          "type": "Asset",
+          "createdAt": "2019-06-20T14:14:39.328Z",
+          "updatedAt": "2019-06-20T14:14:56.444Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 2,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "happy-snek-in-meeting",
+          "description": "Happy snek in meeting",
+          "file": {
+            "url": "https://some-hero-image-somewhere",
+            "details": {
+              "size": 1303022,
+              "image": {
+                "width": 1920,
+                "height": 1280
+              }
+            },
+            "fileName": "happy-snek-in-meeting.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    ]
+  }
+}
