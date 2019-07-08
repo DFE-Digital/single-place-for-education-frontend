@@ -17,6 +17,8 @@ class GuidanceController < ApplicationController
       contents_list: temp_guidance.contents_list,
       content: temp_guidance.content
     }
+
+    puts @guidance
     
     render 'guidance/show'
   end

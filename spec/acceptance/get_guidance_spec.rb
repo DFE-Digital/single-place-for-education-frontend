@@ -46,8 +46,8 @@ describe 'Get Guidance' do
   it 'can retrieve the content of a guidance page' do
 
     response = get_guidance.execute(slug: slug)
-
-    puts response
+    expected_response = File.open("#{fixtures_path}guidance/acceptance/expected_response.rb", &:read)
+    expect(response).to eq(expected_response)
 
     # expect(response).to eq(
     #   name: 'Case Study - Ssss Primary School',
