@@ -10,4 +10,6 @@ class ResourceController < ApplicationController
   def manage_behaviour; end
 
   def ecf_rollout; end
+
+  def ground_rules; end
 end

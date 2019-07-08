@@ -19,4 +19,5 @@ Rails.application.routes.draw do
   get 'resource/making-effective-use-of-teaching-assistants', to: 'resource#teaching_assistants'
   get 'resource/get-children-to-think-for-themselves', to: 'resource#manage_behaviour'
   get 'resource/ecf-roll-out', to: 'resource#ecf_rollout'
+  get 'resource/using-ground-rules-to-create-a-culture-of-respect-and-trust', to: 'resource#ground_rules'
 end
