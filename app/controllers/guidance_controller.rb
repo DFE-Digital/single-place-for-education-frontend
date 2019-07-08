@@ -17,7 +17,7 @@ class GuidanceController < ApplicationController
       contents_list: temp_guidance.contents_list,
       content: temp_guidance.content
     }
-
+    
     render 'guidance/show'
   end
 end
