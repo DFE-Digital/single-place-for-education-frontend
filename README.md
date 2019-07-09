@@ -10,6 +10,7 @@
 
 - `CONTENTFUL_SPACE_ID` - The space ID provided by Contentful
 - `CONTENTFUL_ACCESS_KEY` - The access key provided by Contentful
+- `USER_ZOOM_CUID` - The client ID provided by User Zoom
 
 ### Using make serve
 
