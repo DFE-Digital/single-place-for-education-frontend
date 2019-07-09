@@ -1,0 +1,1122 @@
+{
+    "sys": {
+        "type": "Array"
+    },
+    "total": 1,
+    "skip": 0,
+    "limit": 100,
+    "items": [
+        {
+            "sys": {
+                "space": {
+                    "sys": {
+                        "type": "Link",
+                        "linkType": "Space",
+                        "id": "gfzscr0ovdsz"
+                    }
+                },
+                "id": "3YSN23mjqiJOcBwM2r6ki1",
+                "type": "Entry",
+                "createdAt": "2019-07-08T13:31:41.131Z",
+                "updatedAt": "2019-07-09T10:17:18.660Z",
+                "environment": {
+                    "sys": {
+                        "id": "master",
+                        "type": "Link",
+                        "linkType": "Environment"
+                    }
+                },
+                "revision": 3,
+                "contentType": {
+                    "sys": {
+                        "type": "Link",
+                        "linkType": "ContentType",
+                        "id": "guidance"
+                    }
+                },
+                "locale": "en-US"
+            },
+            "fields": {
+                "title": "Test Guidance",
+                "slug": "test-guidance",
+                "lastUpdated": "Tue, 25 Jun 2019 00:00:00 +0000",
+                "breadcrumbs": {
+                    "sys": {
+                        "type": "Link",
+                        "linkType": "Entry",
+                        "id": "1X9YajWJQadJxw6uuiq3Tt"
+                    }
+                },
+                "contentsList": [
+                    {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Entry",
+                            "id": "1KSzfT7mzJn6UGbPIJ4pFk"
+                        }
+                    },
+                    {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Entry",
+                            "id": "3uYhB3pNthMTsAlViQmubr"
+                        }
+                    },
+                    {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Entry",
+                            "id": "9cBK9wbub0D4j1rTfEKfe"
+                        }
+                    },
+                    {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Entry",
+                            "id": "1R6MlHYF6kZzHBpm5hJInx"
+                        }
+                    }
+                ],
+                "content": [
+                    {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Entry",
+                            "id": "3v5f8CfNoCc3namH8wXMVM"
+                        }
+                    },
+                    {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Entry",
+                            "id": "5CZJ7s1N1inZp9jBJdycPp"
+                        }
+                    },
+                    {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Entry",
+                            "id": "1t3gSPCeEYYUDa7OVYLZxQ"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "includes": {
+        "Entry": [
+            {
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "gfzscr0ovdsz"
+                        }
+                    },
+                    "id": "1KSzfT7mzJn6UGbPIJ4pFk",
+                    "type": "Entry",
+                    "createdAt": "2019-07-01T08:17:03.656Z",
+                    "updatedAt": "2019-07-01T08:17:03.656Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 1,
+                    "contentType": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "ContentType",
+                            "id": "link"
+                        }
+                    },
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "text": "Principles to learn",
+                    "type": "Internal",
+                    "url": "#what-a-newly-qualified-teacher-(nqt)-needs-to-learn"
+                }
+            },
+            {
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "gfzscr0ovdsz"
+                        }
+                    },
+                    "id": "1R6MlHYF6kZzHBpm5hJInx",
+                    "type": "Entry",
+                    "createdAt": "2019-07-01T08:17:50.245Z",
+                    "updatedAt": "2019-07-01T08:17:50.245Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 1,
+                    "contentType": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "ContentType",
+                            "id": "link"
+                        }
+                    },
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "text": "Case studies",
+                    "type": "Internal",
+                    "url": "#case-studies"
+                }
+            },
+            {
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "gfzscr0ovdsz"
+                        }
+                    },
+                    "id": "1X9YajWJQadJxw6uuiq3Tt",
+                    "type": "Entry",
+                    "createdAt": "2019-06-26T10:21:59.289Z",
+                    "updatedAt": "2019-06-26T11:37:06.200Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 6,
+                    "contentType": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "ContentType",
+                            "id": "breadcrumbs"
+                        }
+                    },
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "title": "Supporting early career teacher guidance",
+                    "links": [
+                        {
+                            "sys": {
+                                "type": "Link",
+                                "linkType": "Entry",
+                                "id": "7yeNa3kbNq1OylnLzq5OLq"
+                            }
+                        },
+                        {
+                            "sys": {
+                                "type": "Link",
+                                "linkType": "Entry",
+                                "id": "4DgDabP37LzZ0BGpmV5DtM"
+                            }
+                        },
+                        {
+                            "sys": {
+                                "type": "Link",
+                                "linkType": "Entry",
+                                "id": "5QevOASojkt0ki2Ff1W8HE"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "gfzscr0ovdsz"
+                        }
+                    },
+                    "id": "1t3gSPCeEYYUDa7OVYLZxQ",
+                    "type": "Entry",
+                    "createdAt": "2019-06-27T14:47:24.917Z",
+                    "updatedAt": "2019-06-27T14:47:24.917Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 1,
+                    "contentType": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "ContentType",
+                            "id": "bulletList"
+                        }
+                    },
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "name": "Adaptive teaching > What a newly qualified teacher (NQT) needs to learn",
+                    "type": "Ordered",
+                    "largeNumbers": true,
+                    "items": [
+                        {
+                            "sys": {
+                                "type": "Link",
+                                "linkType": "Entry",
+                                "id": "5Ntw1hcmASVNJ4Q9oSyUfV"
+                            }
+                        },
+                        {
+                            "sys": {
+                                "type": "Link",
+                                "linkType": "Entry",
+                                "id": "3AkyL9kYGvzVtC1cDqCrpl"
+                            }
+                        },
+                        {
+                            "sys": {
+                                "type": "Link",
+                                "linkType": "Entry",
+                                "id": "2v6pkQydgr6KJgiCozTKqd"
+                            }
+                        },
+                        {
+                            "sys": {
+                                "type": "Link",
+                                "linkType": "Entry",
+                                "id": "71retkphPQs79dE3JF6a5k"
+                            }
+                        },
+                        {
+                            "sys": {
+                                "type": "Link",
+                                "linkType": "Entry",
+                                "id": "F3jkSygVWTxPMA8agv4uM"
+                            }
+                        },
+                        {
+                            "sys": {
+                                "type": "Link",
+                                "linkType": "Entry",
+                                "id": "3XjvbU5C5MxCpOLNfH7LgP"
+                            }
+                        },
+                        {
+                            "sys": {
+                                "type": "Link",
+                                "linkType": "Entry",
+                                "id": "5EHxV4Knx5BmF1kBKWOpVv"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "gfzscr0ovdsz"
+                        }
+                    },
+                    "id": "2v6pkQydgr6KJgiCozTKqd",
+                    "type": "Entry",
+                    "createdAt": "2019-06-27T14:46:25.484Z",
+                    "updatedAt": "2019-06-27T14:46:25.484Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 1,
+                    "contentType": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "ContentType",
+                            "id": "richText"
+                        }
+                    },
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "content": {
+                        "nodeType": "document",
+                        "data": {},
+                        "content": [
+                            {
+                                "nodeType": "heading-3",
+                                "content": [
+                                    {
+                                        "nodeType": "text",
+                                        "value": "Giving struggling pupils special attention",
+                                        "marks": [
+                                            {
+                                                "type": "bold"
+                                            }
+                                        ],
+                                        "data": {}
+                                    }
+                                ],
+                                "data": {}
+                            },
+                            {
+                                "nodeType": "paragraph",
+                                "content": [
+                                    {
+                                        "nodeType": "text",
+                                        "value": "Where pupils are struggling, NQTs should be responsive and adapt lessons so they provide targeted support for those who need extra help to succeed.",
+                                        "marks": [],
+                                        "data": {}
+                                    }
+                                ],
+                                "data": {}
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "gfzscr0ovdsz"
+                        }
+                    },
+                    "id": "3AkyL9kYGvzVtC1cDqCrpl",
+                    "type": "Entry",
+                    "createdAt": "2019-06-27T14:46:13.265Z",
+                    "updatedAt": "2019-06-27T14:46:13.265Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 1,
+                    "contentType": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "ContentType",
+                            "id": "richText"
+                        }
+                    },
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "content": {
+                        "nodeType": "document",
+                        "data": {},
+                        "content": [
+                            {
+                                "nodeType": "heading-3",
+                                "content": [
+                                    {
+                                        "nodeType": "text",
+                                        "value": "Appreciating the differences between pupils",
+                                        "marks": [
+                                            {
+                                                "type": "bold"
+                                            }
+                                        ],
+                                        "data": {}
+                                    }
+                                ],
+                                "data": {}
+                            },
+                            {
+                                "nodeType": "paragraph",
+                                "content": [
+                                    {
+                                        "nodeType": "text",
+                                        "value": "Some pupils will have prior knowledge of subjects, others will have barriers that need to be overcome before they can learn. NQTs should take differences between pupils into account when preparing lessons.",
+                                        "marks": [],
+                                        "data": {}
+                                    }
+                                ],
+                                "data": {}
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "gfzscr0ovdsz"
+                        }
+                    },
+                    "id": "3XjvbU5C5MxCpOLNfH7LgP",
+                    "type": "Entry",
+                    "createdAt": "2019-06-27T14:47:10.329Z",
+                    "updatedAt": "2019-06-27T14:47:10.329Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 1,
+                    "contentType": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "ContentType",
+                            "id": "richText"
+                        }
+                    },
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "content": {
+                        "data": {},
+                        "content": [
+                            {
+                                "data": {},
+                                "content": [
+                                    {
+                                        "data": {},
+                                        "marks": [
+                                            {
+                                                "type": "bold"
+                                            }
+                                        ],
+                                        "value": "Planning lessons without worrying about learning styles",
+                                        "nodeType": "text"
+                                    }
+                                ],
+                                "nodeType": "heading-3"
+                            },
+                            {
+                                "data": {},
+                                "content": [
+                                    {
+                                        "data": {},
+                                        "marks": [],
+                                        "value": "There's no evidence to suggest that pupils have different learning styles. NQTs should focus on developing lessons that address the needs of pupils, rather than trying to tailor them to different styles of learning.",
+                                        "nodeType": "text"
+                                    }
+                                ],
+                                "nodeType": "paragraph"
+                            }
+                        ],
+                        "nodeType": "document"
+                    }
+                }
+            },
+            {
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "gfzscr0ovdsz"
+                        }
+                    },
+                    "id": "3uYhB3pNthMTsAlViQmubr",
+                    "type": "Entry",
+                    "createdAt": "2019-07-01T08:17:35.406Z",
+                    "updatedAt": "2019-07-01T08:17:35.406Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 1,
+                    "contentType": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "ContentType",
+                            "id": "link"
+                        }
+                    },
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "text": "Skills to develop",
+                    "type": "Internal",
+                    "url": "#what-skills-an-nqt-needs-to-develop"
+                }
+            },
+            {
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "gfzscr0ovdsz"
+                        }
+                    },
+                    "id": "3v5f8CfNoCc3namH8wXMVM",
+                    "type": "Entry",
+                    "createdAt": "2019-06-24T10:49:04.722Z",
+                    "updatedAt": "2019-06-26T13:08:32.664Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 3,
+                    "contentType": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "ContentType",
+                            "id": "image"
+                        }
+                    },
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "name": "Man and Two Children",
+                    "width": "Default",
+                    "file": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Asset",
+                            "id": "39APdN7OS30U4GzAG5WfNb"
+                        }
+                    }
+                }
+            },
+            {
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "gfzscr0ovdsz"
+                        }
+                    },
+                    "id": "4DgDabP37LzZ0BGpmV5DtM",
+                    "type": "Entry",
+                    "createdAt": "2019-06-26T10:32:22.156Z",
+                    "updatedAt": "2019-06-26T10:33:54.500Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 2,
+                    "contentType": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "ContentType",
+                            "id": "link"
+                        }
+                    },
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "text": "Hiring and development",
+                    "type": "Internal",
+                    "url": "/category/hiring"
+                }
+            },
+            {
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "gfzscr0ovdsz"
+                        }
+                    },
+                    "id": "5CZJ7s1N1inZp9jBJdycPp",
+                    "type": "Entry",
+                    "createdAt": "2019-06-27T14:45:08.117Z",
+                    "updatedAt": "2019-06-27T14:45:08.117Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 1,
+                    "contentType": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "ContentType",
+                            "id": "richText"
+                        }
+                    },
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "title": "Adaptive teaching > What a newly qualified teacher (NQT) needs to learn",
+                    "content": {
+                        "data": {},
+                        "content": [
+                            {
+                                "data": {},
+                                "content": [
+                                    {
+                                        "data": {},
+                                        "marks": [],
+                                        "value": "What a newly qualified teacher (NQT) needs to learn",
+                                        "nodeType": "text"
+                                    }
+                                ],
+                                "nodeType": "heading-2"
+                            },
+                            {
+                                "data": {},
+                                "content": [
+                                    {
+                                        "data": {},
+                                        "marks": [],
+                                        "value": "There are 7 areas an NQT needs to understand and gain experience in.",
+                                        "nodeType": "text"
+                                    }
+                                ],
+                                "nodeType": "paragraph"
+                            }
+                        ],
+                        "nodeType": "document"
+                    }
+                }
+            },
+            {
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "gfzscr0ovdsz"
+                        }
+                    },
+                    "id": "5EHxV4Knx5BmF1kBKWOpVv",
+                    "type": "Entry",
+                    "createdAt": "2019-06-27T14:47:21.686Z",
+                    "updatedAt": "2019-06-27T14:47:21.686Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 1,
+                    "contentType": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "ContentType",
+                            "id": "richText"
+                        }
+                    },
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "content": {
+                        "nodeType": "document",
+                        "data": {},
+                        "content": [
+                            {
+                                "nodeType": "heading-3",
+                                "content": [
+                                    {
+                                        "nodeType": "text",
+                                        "value": "Focusing on pupils with special needs",
+                                        "marks": [
+                                            {
+                                                "type": "bold"
+                                            }
+                                        ],
+                                        "data": {}
+                                    }
+                                ],
+                                "data": {}
+                            },
+                            {
+                                "nodeType": "paragraph",
+                                "content": [
+                                    {
+                                        "nodeType": "text",
+                                        "value": "Pupils with special educational needs or disabilities may require more support. NQTs should work closely with colleagues, families and pupils to understand and tackle any barriers to learning.",
+                                        "marks": [],
+                                        "data": {}
+                                    }
+                                ],
+                                "data": {}
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "gfzscr0ovdsz"
+                        }
+                    },
+                    "id": "5Ntw1hcmASVNJ4Q9oSyUfV",
+                    "type": "Entry",
+                    "createdAt": "2019-06-27T14:45:59.797Z",
+                    "updatedAt": "2019-06-27T14:45:59.797Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 1,
+                    "contentType": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "ContentType",
+                            "id": "richText"
+                        }
+                    },
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "content": {
+                        "data": {},
+                        "content": [
+                            {
+                                "data": {},
+                                "content": [
+                                    {
+                                        "data": {},
+                                        "marks": [
+                                            {
+                                                "type": "bold"
+                                            }
+                                        ],
+                                        "value": "Understanding how pupils learn at different speeds",
+                                        "nodeType": "text"
+                                    }
+                                ],
+                                "nodeType": "heading-3"
+                            },
+                            {
+                                "data": {},
+                                "content": [
+                                    {
+                                        "data": {},
+                                        "marks": [],
+                                        "value": "Pupils learn at different rates. Recognising the varying speeds at which pupils learn, and the different types of help they need, will help NQTs create a supportive learning environment.",
+                                        "nodeType": "text"
+                                    }
+                                ],
+                                "nodeType": "paragraph"
+                            }
+                        ],
+                        "nodeType": "document"
+                    }
+                }
+            },
+            {
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "gfzscr0ovdsz"
+                        }
+                    },
+                    "id": "5QevOASojkt0ki2Ff1W8HE",
+                    "type": "Entry",
+                    "createdAt": "2019-06-26T10:33:46.410Z",
+                    "updatedAt": "2019-06-26T10:33:46.410Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 1,
+                    "contentType": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "ContentType",
+                            "id": "link"
+                        }
+                    },
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "text": "Supporting early career teachers",
+                    "type": "Internal",
+                    "url": "/sub-category/supporting-early-career-teachers"
+                }
+            },
+            {
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "gfzscr0ovdsz"
+                        }
+                    },
+                    "id": "71retkphPQs79dE3JF6a5k",
+                    "type": "Entry",
+                    "createdAt": "2019-06-27T14:46:41.981Z",
+                    "updatedAt": "2019-06-27T14:46:41.981Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 1,
+                    "contentType": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "ContentType",
+                            "id": "richText"
+                        }
+                    },
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "content": {
+                        "data": {},
+                        "content": [
+                            {
+                                "data": {},
+                                "content": [
+                                    {
+                                        "data": {},
+                                        "marks": [
+                                            {
+                                                "type": "bold"
+                                            }
+                                        ],
+                                        "value": "Creating and monitoring learning groups",
+                                        "nodeType": "text"
+                                    }
+                                ],
+                                "nodeType": "heading-3"
+                            },
+                            {
+                                "data": {},
+                                "content": [
+                                    {
+                                        "data": {},
+                                        "marks": [],
+                                        "value": "NQTs should organise pupils into flexible groups to give support to those who need it most. Closely monitoring these groups will allow NQTs to spot any impacts on engagement or motivation, and swop groups around if necessary.",
+                                        "nodeType": "text"
+                                    }
+                                ],
+                                "nodeType": "paragraph"
+                            }
+                        ],
+                        "nodeType": "document"
+                    }
+                }
+            },
+            {
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "gfzscr0ovdsz"
+                        }
+                    },
+                    "id": "7yeNa3kbNq1OylnLzq5OLq",
+                    "type": "Entry",
+                    "createdAt": "2019-06-26T10:21:54.684Z",
+                    "updatedAt": "2019-06-26T10:21:54.684Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 1,
+                    "contentType": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "ContentType",
+                            "id": "link"
+                        }
+                    },
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "text": "Home",
+                    "type": "Internal",
+                    "url": "/"
+                }
+            },
+            {
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "gfzscr0ovdsz"
+                        }
+                    },
+                    "id": "9cBK9wbub0D4j1rTfEKfe",
+                    "type": "Entry",
+                    "createdAt": "2019-07-01T10:27:53.581Z",
+                    "updatedAt": "2019-07-01T10:27:53.582Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 1,
+                    "contentType": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "ContentType",
+                            "id": "link"
+                        }
+                    },
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "text": "Resources",
+                    "type": "Internal",
+                    "url": "#resources"
+                }
+            },
+            {
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "gfzscr0ovdsz"
+                        }
+                    },
+                    "id": "F3jkSygVWTxPMA8agv4uM",
+                    "type": "Entry",
+                    "createdAt": "2019-06-27T14:46:56.490Z",
+                    "updatedAt": "2019-06-27T14:46:56.490Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 1,
+                    "contentType": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "ContentType",
+                            "id": "richText"
+                        }
+                    },
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "content": {
+                        "nodeType": "document",
+                        "data": {},
+                        "content": [
+                            {
+                                "nodeType": "heading-3",
+                                "content": [
+                                    {
+                                        "nodeType": "text",
+                                        "value": "Treating groups of pupils the same",
+                                        "marks": [
+                                            {
+                                                "type": "bold"
+                                            }
+                                        ],
+                                        "data": {}
+                                    }
+                                ],
+                                "data": {}
+                            },
+                            {
+                                "nodeType": "paragraph",
+                                "content": [
+                                    {
+                                        "nodeType": "text",
+                                        "value": "If groups of pupils are given different tasks to complete, it can lower expectations for some students. NQTs should give all pupils the same tasks, and give extra support to any groups of students who are struggling.",
+                                        "marks": [],
+                                        "data": {}
+                                    }
+                                ],
+                                "data": {}
+                            }
+                        ]
+                    }
+                }
+            }
+        ],
+        "Asset": [
+            {
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "gfzscr0ovdsz"
+                        }
+                    },
+                    "id": "39APdN7OS30U4GzAG5WfNb",
+                    "type": "Asset",
+                    "createdAt": "2019-06-26T13:07:25.136Z",
+                    "updatedAt": "2019-07-03T12:15:27.009Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 3,
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "title": "Man with two children",
+                    "file": {
+                        "url": "//images.ctfassets.net/gfzscr0ovdsz/39APdN7OS30U4GzAG5WfNb/0252dbdf1b6160ec70edc224cdefd581/53224219_1489256524541522_4335915866861461131_n.jpg",
+                        "details": {
+                            "size": 46427,
+                            "image": {
+                                "width": 700,
+                                "height": 424
+                            }
+                        },
+                        "fileName": "53224219_1489256524541522_4335915866861461131_n.jpg",
+                        "contentType": "image/jpeg"
+                    }
+                }
+            }
+        ]
+    }
+}
