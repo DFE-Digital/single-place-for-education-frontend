@@ -663,4 +663,344 @@ describe Gateway::ContentfulGateway do
       end
     end
   end
+
+  context '#get_sub_category (example one)' do
+    let(:space_id) { 'lion' }
+    let(:access_token) { 'roar' }
+    let(:slug) { 'supporting-early-career-lions' }
+    let(:contentful_gateway) do
+      described_class.new(space_id: space_id, access_token: access_token, logger: logger)
+    end
+    let(:initial_url) do
+      "https://cdn.contentful.com/spaces/#{space_id}/environments/master/content_types?limit=1000"
+    end
+    let(:sub_category_url) do
+      "https://cdn.contentful.com/spaces/#{space_id}/environments/master/entries?content_type=subCategory&include=10&fields.slug=#{slug}"
+    end
+    let(:sub_category) { contentful_gateway.get_sub_category(slug: slug) }
+    let(:example_fixtures_path) { "#{fixtures_path}sub_category/example_one/" }
+
+    before do
+      headers['Authorization'] = "Bearer #{access_token}"
+
+      stub_request(:get, initial_url)
+        .with(headers: headers)
+        .to_return(status: 200, body: response_with_no_items, headers: {})
+    end
+
+    context 'can return a basic sub-category' do
+      before do
+        response_with_items = File.open("#{example_fixtures_path}basic.json", &:read)
+        stub_request(:get, sub_category_url)
+          .with(headers: headers)
+          .to_return(status: 200, body: response_with_items, headers: {})
+
+        sub_category
+      end
+
+      it 'can send a get request to Contentful' do
+        assert_requested :get, sub_category_url
+      end
+
+      it 'can send a get request to Contentful with a space id' do
+        assert_requested :get, initial_url
+      end
+
+      it 'can send a get request to Contentful with authorization' do
+        assert_requested :get, initial_url, headers: { 'Authorization' => "Bearer #{access_token}" }
+      end
+
+      it 'can return a sub-category with a title' do
+        expect(sub_category.title).to eq('Supporting early career lions')
+      end
+
+      it 'can return a sub-category with a slug' do
+        expect(sub_category.slug).to eq(slug)
+      end
+
+      it 'can return a sub-category with a collection name' do
+        expect(sub_category.collection_name).to eq('Guidance')
+      end
+
+      it 'can return a sub-category with breadcrumbs' do
+        expect(sub_category.breadcrumbs).to eq([
+          {
+            text: 'Home',
+            url: '/'
+          },
+          {
+            text: 'Hiring and lion development',
+            url: '/category/hiring'
+          }
+        ])
+      end
+
+      it 'can return a sub-category with a description' do
+        expect(sub_category.description).to eq([{
+          type: :rich_text,
+          data: {
+            html_content: "<p class=\"govuk-body\">Starting in September 1997 is the Early Career Framework (ECF). The ECF is a 2-year fully funded programme to help support newly qualified lions.</p>"
+          }
+        }])
+      end
+    end
+
+    context 'can return a sub-category with content' do
+      it 'including a heading' do
+        response_with_headings = File.open("#{example_fixtures_path}with_heading.json", &:read)
+
+        stub_request(:get, sub_category_url)
+          .with(headers: headers)
+          .to_return(status: 200, body: response_with_headings, headers: {})
+
+        sub_category
+
+        expect(sub_category.content).to eq([
+          {
+            type: :heading,
+            data: {
+              text: 'Lion Standards',
+              level: :heading_two,
+              bold: false,
+              alignment: 'Left'
+            }
+          }
+        ])
+      end
+
+      it 'including multiple columns' do
+        response_with_multiple_columns = File.open("#{example_fixtures_path}with_multiple_columns.json", &:read)
+
+        stub_request(:get, sub_category_url)
+          .with(headers: headers)
+          .to_return(status: 200, body: response_with_multiple_columns, headers: {})
+
+        sub_category
+
+        expect(sub_category.content).to eq([
+          {
+            type: :columns,
+            data: {
+              columns: [
+                [
+                  {
+                    type: :image_link_with_description,
+                    data: {
+                      image_src: 'https://some-lion-drinking-tea.jpg',
+                      link: {
+                        type: :link,
+                        data: {
+                          text: 'Set roar expectations',
+                          type: :internal,
+                          url: '/guidance/set-roar-expectations'
+                        }
+                      },
+                      description: {
+                        type: :rich_text,
+                        data: {
+                          html_content: "<p class=\"govuk-body\"><a class=\"govuk-link\" href=\"/guidance/set-roar-expectations\">Set roar expectations</a></p>"
+                        }
+                      }
+                    }
+                  }
+                ],
+                [
+                  {
+                    type: :image_link_with_description,
+                    data: {
+                      image_src: 'https://some-lion-teaching-karate.jpg',
+                      link: {
+                        type: :link,
+                        data: {
+                          text: 'Promote roar progress',
+                          type: :internal,
+                          url: '/guidance/promote-roar-progress'
+                        }
+                      },
+                      description: {
+                        type: :rich_text,
+                        data: {
+                          html_content: "<p class=\"govuk-body\"><a class=\"govuk-link\" href=\"/guidance/promote-roar-progress\">Promote roar progress</a></p>"
+                        }
+                      }
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ])
+      end
+    end
+  end
+
+  context '#get_sub_category (example two)' do
+    let(:space_id) { 'cow' }
+    let(:access_token) { 'moo' }
+    let(:slug) { 'supporting-early-career-cows' }
+    let(:contentful_gateway) do
+      described_class.new(space_id: space_id, access_token: access_token, logger: logger)
+    end
+    let(:initial_url) do
+      "https://cdn.contentful.com/spaces/#{space_id}/environments/master/content_types?limit=1000"
+    end
+    let(:sub_category_url) do
+      "https://cdn.contentful.com/spaces/#{space_id}/environments/master/entries?content_type=subCategory&include=10&fields.slug=#{slug}"
+    end
+    let(:sub_category) { contentful_gateway.get_sub_category(slug: slug) }
+    let(:example_fixtures_path) { "#{fixtures_path}sub_category/example_two/" }
+
+    before do
+      headers['Authorization'] = "Bearer #{access_token}"
+
+      stub_request(:get, initial_url)
+        .with(headers: headers)
+        .to_return(status: 200, body: response_with_no_items, headers: {})
+    end
+
+    context 'can return a basic sub-category' do
+      before do
+        response_with_items = File.open("#{example_fixtures_path}basic.json", &:read)
+        stub_request(:get, sub_category_url)
+          .with(headers: headers)
+          .to_return(status: 200, body: response_with_items, headers: {})
+
+        sub_category
+      end
+
+      it 'can send a get request to Contentful' do
+        assert_requested :get, sub_category_url
+      end
+
+      it 'can send a get request to Contentful with a space id' do
+        assert_requested :get, initial_url
+      end
+
+      it 'can send a get request to Contentful with authorization' do
+        assert_requested :get, initial_url, headers: { 'Authorization' => "Bearer #{access_token}" }
+      end
+
+      it 'can return a sub-category with a title' do
+        expect(sub_category.title).to eq('Supporting early career cows')
+      end
+
+      it 'can return a sub-category with a slug' do
+        expect(sub_category.slug).to eq(slug)
+      end
+
+      it 'can return a sub-category with a collection name' do
+        expect(sub_category.collection_name).to eq('Article')
+      end
+
+      it 'can return a sub-category with breadcrumbs' do
+        expect(sub_category.breadcrumbs).to eq([
+          {
+            text: 'Home',
+            url: '/'
+          },
+          {
+            text: 'Hiring and cow development',
+            url: '/category/hiring'
+          }
+        ])
+      end
+
+      it 'can return a sub-category with a description' do
+        expect(sub_category.description).to eq([{
+          type: :rich_text,
+          data: {
+            html_content: "<p class=\"govuk-body\">Starting in September 1993 is the Early Career Framework (ECF). The ECF is a 2-year fully funded programme to help support newly qualified cows.</p>"
+          }
+        }])
+      end
+    end
+
+    context 'can return a sub-category with content' do
+      it 'including a heading' do
+        response_with_headings = File.open("#{example_fixtures_path}with_heading.json", &:read)
+
+        stub_request(:get, sub_category_url)
+          .with(headers: headers)
+          .to_return(status: 200, body: response_with_headings, headers: {})
+
+        sub_category
+
+        expect(sub_category.content).to eq([
+          {
+            type: :heading,
+            data: {
+              text: 'Cow Standards',
+              level: :heading_two,
+              bold: false,
+              alignment: 'Left'
+            }
+          }
+        ])
+      end
+
+      it 'including multiple columns' do
+        response_with_multiple_columns = File.open("#{example_fixtures_path}with_multiple_columns.json", &:read)
+
+        stub_request(:get, sub_category_url)
+          .with(headers: headers)
+          .to_return(status: 200, body: response_with_multiple_columns, headers: {})
+
+        sub_category
+
+        expect(sub_category.content).to eq([
+          {
+            type: :columns,
+            data: {
+              columns: [
+                [
+                  {
+                    type: :image_link_with_description,
+                    data: {
+                      image_src: 'https://some-cow-drinking-tea.jpg',
+                      link: {
+                        type: :link,
+                        data: {
+                          text: 'Set moo expectations',
+                          type: :internal,
+                          url: '/guidance/set-moo-expectations'
+                        }
+                      },
+                      description: {
+                        type: :rich_text,
+                        data: {
+                          html_content: "<p class=\"govuk-body\"><a class=\"govuk-link\" href=\"/guidance/set-moo-expectations\">Set moo expectations</a></p>"
+                        }
+                      }
+                    }
+                  }
+                ],
+                [
+                  {
+                    type: :image_link_with_description,
+                    data: {
+                      image_src: 'https://some-cow-teaching-table-tennis.jpg',
+                      link: {
+                        type: :link,
+                        data: {
+                          text: 'Promote moo progress',
+                          type: :internal,
+                          url: '/guidance/promote-moo-progress'
+                        }
+                      },
+                      description: {
+                        type: :rich_text,
+                        data: {
+                          html_content: "<p class=\"govuk-body\"><a class=\"govuk-link\" href=\"/guidance/promote-moo-progress\">Promote moo progress</a></p>"
+                        }
+                      }
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ])
+      end
+    end
+  end
 end
