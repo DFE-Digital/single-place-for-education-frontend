@@ -16,3 +16,4 @@ services:
       BASIC_AUTH_PASSWORD: 'password'
       CONTENTFUL_SPACE_ID:
       CONTENTFUL_ACCESS_TOKEN:
+      USER_ZOOM_CUID:

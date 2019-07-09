@@ -16,8 +16,5 @@
 To serve the application with the environment variables, run:
 
 ```bash
-env CONTENTFUL_SPACE_ID=meow CONTENTFUL_ACCESS_KEY=secureWoof make serve
+env CONTENTFUL_SPACE_ID=meow CONTENTFUL_ACCESS_KEY=secureWoof USER_ZOOM_CUID=hoot make serve
 ```
-
-
-
