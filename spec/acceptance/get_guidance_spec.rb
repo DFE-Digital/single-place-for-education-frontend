@@ -45,8 +45,6 @@ describe 'Get Guidance' do
   it 'can retrieve the content of a guidance page' do
     response = get_guidance.execute(slug: slug)
 
-
-
     expect(response).to eq(
       title: "Test Guidance",
       slug: "test-guidance",
