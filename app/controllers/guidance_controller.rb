@@ -13,6 +13,6 @@ class GuidanceController < ApplicationController
       render 'guidance/show'
     else
       render 'error/404', status: :not_found
-    end   
+    end
   end
 end
