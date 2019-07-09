@@ -5,18 +5,11 @@ class SubCategoryController < ApplicationController
       access_token: ENV['CONTENTFUL_ACCESS_TOKEN']
     )
 
-    temp_sub_category = contentful_gateway.get_sub_category(slug: params[:slug])
+    get_sub_category = UseCase::GetSubCategory.new(content_gateway: contentful_gateway)
 
-    return render 'error/404', status: :not_found if temp_sub_category.nil?
+    @sub_category = get_sub_category.execute(slug: params[:slug])
 
-    @sub_category = {
-      title: temp_sub_category.title,
-      slug: temp_sub_category.slug,
-      collection_name: temp_sub_category.collection_name,
-      breadcrumbs: temp_sub_category.breadcrumbs,
-      description: temp_sub_category.description,
-      content: temp_sub_category.content
-    }
+    return render 'error/404', status: :not_found if @sub_category.nil?
 
     render 'sub_category/index'
   end
