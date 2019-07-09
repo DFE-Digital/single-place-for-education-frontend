@@ -44,6 +44,9 @@ describe 'Get Guidance' do
 
   it 'can retrieve the content of a guidance page' do
     response = get_guidance.execute(slug: slug)
+
+
+
     expect(response).to eq(
       title: "Test Guidance",
       slug: "test-guidance",
@@ -61,7 +64,7 @@ describe 'Get Guidance' do
           url: "/sub-category/supporting-early-career-teachers"
         }
       ],
-      last_updated: "2019-07-11",
+      last_updated: "Tue, 25 Jun 2019 00:00:00 +0000",
       contents_list: [
         {
           type: :link,
