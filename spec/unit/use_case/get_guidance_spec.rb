@@ -105,6 +105,10 @@ describe UseCase::GetGuidance do
       expect(response[:slug]).to eq(slug)
     end
 
+    it 'can return the last_updated for the guidance' do
+        expect(response[:last_updated]).to eq('Tue, 25 Jun 2019 00:00:00 +0000')
+    end
+
     it 'can return the contents list for the guidance' do
       expect(response[:contents_list]).to eq([
         {
@@ -272,6 +276,10 @@ describe UseCase::GetGuidance do
 
     it 'can return the slug of a guidance' do
       expect(response[:slug]).to eq(slug)
+    end
+
+    it 'can return the last_updated for the guidance' do
+        expect(response[:last_updated]).to eq('Tue, 21 Jun 2018 00:00:00 +0000')
     end
 
     it 'can return the contents list for the guidance' do
