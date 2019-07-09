@@ -5,21 +5,14 @@ class GuidanceController < ApplicationController
       access_token: ENV['CONTENTFUL_ACCESS_TOKEN']
     )
 
-    temp_guidance = contentful_gateway.get_guidance(slug: params[:slug])
+    get_guidance = UseCase::GetGuidance.new(content_gateway: contentful_gateway)
 
-    return render 'error/404', status: :not_found if temp_guidance.nil?
+    @guidance = get_guidance.execute(slug: params[:slug])
 
-    @guidance = {
-      title: temp_guidance.title,
-      slug: temp_guidance.slug,
-      breadcrumbs: temp_guidance.breadcrumbs,
-      last_updated: temp_guidance.last_updated,
-      contents_list: temp_guidance.contents_list,
-      content: temp_guidance.content
-    }
-
-    puts @guidance
-    
-    render 'guidance/show'
+    if !@guidance.nil? && @guidance[:slug] == params[:slug].to_s
+      render 'guidance/show'
+    else
+      render 'error/404', status: :not_found
+    end   
   end
 end
