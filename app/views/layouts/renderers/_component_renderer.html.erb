@@ -15,8 +15,8 @@
   <% when :columns %>
     <div class="govuk-grid-row">
       <% content[:data][:columns].each do |column| %>
-        <div class="<%= content[:data][:columns].count == 2 ? 'govuk-grid-column-one-half' : 'govuk-grid-column-one-third'%>">
-            <%= render 'layouts/renderers/component_renderer', contents: column %>
+        <div class="govuk-grid-column-<%= column[:data][:width] %>">
+          <%= render 'layouts/renderers/component_renderer', contents: column[:data][:content] %>
         </div>
       <% end %>
     </div>
