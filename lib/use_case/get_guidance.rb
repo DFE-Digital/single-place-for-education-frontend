@@ -6,6 +6,7 @@ class UseCase::GetGuidance
   def execute(slug:)
     guidance = @content_gateway.get_guidance(slug: slug)
     return nil if guidance.nil?
+
     {
       title: guidance.title,
       slug: guidance.slug,
