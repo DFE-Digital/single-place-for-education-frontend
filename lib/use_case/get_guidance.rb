@@ -7,7 +7,6 @@ class UseCase::GetGuidance
     guidance = @content_gateway.get_guidance(slug: slug)
     return nil if guidance.nil?
 
-    puts guidance.last_updated
     {
       title: guidance.title,
       slug: guidance.slug,
