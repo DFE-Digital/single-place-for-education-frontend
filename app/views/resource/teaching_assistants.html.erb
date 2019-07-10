@@ -57,57 +57,10 @@
         <%= render 'layouts/components/headings/two', text: 'Downloads' %>
       </div>
     </div>
-    <div class="govuk-grid-row govuk-!-padding-top-5">
-      <div class="govuk-grid-column-two-thirds">
-        <a href="<%= asset_url('empower.jpg') %>" class="govuk-link">
-          <%= render 'layouts/components/images/image', alt_text: 'empower', image_src: asset_url('empower.jpg'), image_width: 'download-thumbnail' %>
-        </a>
-        <p class="govuk-body">
-          <a href="<%= asset_url('empower.jpg') %>" class="govuk-link">
-            Making effective use of teaching assistants - poster: Empower yourself and others
-          </a>
-        </p>
-        <p class="govuk-body">JPG</p>
-      </div>
-    </div>
-    <div class="govuk-grid-row govuk-!-padding-top-9">
-      <div class="govuk-grid-column-two-thirds">
-        <a href="<%= asset_url('chat.jpg') %>" class="govuk-link">
-          <%= render 'layouts/components/images/image', alt_text: 'chat', image_src: asset_url('chat.jpg'), image_width: 'download-thumbnail' %>
-        </a>
-        <p class="govuk-body">
-          <a href="<%= asset_url('chat.jpg') %>" class="govuk-link">
-            Making effective use of teaching assistants - poster: Chat regularly
-          </a>
-        </p>
-        <p class="govuk-body">JPG</p>
-      </div>
-    </div>
-    <div class="govuk-grid-row govuk-!-padding-top-9">
-      <div class="govuk-grid-column-two-thirds">
-        <a href="<%= asset_url('celebrate.jpg') %>" class="govuk-link">
-          <%= render 'layouts/components/images/image', alt_text: 'celebrate', image_src: asset_url('celebrate.jpg'), image_width: 'download-thumbnail' %>
-        </a>
-        <p class="govuk-body">
-          <a href="<%= asset_url('celebrate.jpg') %>" class="govuk-link">
-            Making effective use of teaching assistants - poster: Celebrate success
-          </a>
-        </p>
-        <p class="govuk-body">JPG</p>
-      </div>
-    </div>
-    <div class="govuk-grid-row govuk-!-padding-top-9 govuk-!-padding-bottom-9">
-      <div class="govuk-grid-column-two-thirds">
-        <a href="<%= asset_url('paperwork.jpg') %>" class="govuk-link">
-          <%= render 'layouts/components/images/image', alt_text: 'paperwork', image_src: asset_url('paperwork.jpg'), image_width: 'download-thumbnail' %>
-        </a>
-        <p class="govuk-body">
-          <a href="<%= asset_url('paperwork.jpg') %>" class="govuk-link">
-            Making effective use of teaching assistants - poster: Help reduce paperwork
-          </a>
-        </p>
-        <p class="govuk-body">JPG</p>
-      </div>
-    </div>
+    <%= render 'layouts/components/download', download_link: asset_url('empower.jpg'), image_alt_text: 'empower', image_src: asset_url('empower.jpg'), resource_type: 'JPG' %>
+    <%= render 'layouts/components/download', download_link: asset_url('chat.jpg'), image_alt_text: 'chat', image_src: asset_url('chat.jpg'), resource_type: 'JPG' %>
+    <%= render 'layouts/components/download', download_link: asset_url('celebrate.jpg'), image_alt_text: 'celebrate', image_src: asset_url('celebrate.jpg'), resource_type: 'JPG' %>
+    <%= render 'layouts/components/download', download_link: asset_url('paperwork.jpg'), image_alt_text: 'paperwork', image_src: asset_url('paperwork.jpg'), resource_type: 'JPG' %>
+    
   </main>
 </div>
