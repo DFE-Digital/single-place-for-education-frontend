@@ -198,7 +198,14 @@ private
   def create_columns(content)
     columns_array = []
     content.columns.each do |column|
-      columns_array << build_content_type_array(column.content)
+      column = {
+        type: :column,
+        data: {
+          width: column.width.gsub(' ', '-').downcase,
+          content: build_content_type_array(column.content)
+        }
+      }
+      columns_array << column
     end
     {
       type: :columns,

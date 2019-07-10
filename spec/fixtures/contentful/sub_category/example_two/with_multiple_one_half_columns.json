@@ -37,9 +37,9 @@
         "locale": "en-US"
       },
       "fields": {
-        "title": "Supporting early career lions",
-        "slug": "supporting-early-career-lions",
-        "collectionName": "Guidance",
+        "title": "Supporting early career cows",
+        "slug": "supporting-early-career-cows",
+        "collectionName": "Article",
         "breadcrumbs": {
           "sys": {
             "type": "Link",
@@ -101,9 +101,9 @@
           "locale": "en-US"
         },
         "fields": {
-          "text": "Set roar expectations",
+          "text": "Set moo expectations",
           "type": "Internal",
-          "url": "/guidance/set-roar-expectations"
+          "url": "/guidance/set-moo-expectations"
         }
       },
       {
@@ -187,6 +187,7 @@
           "locale": "en-US"
         },
         "fields": {
+          "width": "One Half",
           "content": [
             {
               "sys": {
@@ -229,7 +230,7 @@
           "locale": "en-US"
         },
         "fields": {
-          "title": "Supporting early career lions > Description",
+          "title": "Supporting early career cows > Description",
           "content": {
             "data": {},
             "content": [
@@ -239,7 +240,7 @@
                   {
                     "data": {},
                     "marks": [],
-                    "value": "Starting in September 1997 is the Early Career Framework (ECF). The ECF is a 2-year fully funded programme to help support newly qualified lions.",
+                    "value": "Starting in September 1993 is the Early Career Framework (ECF). The ECF is a 2-year fully funded programme to help support newly qualified cows.",
                     "nodeType": "text"
                   }
                 ],
@@ -281,9 +282,9 @@
           "locale": "en-US"
         },
         "fields": {
-          "text": "Promote roar progress",
+          "text": "Promote moo progress",
           "type": "Internal",
-          "url": "/guidance/promote-roar-progress"
+          "url": "/guidance/promote-moo-progress"
         }
       },
       {
@@ -317,6 +318,7 @@
           "locale": "en-US"
         },
         "fields": {
+          "width": "One Half",
           "content": [
             {
               "sys": {
@@ -359,7 +361,7 @@
           "locale": "en-US"
         },
         "fields": {
-          "title": "Promote roar progress",
+          "title": "Promote moo progress",
           "image": {
             "sys": {
               "type": "Link",
@@ -414,7 +416,7 @@
           "locale": "en-US"
         },
         "fields": {
-          "name": "Supporting early career lions > Row 1",
+          "name": "Supporting early career cows > Row 1",
           "columns": [
             {
               "sys": {
@@ -464,7 +466,7 @@
           "locale": "en-US"
         },
         "fields": {
-          "text": "Hiring and lion development",
+          "text": "Hiring and cow development",
           "type": "Internal",
           "url": "/category/hiring"
         }
@@ -500,7 +502,7 @@
           "locale": "en-US"
         },
         "fields": {
-          "title": "Set roar expectations",
+          "title": "Set moo expectations",
           "content": {
             "data": {},
             "content": [
@@ -515,13 +517,13 @@
                   },
                   {
                     "data": {
-                      "uri": "/guidance/set-roar-expectations"
+                      "uri": "/guidance/set-moo-expectations"
                     },
                     "content": [
                       {
                         "data": {},
                         "marks": [],
-                        "value": "Set roar expectations",
+                        "value": "Set moo expectations",
                         "nodeType": "text"
                       }
                     ],
@@ -572,7 +574,7 @@
           "locale": "en-US"
         },
         "fields": {
-          "title": "Set roar expectations",
+          "title": "Set moo expectations",
           "image": {
             "sys": {
               "type": "Link",
@@ -627,7 +629,7 @@
           "locale": "en-US"
         },
         "fields": {
-          "title": "Promote roar progress",
+          "title": "Promote moo progress",
           "content": {
             "data": {},
             "content": [
@@ -642,13 +644,13 @@
                   },
                   {
                     "data": {
-                      "uri": "/guidance/promote-roar-progress"
+                      "uri": "/guidance/promote-moo-progress"
                     },
                     "content": [
                       {
                         "data": {},
                         "marks": [],
-                        "value": "Promote roar progress",
+                        "value": "Promote moo progress",
                         "nodeType": "text"
                       }
                     ],
@@ -730,9 +732,9 @@
           "locale": "en-US"
         },
         "fields": {
-          "title": "Lion Teaching Karate",
+          "title": "cow Teaching Table Tennis",
           "file": {
-            "url": "https://some-lion-teaching-karate.jpg",
+            "url": "https://some-cow-teaching-table-tennis.jpg",
             "details": {
               "size": 367517,
               "image": {
@@ -740,7 +742,7 @@
                 "height": 1280
               }
             },
-            "fileName": "lion-teaching-karate.jpg",
+            "fileName": "cow-teaching-table-tennis.jpg",
             "contentType": "image/jpeg"
           }
         }
@@ -769,9 +771,9 @@
           "locale": "en-US"
         },
         "fields": {
-          "title": "Lion Drinking Tea",
+          "title": "Cow Drinking Tea",
           "file": {
-            "url": "https://some-lion-drinking-tea.jpg",
+            "url": "https://some-cow-drinking-tea.jpg",
             "details": {
               "size": 921669,
               "image": {
@@ -779,7 +781,7 @@
                 "height": 2732
               }
             },
-            "fileName": "lion-drinking-tea.jpg",
+            "fileName": "cow-drinking-tea.jpg",
             "contentType": "image/jpeg"
           }
         }
