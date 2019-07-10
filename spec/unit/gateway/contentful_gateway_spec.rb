@@ -769,7 +769,7 @@ describe Gateway::ContentfulGateway do
       end
 
       it 'including multiple one half columns' do
-        response_with_one_half_columns = File.open("#{example_fixtures_path}with_multiple_one_half_columns.json", &:read)
+        response_with_one_half_columns = File.open("#{example_fixtures_path}with_one_half_columns.json", &:read)
 
         stub_request(:get, sub_category_url)
           .with(headers: headers)
@@ -801,7 +801,7 @@ describe Gateway::ContentfulGateway do
                           },
                           description: {
                             type: :rich_text,
-                            data: { 
+                            data: {
                               html_content: "<p class=\"govuk-body\"><a class=\"govuk-link\" href=\"/guidance/set-roar-expectations\">Set roar expectations</a></p>"
                             }
                           }
@@ -877,7 +877,7 @@ describe Gateway::ContentfulGateway do
                           },
                           description: {
                             type: :rich_text,
-                            data: { 
+                            data: {
                               html_content: "<p class=\"govuk-body\"><a class=\"govuk-link\" href=\"/guidance/set-roar-expectations\">Set roar expectations</a></p>"
                             }
                           }
@@ -925,7 +925,7 @@ describe Gateway::ContentfulGateway do
                           },
                           description: {
                             type: :rich_text,
-                            data: { 
+                            data: {
                               html_content: "<p class=\"govuk-body\"><a class=\"govuk-link\" href=\"/guidance/set-roar-expectations\">Set roar expectations</a></p>"
                             }
                           }
@@ -1001,7 +1001,7 @@ describe Gateway::ContentfulGateway do
                           },
                           description: {
                             type: :rich_text,
-                            data: { 
+                            data: {
                               html_content: "<p class=\"govuk-body\"><a class=\"govuk-link\" href=\"/guidance/set-roar-expectations\">Set roar expectations</a></p>"
                             }
                           }
@@ -1057,7 +1057,7 @@ describe Gateway::ContentfulGateway do
                           },
                           description: {
                             type: :rich_text,
-                            data: { 
+                            data: {
                               html_content: "<p class=\"govuk-body\"><a class=\"govuk-link\" href=\"/guidance/plan-and-teach-well-structured-roaring-lessons\">Plan and teach well structured roaring lessons</a></p>"
                             }
                           }
@@ -1179,7 +1179,7 @@ describe Gateway::ContentfulGateway do
       end
 
       it 'including multiple one half columns' do
-        response_with_one_half_columns = File.open("#{example_fixtures_path}with_multiple_one_half_columns.json", &:read)
+        response_with_one_half_columns = File.open("#{example_fixtures_path}with_one_half_columns.json", &:read)
 
         stub_request(:get, sub_category_url)
           .with(headers: headers)
@@ -1211,7 +1211,7 @@ describe Gateway::ContentfulGateway do
                           },
                           description: {
                             type: :rich_text,
-                            data: { 
+                            data: {
                               html_content: "<p class=\"govuk-body\"><a class=\"govuk-link\" href=\"/guidance/set-moo-expectations\">Set moo expectations</a></p>"
                             }
                           }
@@ -1287,7 +1287,7 @@ describe Gateway::ContentfulGateway do
                           },
                           description: {
                             type: :rich_text,
-                            data: { 
+                            data: {
                               html_content: "<p class=\"govuk-body\"><a class=\"govuk-link\" href=\"/guidance/set-moo-expectations\">Set moo expectations</a></p>"
                             }
                           }
@@ -1335,7 +1335,7 @@ describe Gateway::ContentfulGateway do
                           },
                           description: {
                             type: :rich_text,
-                            data: { 
+                            data: {
                               html_content: "<p class=\"govuk-body\"><a class=\"govuk-link\" href=\"/guidance/set-moo-expectations\">Set moo expectations</a></p>"
                             }
                           }
@@ -1411,7 +1411,7 @@ describe Gateway::ContentfulGateway do
                           },
                           description: {
                             type: :rich_text,
-                            data: { 
+                            data: {
                               html_content: "<p class=\"govuk-body\"><a class=\"govuk-link\" href=\"/guidance/set-moo-expectations\">Set moo expectations</a></p>"
                             }
                           }
@@ -1467,7 +1467,7 @@ describe Gateway::ContentfulGateway do
                           },
                           description: {
                             type: :rich_text,
-                            data: { 
+                            data: {
                               html_content: "<p class=\"govuk-body\"><a class=\"govuk-link\" href=\"/guidance/plan-and-teach-well-structured-mooing-lessons\">Plan and teach well structured mooing lessons</a></p>"
                             }
                           }
