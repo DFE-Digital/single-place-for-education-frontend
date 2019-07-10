@@ -125,6 +125,24 @@ private
     end
   end
 
+  def build_columns_array(columns)
+    columns.map do |column|
+      width = if column.fields[:width].nil?
+                columns.count == 2 ? 'one-half' : 'one-third'
+              else
+                column.width.gsub(' ', '-').downcase
+              end
+
+      {
+        type: :column,
+        data: {
+          width: width,
+          content: build_content_type_array(column.content)
+        }
+      }
+    end
+  end
+
   def parse_content(content)
     case content.sys[:content_type].id
     when 'image'
@@ -196,21 +214,10 @@ private
   end
 
   def create_columns(content)
-    columns_array = []
-    content.columns.each do |column|
-      column = {
-        type: :column,
-        data: {
-          width: column.width.gsub(' ', '-').downcase,
-          content: build_content_type_array(column.content)
-        }
-      }
-      columns_array << column
-    end
     {
       type: :columns,
       data: {
-        columns: columns_array
+        columns: build_columns_array(content.columns)
       }
     }
   end
