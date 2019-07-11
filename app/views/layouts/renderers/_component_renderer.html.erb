@@ -36,5 +36,7 @@
     <%= render 'layouts/components/container', background_colour: content[:data][:background_colour], content: content[:data][:content] %>
   <% when :image_link_with_description %>
     <%= render 'layouts/components/image_link_with_description', image_src: content[:data][:image_src], link: content[:data][:link][:data][:url], description: content[:data][:description][:data][:html_content] %>
+  <% when :download %>
+    <%= render 'layouts/components/download', download_text: content[:data][:download_link_text], download_link: content[:data][:resource_link], image_alt_text: 'download thumbnail', image_src: content[:data][:thumbnail_image_src], resource_type: content[:data][:resource_type] %>
   <% end %>
 <% end %>

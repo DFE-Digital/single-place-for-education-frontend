@@ -171,10 +171,24 @@ private
       create_container(content)
     when 'imageLinkWithDescription'
       create_image_link_with_description(content)
+    when 'download'
+      create_download(content)
     else
       @logger.warn("Content #{content.sys[:content_type].id} not supported")
       nil
     end
+  end
+
+  def create_download(content)
+    {
+      type: :download,
+      data: {
+        thumbnail_image_src: content.thumbnail_image.url,
+        resource_link: content.resource.url,
+        resource_type: content.resource.file.content_type,
+        download_link_text: content.download_link_text
+      }
+    }
   end
 
   def create_bullet_list(content)

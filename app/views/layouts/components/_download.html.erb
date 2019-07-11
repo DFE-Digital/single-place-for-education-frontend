@@ -1,0 +1,13 @@
+<div class="govuk-grid-row govuk-!-padding-top-5">
+  <div class="govuk-grid-column-two-thirds">
+    <a href="<%= download_link %>" class="govuk-link">
+      <%= render 'layouts/components/images/image', alt_text: image_alt_text, image_src: image_src, image_width: 'download-thumbnail' %>
+    </a>
+    <p class="govuk-body">
+      <a href="<%= download_link %>" class="govuk-link">
+         <%= download_text%>
+      </a>
+    </p>
+    <p class="govuk-body"><%= resource_type %></p>
+  </div>
+</div>
