@@ -165,10 +165,9 @@ private
     {
       type: :download,
       data: {
-        name: content.name,
         thumbnail_image_src: content.thumbnail_image.url,
-        download_resource_link: content.download_resource.url,
-        download_resource_type: content.download_resource.file.content_type,
+        resource_link: content.resource.url,
+        resource_type: content.resource.file.content_type,
         download_link_text: content.download_link_text
       }
     }
