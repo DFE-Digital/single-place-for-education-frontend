@@ -37,8 +37,8 @@
         "locale": "en-US"
       },
       "fields": {
-        "title": "Supporting early career frogs",
-        "slug": "supporting-early-career-frogs",
+        "title": "Supporting early career lions",
+        "slug": "supporting-early-career-lions",
         "collectionName": "Guidance",
         "breadcrumbs": {
           "sys": {
@@ -57,13 +57,6 @@
           }
         ],
         "content": [
-          {
-            "sys": {
-              "type": "Link",
-              "linkType": "Entry",
-              "id": "1lVBB6qmkeWvofDvEi30qW"
-            }
-          },
           {
             "sys": {
               "type": "Link",
@@ -108,46 +101,9 @@
           "locale": "en-US"
         },
         "fields": {
-          "text": "Set ribbit expectations",
+          "text": "Set roar expectations",
           "type": "Internal",
-          "url": "/guidance/set-ribbit-expectations"
-        }
-      },
-      {
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "gfzscr0ovdsz"
-            }
-          },
-          "id": "1lVBB6qmkeWvofDvEi30qW",
-          "type": "Entry",
-          "createdAt": "2019-07-08T14:12:23.249Z",
-          "updatedAt": "2019-07-08T15:40:19.218Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "revision": 2,
-          "contentType": {
-            "sys": {
-              "type": "Link",
-              "linkType": "ContentType",
-              "id": "heading"
-            }
-          },
-          "locale": "en-US"
-        },
-        "fields": {
-          "text": "Frog Standards",
-          "level": "H2",
-          "bold": false,
-          "alignment": "Left"
+          "url": "/guidance/set-roar-expectations"
         }
       },
       {
@@ -209,6 +165,90 @@
               "id": "gfzscr0ovdsz"
             }
           },
+          "id": "7Gkz36SHXUfMEOWMYCAKlL",
+          "type": "Entry",
+          "createdAt": "2019-07-08T14:19:03.950Z",
+          "updatedAt": "2019-07-08T14:19:03.950Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "contentType": {
+            "sys": {
+              "type": "Link",
+              "linkType": "ContentType",
+              "id": "column"
+            }
+          },
+          "locale": "en-US"
+        },
+        "fields": {
+          "content": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "69NsMlp4Yc7fun811QEjz6"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "gfzscr0ovdsz"
+            }
+          },
+          "id": "7Gkz36SHXUfMEOWMYCAKlL",
+          "type": "Entry",
+          "createdAt": "2019-07-08T14:19:03.950Z",
+          "updatedAt": "2019-07-08T14:19:03.950Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "contentType": {
+            "sys": {
+              "type": "Link",
+              "linkType": "ContentType",
+              "id": "column"
+            }
+          },
+          "locale": "en-US"
+        },
+        "fields": {
+          "content": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "69NsMlp4Yc7fun811QEjz6"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "gfzscr0ovdsz"
+            }
+          },
           "id": "2Gkz36SHXUfDCCUMYCAKlL",
           "type": "Entry",
           "createdAt": "2019-07-08T14:19:03.950Z",
@@ -231,7 +271,6 @@
           "locale": "en-US"
         },
         "fields": {
-          "width": "One Half",
           "content": [
             {
               "sys": {
@@ -274,7 +313,7 @@
           "locale": "en-US"
         },
         "fields": {
-          "title": "Supporting early career frogs > Description",
+          "title": "Supporting early career lions > Description",
           "content": {
             "data": {},
             "content": [
@@ -284,7 +323,7 @@
                   {
                     "data": {},
                     "marks": [],
-                    "value": "Starting in September 1973 is the Early Career Framework (ECF). The ECF is a 2-year fully funded programme to help support newly qualified frogs.",
+                    "value": "Starting in September 1997 is the Early Career Framework (ECF). The ECF is a 2-year fully funded programme to help support newly qualified lions.",
                     "nodeType": "text"
                   }
                 ],
@@ -326,9 +365,45 @@
           "locale": "en-US"
         },
         "fields": {
-          "text": "Promote ribbit progress",
+          "text": "Promote roar progress",
           "type": "Internal",
-          "url": "/guidance/promote-ribbit-progress"
+          "url": "/guidance/promote-roar-progress"
+        }
+      },
+      {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "gfzscr0ovdsz"
+            }
+          },
+          "id": "1rOb0iH12ctFTNCdjnzXR0",
+          "type": "Entry",
+          "createdAt": "2019-07-08T14:18:31.147Z",
+          "updatedAt": "2019-07-08T14:18:31.147Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "contentType": {
+            "sys": {
+              "type": "Link",
+              "linkType": "ContentType",
+              "id": "link"
+            }
+          },
+          "locale": "en-US"
+        },
+        "fields": {
+          "text": "Plan and teach well structured roaring lessons",
+          "type": "Internal",
+          "url": "/guidance/plan-and-teach-well-structured-roaring-lessons"
         }
       },
       {
@@ -362,7 +437,6 @@
           "locale": "en-US"
         },
         "fields": {
-          "width": "One Half",
           "content": [
             {
               "sys": {
@@ -372,6 +446,61 @@
               }
             }
           ]
+        }
+      },
+      {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "gfzscr0ovdsz"
+            }
+          },
+          "id": "69NsMlp4Yc7fun811QEjz6",
+          "type": "Entry",
+          "createdAt": "2019-07-08T14:19:01.193Z",
+          "updatedAt": "2019-07-08T14:19:01.193Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "contentType": {
+            "sys": {
+              "type": "Link",
+              "linkType": "ContentType",
+              "id": "imageLinkWithDescription"
+            }
+          },
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "Plan and teach well structured roaring lessons",
+          "image": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "7sad1jk5WjQ0W9s88cO2L"
+            }
+          },
+          "link": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "1rOb0iH12ctFTNCdjnzXR0"
+            }
+          },
+          "description": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "0Vw1dogUm8f3abr4CyJBn"
+            }
+          }
         }
       },
       {
@@ -405,7 +534,7 @@
           "locale": "en-US"
         },
         "fields": {
-          "title": "Promote ribbit progress",
+          "title": "Promote roar progress",
           "image": {
             "sys": {
               "type": "Link",
@@ -460,7 +589,7 @@
           "locale": "en-US"
         },
         "fields": {
-          "name": "Supporting early career frogs > Row 1",
+          "name": "Supporting early career lions > Row 1",
           "columns": [
             {
               "sys": {
@@ -474,6 +603,13 @@
                 "type": "Link",
                 "linkType": "Entry",
                 "id": "2Gkz36SHXUfDCCUMYCAKlL"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "7Gkz36SHXUfMEOWMYCAKlL"
               }
             }
           ]
@@ -510,7 +646,7 @@
           "locale": "en-US"
         },
         "fields": {
-          "text": "Hiring and development",
+          "text": "Hiring and lion development",
           "type": "Internal",
           "url": "/category/hiring"
         }
@@ -546,7 +682,7 @@
           "locale": "en-US"
         },
         "fields": {
-          "title": "Set ribbit expectations",
+          "title": "Set roar expectations",
           "content": {
             "data": {},
             "content": [
@@ -561,13 +697,13 @@
                   },
                   {
                     "data": {
-                      "uri": "/guidance/set-ribbit-expectations"
+                      "uri": "/guidance/set-roar-expectations"
                     },
                     "content": [
                       {
                         "data": {},
                         "marks": [],
-                        "value": "Set ribbit expectations",
+                        "value": "Set roar expectations",
                         "nodeType": "text"
                       }
                     ],
@@ -618,7 +754,7 @@
           "locale": "en-US"
         },
         "fields": {
-          "title": "Set ribbit expectations",
+          "title": "Set roar expectations",
           "image": {
             "sys": {
               "type": "Link",
@@ -673,7 +809,7 @@
           "locale": "en-US"
         },
         "fields": {
-          "title": "Promote ribbit progress",
+          "title": "Promote roar progress",
           "content": {
             "data": {},
             "content": [
@@ -688,13 +824,85 @@
                   },
                   {
                     "data": {
-                      "uri": "/guidance/promote-ribbit-progress"
+                      "uri": "/guidance/promote-roar-progress"
                     },
                     "content": [
                       {
                         "data": {},
                         "marks": [],
-                        "value": "Promote ribbit progress",
+                        "value": "Promote roar progress",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "hyperlink"
+                  },
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": "",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        }
+      },
+      {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "gfzscr0ovdsz"
+            }
+          },
+          "id": "0Vw1dogUm8f3abr4CyJBn",
+          "type": "Entry",
+          "createdAt": "2019-07-08T14:18:53.232Z",
+          "updatedAt": "2019-07-08T14:18:53.232Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "contentType": {
+            "sys": {
+              "type": "Link",
+              "linkType": "ContentType",
+              "id": "richText"
+            }
+          },
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "Plan and teach well structured roaring lessons",
+          "content": {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "content": [
+                  {
+                    "data": {},
+                    "marks": [],
+                    "value": "",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                      "uri": "/guidance/plan-and-teach-well-structured-roaring-lessons"
+                    },
+                    "content": [
+                      {
+                        "data": {},
+                        "marks": [],
+                        "value": "Plan and teach well structured roaring lessons",
                         "nodeType": "text"
                       }
                     ],
@@ -776,9 +984,9 @@
           "locale": "en-US"
         },
         "fields": {
-          "title": "Frog Holding Pen",
+          "title": "Lion Teaching Karate",
           "file": {
-            "url": "https://some-frog-holding-pen.jpg",
+            "url": "https://some-lion-teaching-karate.jpg",
             "details": {
               "size": 367517,
               "image": {
@@ -786,7 +994,46 @@
                 "height": 1280
               }
             },
-            "fileName": "frog-holding-pen.jpg",
+            "fileName": "lion-teaching-karate.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      },
+      {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "gfzscr0ovdsz"
+            }
+          },
+          "id": "7sad1jk5WjQ0W9s88cO2L",
+          "type": "Asset",
+          "createdAt": "2019-07-08T08:45:33.508Z",
+          "updatedAt": "2019-07-08T08:45:33.508Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "Lion Eating Cake",
+          "file": {
+            "url": "https://some-lion-eating-cake.jpg",
+            "details": {
+              "size": 367517,
+              "image": {
+                "width": 1920,
+                "height": 1280
+              }
+            },
+            "fileName": "lion-eating-cake.jpg",
             "contentType": "image/jpeg"
           }
         }
@@ -815,9 +1062,9 @@
           "locale": "en-US"
         },
         "fields": {
-          "title": "Frog Drinking Tea",
+          "title": "Lion Drinking Tea",
           "file": {
-            "url": "https://some-frog-drinking-tea.jpg",
+            "url": "https://some-lion-drinking-tea.jpg",
             "details": {
               "size": 921669,
               "image": {
@@ -825,7 +1072,7 @@
                 "height": 2732
               }
             },
-            "fileName": "frog-drinking-tea.jpg",
+            "fileName": "lion-drinking-tea.jpg",
             "contentType": "image/jpeg"
           }
         }

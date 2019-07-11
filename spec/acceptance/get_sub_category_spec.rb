@@ -79,50 +79,62 @@ describe 'Get Sub-Category' do
           type: :columns,
           data: {
             columns: [
-              [
-                {
-                  type: :image_link_with_description,
-                  data: {
-                    image_src: 'https://some-frog-drinking-tea.jpg',
-                    link: {
-                      type: :link,
+              {
+                type: :column,
+                data: {
+                  width: 'one-half',
+                  content: [
+                    {
+                      type: :image_link_with_description,
                       data: {
-                        text: 'Set ribbit expectations',
-                        type: :internal,
-                        url: '/guidance/set-ribbit-expectations'
-                      }
-                    },
-                    description: {
-                      type: :rich_text,
-                      data: {
-                        html_content: "<p class=\"govuk-body\"><a class=\"govuk-link\" href=\"/guidance/set-ribbit-expectations\">Set ribbit expectations</a></p>"
-                      }
-                    }
-                  }
-                }
-              ],
-              [
-                {
-                  type: :image_link_with_description,
-                  data: {
-                    image_src: 'https://some-frog-holding-pen.jpg',
-                    link: {
-                      type: :link,
-                      data: {
-                        text: 'Promote ribbit progress',
-                        type: :internal,
-                        url: '/guidance/promote-ribbit-progress'
-                      }
-                    },
-                    description: {
-                      type: :rich_text,
-                      data: {
-                        html_content: "<p class=\"govuk-body\"><a class=\"govuk-link\" href=\"/guidance/promote-ribbit-progress\">Promote ribbit progress</a></p>"
+                        image_src: 'https://some-frog-drinking-tea.jpg',
+                        link: {
+                          type: :link,
+                          data: {
+                            text: 'Set ribbit expectations',
+                            type: :internal,
+                            url: '/guidance/set-ribbit-expectations'
+                          }
+                        },
+                        description: {
+                          type: :rich_text,
+                          data: {
+                            html_content: "<p class=\"govuk-body\"><a class=\"govuk-link\" href=\"/guidance/set-ribbit-expectations\">Set ribbit expectations</a></p>"
+                          }
+                        }
                       }
                     }
-                  }
+                  ]
                 }
-              ]
+              },
+              {
+                type: :column,
+                data: {
+                  width: 'one-half',
+                  content: [
+                    {
+                      type: :image_link_with_description,
+                      data: {
+                        image_src: 'https://some-frog-holding-pen.jpg',
+                        link: {
+                          type: :link,
+                          data: {
+                            text: 'Promote ribbit progress',
+                            type: :internal,
+                            url: '/guidance/promote-ribbit-progress'
+                          }
+                        },
+                        description: {
+                          type: :rich_text,
+                          data: {
+                            html_content: "<p class=\"govuk-body\"><a class=\"govuk-link\" href=\"/guidance/promote-ribbit-progress\">Promote ribbit progress</a></p>"
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
             ]
           }
         }

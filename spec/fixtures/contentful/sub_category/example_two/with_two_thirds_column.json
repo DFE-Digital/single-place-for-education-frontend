@@ -37,9 +37,9 @@
         "locale": "en-US"
       },
       "fields": {
-        "title": "Supporting early career frogs",
-        "slug": "supporting-early-career-frogs",
-        "collectionName": "Guidance",
+        "title": "Supporting early career cows",
+        "slug": "supporting-early-career-cows",
+        "collectionName": "Article",
         "breadcrumbs": {
           "sys": {
             "type": "Link",
@@ -57,13 +57,6 @@
           }
         ],
         "content": [
-          {
-            "sys": {
-              "type": "Link",
-              "linkType": "Entry",
-              "id": "1lVBB6qmkeWvofDvEi30qW"
-            }
-          },
           {
             "sys": {
               "type": "Link",
@@ -108,46 +101,9 @@
           "locale": "en-US"
         },
         "fields": {
-          "text": "Set ribbit expectations",
+          "text": "Set moo expectations",
           "type": "Internal",
-          "url": "/guidance/set-ribbit-expectations"
-        }
-      },
-      {
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "gfzscr0ovdsz"
-            }
-          },
-          "id": "1lVBB6qmkeWvofDvEi30qW",
-          "type": "Entry",
-          "createdAt": "2019-07-08T14:12:23.249Z",
-          "updatedAt": "2019-07-08T15:40:19.218Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "revision": 2,
-          "contentType": {
-            "sys": {
-              "type": "Link",
-              "linkType": "ContentType",
-              "id": "heading"
-            }
-          },
-          "locale": "en-US"
-        },
-        "fields": {
-          "text": "Frog Standards",
-          "level": "H2",
-          "bold": false,
-          "alignment": "Left"
+          "url": "/guidance/set-moo-expectations"
         }
       },
       {
@@ -209,49 +165,6 @@
               "id": "gfzscr0ovdsz"
             }
           },
-          "id": "2Gkz36SHXUfDCCUMYCAKlL",
-          "type": "Entry",
-          "createdAt": "2019-07-08T14:19:03.950Z",
-          "updatedAt": "2019-07-08T14:19:03.950Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "revision": 1,
-          "contentType": {
-            "sys": {
-              "type": "Link",
-              "linkType": "ContentType",
-              "id": "column"
-            }
-          },
-          "locale": "en-US"
-        },
-        "fields": {
-          "width": "One Half",
-          "content": [
-            {
-              "sys": {
-                "type": "Link",
-                "linkType": "Entry",
-                "id": "30NsMlp4Yc7eny811QEjz6"
-              }
-            }
-          ]
-        }
-      },
-      {
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "gfzscr0ovdsz"
-            }
-          },
           "id": "2eihK1xoJ9Q0xkmX0DGWjr",
           "type": "Entry",
           "createdAt": "2019-07-08T14:11:41.862Z",
@@ -274,7 +187,7 @@
           "locale": "en-US"
         },
         "fields": {
-          "title": "Supporting early career frogs > Description",
+          "title": "Supporting early career cows > Description",
           "content": {
             "data": {},
             "content": [
@@ -284,7 +197,7 @@
                   {
                     "data": {},
                     "marks": [],
-                    "value": "Starting in September 1973 is the Early Career Framework (ECF). The ECF is a 2-year fully funded programme to help support newly qualified frogs.",
+                    "value": "Starting in September 1993 is the Early Career Framework (ECF). The ECF is a 2-year fully funded programme to help support newly qualified cows.",
                     "nodeType": "text"
                   }
                 ],
@@ -293,42 +206,6 @@
             ],
             "nodeType": "document"
           }
-        }
-      },
-      {
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "gfzscr0ovdsz"
-            }
-          },
-          "id": "2fIh0iH12ctFTNCdjnzXR0",
-          "type": "Entry",
-          "createdAt": "2019-07-08T14:18:31.147Z",
-          "updatedAt": "2019-07-08T14:18:31.147Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "revision": 1,
-          "contentType": {
-            "sys": {
-              "type": "Link",
-              "linkType": "ContentType",
-              "id": "link"
-            }
-          },
-          "locale": "en-US"
-        },
-        "fields": {
-          "text": "Promote ribbit progress",
-          "type": "Internal",
-          "url": "/guidance/promote-ribbit-progress"
         }
       },
       {
@@ -362,7 +239,7 @@
           "locale": "en-US"
         },
         "fields": {
-          "width": "One Half",
+          "width": "Two Thirds",
           "content": [
             {
               "sys": {
@@ -372,61 +249,6 @@
               }
             }
           ]
-        }
-      },
-      {
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "gfzscr0ovdsz"
-            }
-          },
-          "id": "30NsMlp4Yc7eny811QEjz6",
-          "type": "Entry",
-          "createdAt": "2019-07-08T14:19:01.193Z",
-          "updatedAt": "2019-07-08T14:19:01.193Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "revision": 1,
-          "contentType": {
-            "sys": {
-              "type": "Link",
-              "linkType": "ContentType",
-              "id": "imageLinkWithDescription"
-            }
-          },
-          "locale": "en-US"
-        },
-        "fields": {
-          "title": "Promote ribbit progress",
-          "image": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Asset",
-              "id": "3udu1jk5WjQ0W9s88cO2L"
-            }
-          },
-          "link": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Entry",
-              "id": "2fIh0iH12ctFTNCdjnzXR0"
-            }
-          },
-          "description": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Entry",
-              "id": "6Vh0JrAmUm8f3abr4CyJBn"
-            }
-          }
         }
       },
       {
@@ -460,20 +282,13 @@
           "locale": "en-US"
         },
         "fields": {
-          "name": "Supporting early career frogs > Row 1",
+          "name": "Supporting early career cows > Row 1",
           "columns": [
             {
               "sys": {
                 "type": "Link",
                 "linkType": "Entry",
                 "id": "2lujq5lAvBBALEmaVvECN6"
-              }
-            },
-            {
-              "sys": {
-                "type": "Link",
-                "linkType": "Entry",
-                "id": "2Gkz36SHXUfDCCUMYCAKlL"
               }
             }
           ]
@@ -510,7 +325,7 @@
           "locale": "en-US"
         },
         "fields": {
-          "text": "Hiring and development",
+          "text": "Hiring and cow development",
           "type": "Internal",
           "url": "/category/hiring"
         }
@@ -546,7 +361,7 @@
           "locale": "en-US"
         },
         "fields": {
-          "title": "Set ribbit expectations",
+          "title": "Set moo expectations",
           "content": {
             "data": {},
             "content": [
@@ -561,13 +376,13 @@
                   },
                   {
                     "data": {
-                      "uri": "/guidance/set-ribbit-expectations"
+                      "uri": "/guidance/set-moo-expectations"
                     },
                     "content": [
                       {
                         "data": {},
                         "marks": [],
-                        "value": "Set ribbit expectations",
+                        "value": "Set moo expectations",
                         "nodeType": "text"
                       }
                     ],
@@ -618,7 +433,7 @@
           "locale": "en-US"
         },
         "fields": {
-          "title": "Set ribbit expectations",
+          "title": "Set moo expectations",
           "image": {
             "sys": {
               "type": "Link",
@@ -639,78 +454,6 @@
               "linkType": "Entry",
               "id": "5l9OppnSwVZvQBYYroCert"
             }
-          }
-        }
-      },
-      {
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "gfzscr0ovdsz"
-            }
-          },
-          "id": "6Vh0JrAmUm8f3abr4CyJBn",
-          "type": "Entry",
-          "createdAt": "2019-07-08T14:18:53.232Z",
-          "updatedAt": "2019-07-08T14:18:53.232Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "revision": 1,
-          "contentType": {
-            "sys": {
-              "type": "Link",
-              "linkType": "ContentType",
-              "id": "richText"
-            }
-          },
-          "locale": "en-US"
-        },
-        "fields": {
-          "title": "Promote ribbit progress",
-          "content": {
-            "data": {},
-            "content": [
-              {
-                "data": {},
-                "content": [
-                  {
-                    "data": {},
-                    "marks": [],
-                    "value": "",
-                    "nodeType": "text"
-                  },
-                  {
-                    "data": {
-                      "uri": "/guidance/promote-ribbit-progress"
-                    },
-                    "content": [
-                      {
-                        "data": {},
-                        "marks": [],
-                        "value": "Promote ribbit progress",
-                        "nodeType": "text"
-                      }
-                    ],
-                    "nodeType": "hyperlink"
-                  },
-                  {
-                    "data": {},
-                    "marks": [],
-                    "value": "",
-                    "nodeType": "text"
-                  }
-                ],
-                "nodeType": "paragraph"
-              }
-            ],
-            "nodeType": "document"
           }
         }
       },
@@ -761,45 +504,6 @@
               "id": "gfzscr0ovdsz"
             }
           },
-          "id": "3udu1jk5WjQ0W9s88cO2L",
-          "type": "Asset",
-          "createdAt": "2019-07-08T08:45:33.508Z",
-          "updatedAt": "2019-07-08T08:45:33.508Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "revision": 1,
-          "locale": "en-US"
-        },
-        "fields": {
-          "title": "Frog Holding Pen",
-          "file": {
-            "url": "https://some-frog-holding-pen.jpg",
-            "details": {
-              "size": 367517,
-              "image": {
-                "width": 1920,
-                "height": 1280
-              }
-            },
-            "fileName": "frog-holding-pen.jpg",
-            "contentType": "image/jpeg"
-          }
-        }
-      },
-      {
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "gfzscr0ovdsz"
-            }
-          },
           "id": "cBtx1rtnplkk9YyZjQ0WA",
           "type": "Asset",
           "createdAt": "2019-06-24T14:26:25.787Z",
@@ -815,9 +519,9 @@
           "locale": "en-US"
         },
         "fields": {
-          "title": "Frog Drinking Tea",
+          "title": "Cow Drinking Tea",
           "file": {
-            "url": "https://some-frog-drinking-tea.jpg",
+            "url": "https://some-cow-drinking-tea.jpg",
             "details": {
               "size": 921669,
               "image": {
@@ -825,7 +529,7 @@
                 "height": 2732
               }
             },
-            "fileName": "frog-drinking-tea.jpg",
+            "fileName": "cow-drinking-tea.jpg",
             "contentType": "image/jpeg"
           }
         }

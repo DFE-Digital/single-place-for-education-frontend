@@ -37,8 +37,8 @@
         "locale": "en-US"
       },
       "fields": {
-        "title": "Supporting early career frogs",
-        "slug": "supporting-early-career-frogs",
+        "title": "Supporting early career lions",
+        "slug": "supporting-early-career-lions",
         "collectionName": "Guidance",
         "breadcrumbs": {
           "sys": {
@@ -57,13 +57,6 @@
           }
         ],
         "content": [
-          {
-            "sys": {
-              "type": "Link",
-              "linkType": "Entry",
-              "id": "1lVBB6qmkeWvofDvEi30qW"
-            }
-          },
           {
             "sys": {
               "type": "Link",
@@ -108,46 +101,9 @@
           "locale": "en-US"
         },
         "fields": {
-          "text": "Set ribbit expectations",
+          "text": "Set roar expectations",
           "type": "Internal",
-          "url": "/guidance/set-ribbit-expectations"
-        }
-      },
-      {
-        "sys": {
-          "space": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Space",
-              "id": "gfzscr0ovdsz"
-            }
-          },
-          "id": "1lVBB6qmkeWvofDvEi30qW",
-          "type": "Entry",
-          "createdAt": "2019-07-08T14:12:23.249Z",
-          "updatedAt": "2019-07-08T15:40:19.218Z",
-          "environment": {
-            "sys": {
-              "id": "master",
-              "type": "Link",
-              "linkType": "Environment"
-            }
-          },
-          "revision": 2,
-          "contentType": {
-            "sys": {
-              "type": "Link",
-              "linkType": "ContentType",
-              "id": "heading"
-            }
-          },
-          "locale": "en-US"
-        },
-        "fields": {
-          "text": "Frog Standards",
-          "level": "H2",
-          "bold": false,
-          "alignment": "Left"
+          "url": "/guidance/set-roar-expectations"
         }
       },
       {
@@ -274,7 +230,7 @@
           "locale": "en-US"
         },
         "fields": {
-          "title": "Supporting early career frogs > Description",
+          "title": "Supporting early career lions > Description",
           "content": {
             "data": {},
             "content": [
@@ -284,7 +240,7 @@
                   {
                     "data": {},
                     "marks": [],
-                    "value": "Starting in September 1973 is the Early Career Framework (ECF). The ECF is a 2-year fully funded programme to help support newly qualified frogs.",
+                    "value": "Starting in September 1997 is the Early Career Framework (ECF). The ECF is a 2-year fully funded programme to help support newly qualified lions.",
                     "nodeType": "text"
                   }
                 ],
@@ -326,9 +282,9 @@
           "locale": "en-US"
         },
         "fields": {
-          "text": "Promote ribbit progress",
+          "text": "Promote roar progress",
           "type": "Internal",
-          "url": "/guidance/promote-ribbit-progress"
+          "url": "/guidance/promote-roar-progress"
         }
       },
       {
@@ -405,7 +361,7 @@
           "locale": "en-US"
         },
         "fields": {
-          "title": "Promote ribbit progress",
+          "title": "Promote roar progress",
           "image": {
             "sys": {
               "type": "Link",
@@ -460,7 +416,7 @@
           "locale": "en-US"
         },
         "fields": {
-          "name": "Supporting early career frogs > Row 1",
+          "name": "Supporting early career lions > Row 1",
           "columns": [
             {
               "sys": {
@@ -510,7 +466,7 @@
           "locale": "en-US"
         },
         "fields": {
-          "text": "Hiring and development",
+          "text": "Hiring and lion development",
           "type": "Internal",
           "url": "/category/hiring"
         }
@@ -546,7 +502,7 @@
           "locale": "en-US"
         },
         "fields": {
-          "title": "Set ribbit expectations",
+          "title": "Set roar expectations",
           "content": {
             "data": {},
             "content": [
@@ -561,13 +517,13 @@
                   },
                   {
                     "data": {
-                      "uri": "/guidance/set-ribbit-expectations"
+                      "uri": "/guidance/set-roar-expectations"
                     },
                     "content": [
                       {
                         "data": {},
                         "marks": [],
-                        "value": "Set ribbit expectations",
+                        "value": "Set roar expectations",
                         "nodeType": "text"
                       }
                     ],
@@ -618,7 +574,7 @@
           "locale": "en-US"
         },
         "fields": {
-          "title": "Set ribbit expectations",
+          "title": "Set roar expectations",
           "image": {
             "sys": {
               "type": "Link",
@@ -673,7 +629,7 @@
           "locale": "en-US"
         },
         "fields": {
-          "title": "Promote ribbit progress",
+          "title": "Promote roar progress",
           "content": {
             "data": {},
             "content": [
@@ -688,13 +644,13 @@
                   },
                   {
                     "data": {
-                      "uri": "/guidance/promote-ribbit-progress"
+                      "uri": "/guidance/promote-roar-progress"
                     },
                     "content": [
                       {
                         "data": {},
                         "marks": [],
-                        "value": "Promote ribbit progress",
+                        "value": "Promote roar progress",
                         "nodeType": "text"
                       }
                     ],
@@ -776,9 +732,9 @@
           "locale": "en-US"
         },
         "fields": {
-          "title": "Frog Holding Pen",
+          "title": "Lion Teaching Karate",
           "file": {
-            "url": "https://some-frog-holding-pen.jpg",
+            "url": "https://some-lion-teaching-karate.jpg",
             "details": {
               "size": 367517,
               "image": {
@@ -786,7 +742,7 @@
                 "height": 1280
               }
             },
-            "fileName": "frog-holding-pen.jpg",
+            "fileName": "lion-teaching-karate.jpg",
             "contentType": "image/jpeg"
           }
         }
@@ -815,9 +771,9 @@
           "locale": "en-US"
         },
         "fields": {
-          "title": "Frog Drinking Tea",
+          "title": "Lion Drinking Tea",
           "file": {
-            "url": "https://some-frog-drinking-tea.jpg",
+            "url": "https://some-lion-drinking-tea.jpg",
             "details": {
               "size": 921669,
               "image": {
@@ -825,7 +781,7 @@
                 "height": 2732
               }
             },
-            "fileName": "frog-drinking-tea.jpg",
+            "fileName": "lion-drinking-tea.jpg",
             "contentType": "image/jpeg"
           }
         }

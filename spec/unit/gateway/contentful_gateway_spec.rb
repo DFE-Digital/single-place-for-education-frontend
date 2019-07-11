@@ -768,12 +768,12 @@ describe Gateway::ContentfulGateway do
         ])
       end
 
-      it 'including multiple columns' do
-        response_with_multiple_columns = File.open("#{example_fixtures_path}with_multiple_columns.json", &:read)
+      it 'including multiple one half columns' do
+        response_with_one_half_columns = File.open("#{example_fixtures_path}with_one_half_columns.json", &:read)
 
         stub_request(:get, sub_category_url)
           .with(headers: headers)
-          .to_return(status: 200, body: response_with_multiple_columns, headers: {})
+          .to_return(status: 200, body: response_with_one_half_columns, headers: {})
 
         sub_category
 
@@ -782,50 +782,290 @@ describe Gateway::ContentfulGateway do
             type: :columns,
             data: {
               columns: [
-                [
-                  {
-                    type: :image_link_with_description,
-                    data: {
-                      image_src: 'https://some-lion-drinking-tea.jpg',
-                      link: {
-                        type: :link,
+                {
+                  type: :column,
+                  data: {
+                    width: 'one-half',
+                    content: [
+                      {
+                        type: :image_link_with_description,
                         data: {
-                          text: 'Set roar expectations',
-                          type: :internal,
-                          url: '/guidance/set-roar-expectations'
-                        }
-                      },
-                      description: {
-                        type: :rich_text,
-                        data: {
-                          html_content: "<p class=\"govuk-body\"><a class=\"govuk-link\" href=\"/guidance/set-roar-expectations\">Set roar expectations</a></p>"
-                        }
-                      }
-                    }
-                  }
-                ],
-                [
-                  {
-                    type: :image_link_with_description,
-                    data: {
-                      image_src: 'https://some-lion-teaching-karate.jpg',
-                      link: {
-                        type: :link,
-                        data: {
-                          text: 'Promote roar progress',
-                          type: :internal,
-                          url: '/guidance/promote-roar-progress'
-                        }
-                      },
-                      description: {
-                        type: :rich_text,
-                        data: {
-                          html_content: "<p class=\"govuk-body\"><a class=\"govuk-link\" href=\"/guidance/promote-roar-progress\">Promote roar progress</a></p>"
+                          image_src: 'https://some-lion-drinking-tea.jpg',
+                          link: {
+                            type: :link,
+                            data: {
+                              text: 'Set roar expectations',
+                              type: :internal,
+                              url: '/guidance/set-roar-expectations'
+                            }
+                          },
+                          description: {
+                            type: :rich_text,
+                            data: {
+                              html_content: "<p class=\"govuk-body\"><a class=\"govuk-link\" href=\"/guidance/set-roar-expectations\">Set roar expectations</a></p>"
+                            }
+                          }
                         }
                       }
-                    }
+                    ]
                   }
-                ]
+                },
+                {
+                  type: :column,
+                  data: {
+                    width: 'one-half',
+                    content: [
+                      {
+                        type: :image_link_with_description,
+                        data: {
+                          image_src: 'https://some-lion-teaching-karate.jpg',
+                          link: {
+                            type: :link,
+                            data: {
+                              text: 'Promote roar progress',
+                              type: :internal,
+                              url: '/guidance/promote-roar-progress'
+                            }
+                          },
+                          description: {
+                            type: :rich_text,
+                            data: {
+                              html_content: "<p class=\"govuk-body\"><a class=\"govuk-link\" href=\"/guidance/promote-roar-progress\">Promote roar progress</a></p>"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ])
+      end
+
+      it 'including two thirds column' do
+        response_with_two_thirds_column = File.open("#{example_fixtures_path}with_two_thirds_column.json", &:read)
+
+        stub_request(:get, sub_category_url)
+          .with(headers: headers)
+          .to_return(status: 200, body: response_with_two_thirds_column, headers: {})
+
+        sub_category
+
+        expect(sub_category.content).to eq([
+          {
+            type: :columns,
+            data: {
+              columns: [
+                {
+                  type: :column,
+                  data: {
+                    width: 'two-thirds',
+                    content: [
+                      {
+                        type: :image_link_with_description,
+                        data: {
+                          image_src: 'https://some-lion-drinking-tea.jpg',
+                          link: {
+                            type: :link,
+                            data: {
+                              text: 'Set roar expectations',
+                              type: :internal,
+                              url: '/guidance/set-roar-expectations'
+                            }
+                          },
+                          description: {
+                            type: :rich_text,
+                            data: {
+                              html_content: "<p class=\"govuk-body\"><a class=\"govuk-link\" href=\"/guidance/set-roar-expectations\">Set roar expectations</a></p>"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ])
+      end
+
+      it 'can assign equal width for two columns if not provided' do
+        response_with_two_columns = File.open("#{example_fixtures_path}with_two_columns.json", &:read)
+
+        stub_request(:get, sub_category_url)
+          .with(headers: headers)
+          .to_return(status: 200, body: response_with_two_columns, headers: {})
+
+        sub_category
+
+        expect(sub_category.content).to eq([
+          {
+            type: :columns,
+            data: {
+              columns: [
+                {
+                  type: :column,
+                  data: {
+                    width: 'one-half',
+                    content: [
+                      {
+                        type: :image_link_with_description,
+                        data: {
+                          image_src: 'https://some-lion-drinking-tea.jpg',
+                          link: {
+                            type: :link,
+                            data: {
+                              text: 'Set roar expectations',
+                              type: :internal,
+                              url: '/guidance/set-roar-expectations'
+                            }
+                          },
+                          description: {
+                            type: :rich_text,
+                            data: {
+                              html_content: "<p class=\"govuk-body\"><a class=\"govuk-link\" href=\"/guidance/set-roar-expectations\">Set roar expectations</a></p>"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  type: :column,
+                  data: {
+                    width: 'one-half',
+                    content: [
+                      {
+                        type: :image_link_with_description,
+                        data: {
+                          image_src: 'https://some-lion-teaching-karate.jpg',
+                          link: {
+                            type: :link,
+                            data: {
+                              text: 'Promote roar progress',
+                              type: :internal,
+                              url: '/guidance/promote-roar-progress'
+                            }
+                          },
+                          description: {
+                            type: :rich_text,
+                            data: {
+                              html_content: "<p class=\"govuk-body\"><a class=\"govuk-link\" href=\"/guidance/promote-roar-progress\">Promote roar progress</a></p>"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ])
+      end
+
+      it 'can assign equal width for three columns if not provided' do
+        response_with_three_columns = File.open("#{example_fixtures_path}with_three_columns.json", &:read)
+
+        stub_request(:get, sub_category_url)
+          .with(headers: headers)
+          .to_return(status: 200, body: response_with_three_columns, headers: {})
+
+        sub_category
+
+        expect(sub_category.content).to eq([
+          {
+            type: :columns,
+            data: {
+              columns: [
+                {
+                  type: :column,
+                  data: {
+                    width: 'one-third',
+                    content: [
+                      {
+                        type: :image_link_with_description,
+                        data: {
+                          image_src: 'https://some-lion-drinking-tea.jpg',
+                          link: {
+                            type: :link,
+                            data: {
+                              text: 'Set roar expectations',
+                              type: :internal,
+                              url: '/guidance/set-roar-expectations'
+                            }
+                          },
+                          description: {
+                            type: :rich_text,
+                            data: {
+                              html_content: "<p class=\"govuk-body\"><a class=\"govuk-link\" href=\"/guidance/set-roar-expectations\">Set roar expectations</a></p>"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  type: :column,
+                  data: {
+                    width: 'one-third',
+                    content: [
+                      {
+                        type: :image_link_with_description,
+                        data: {
+                          image_src: 'https://some-lion-teaching-karate.jpg',
+                          link: {
+                            type: :link,
+                            data: {
+                              text: 'Promote roar progress',
+                              type: :internal,
+                              url: '/guidance/promote-roar-progress'
+                            }
+                          },
+                          description: {
+                            type: :rich_text,
+                            data: {
+                              html_content: "<p class=\"govuk-body\"><a class=\"govuk-link\" href=\"/guidance/promote-roar-progress\">Promote roar progress</a></p>"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  type: :column,
+                  data: {
+                    width: 'one-third',
+                    content: [
+                      {
+                        type: :image_link_with_description,
+                        data: {
+                          image_src: 'https://some-lion-eating-cake.jpg',
+                          link: {
+                            type: :link,
+                            data: {
+                              text: 'Plan and teach well structured roaring lessons',
+                              type: :internal,
+                              url: '/guidance/plan-and-teach-well-structured-roaring-lessons'
+                            }
+                          },
+                          description: {
+                            type: :rich_text,
+                            data: {
+                              html_content: "<p class=\"govuk-body\"><a class=\"govuk-link\" href=\"/guidance/plan-and-teach-well-structured-roaring-lessons\">Plan and teach well structured roaring lessons</a></p>"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
               ]
             }
           }
@@ -938,12 +1178,12 @@ describe Gateway::ContentfulGateway do
         ])
       end
 
-      it 'including multiple columns' do
-        response_with_multiple_columns = File.open("#{example_fixtures_path}with_multiple_columns.json", &:read)
+      it 'including multiple one half columns' do
+        response_with_one_half_columns = File.open("#{example_fixtures_path}with_one_half_columns.json", &:read)
 
         stub_request(:get, sub_category_url)
           .with(headers: headers)
-          .to_return(status: 200, body: response_with_multiple_columns, headers: {})
+          .to_return(status: 200, body: response_with_one_half_columns, headers: {})
 
         sub_category
 
@@ -952,50 +1192,290 @@ describe Gateway::ContentfulGateway do
             type: :columns,
             data: {
               columns: [
-                [
-                  {
-                    type: :image_link_with_description,
-                    data: {
-                      image_src: 'https://some-cow-drinking-tea.jpg',
-                      link: {
-                        type: :link,
+                {
+                  type: :column,
+                  data: {
+                    width: 'one-half',
+                    content: [
+                      {
+                        type: :image_link_with_description,
                         data: {
-                          text: 'Set moo expectations',
-                          type: :internal,
-                          url: '/guidance/set-moo-expectations'
-                        }
-                      },
-                      description: {
-                        type: :rich_text,
-                        data: {
-                          html_content: "<p class=\"govuk-body\"><a class=\"govuk-link\" href=\"/guidance/set-moo-expectations\">Set moo expectations</a></p>"
-                        }
-                      }
-                    }
-                  }
-                ],
-                [
-                  {
-                    type: :image_link_with_description,
-                    data: {
-                      image_src: 'https://some-cow-teaching-table-tennis.jpg',
-                      link: {
-                        type: :link,
-                        data: {
-                          text: 'Promote moo progress',
-                          type: :internal,
-                          url: '/guidance/promote-moo-progress'
-                        }
-                      },
-                      description: {
-                        type: :rich_text,
-                        data: {
-                          html_content: "<p class=\"govuk-body\"><a class=\"govuk-link\" href=\"/guidance/promote-moo-progress\">Promote moo progress</a></p>"
+                          image_src: 'https://some-cow-drinking-tea.jpg',
+                          link: {
+                            type: :link,
+                            data: {
+                              text: 'Set moo expectations',
+                              type: :internal,
+                              url: '/guidance/set-moo-expectations'
+                            }
+                          },
+                          description: {
+                            type: :rich_text,
+                            data: {
+                              html_content: "<p class=\"govuk-body\"><a class=\"govuk-link\" href=\"/guidance/set-moo-expectations\">Set moo expectations</a></p>"
+                            }
+                          }
                         }
                       }
-                    }
+                    ]
                   }
-                ]
+                },
+                {
+                  type: :column,
+                  data: {
+                    width: 'one-half',
+                    content: [
+                      {
+                        type: :image_link_with_description,
+                        data: {
+                          image_src: 'https://some-cow-teaching-table-tennis.jpg',
+                          link: {
+                            type: :link,
+                            data: {
+                              text: 'Promote moo progress',
+                              type: :internal,
+                              url: '/guidance/promote-moo-progress'
+                            }
+                          },
+                          description: {
+                            type: :rich_text,
+                            data: {
+                              html_content: "<p class=\"govuk-body\"><a class=\"govuk-link\" href=\"/guidance/promote-moo-progress\">Promote moo progress</a></p>"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ])
+      end
+
+      it 'including two thirds column' do
+        response_with_two_thirds_column = File.open("#{example_fixtures_path}with_two_thirds_column.json", &:read)
+
+        stub_request(:get, sub_category_url)
+          .with(headers: headers)
+          .to_return(status: 200, body: response_with_two_thirds_column, headers: {})
+
+        sub_category
+
+        expect(sub_category.content).to eq([
+          {
+            type: :columns,
+            data: {
+              columns: [
+                {
+                  type: :column,
+                  data: {
+                    width: 'two-thirds',
+                    content: [
+                      {
+                        type: :image_link_with_description,
+                        data: {
+                          image_src: 'https://some-cow-drinking-tea.jpg',
+                          link: {
+                            type: :link,
+                            data: {
+                              text: 'Set moo expectations',
+                              type: :internal,
+                              url: '/guidance/set-moo-expectations'
+                            }
+                          },
+                          description: {
+                            type: :rich_text,
+                            data: {
+                              html_content: "<p class=\"govuk-body\"><a class=\"govuk-link\" href=\"/guidance/set-moo-expectations\">Set moo expectations</a></p>"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ])
+      end
+
+      it 'can assign equal width for two columns if not provided' do
+        response_with_two_columns = File.open("#{example_fixtures_path}with_two_columns.json", &:read)
+
+        stub_request(:get, sub_category_url)
+          .with(headers: headers)
+          .to_return(status: 200, body: response_with_two_columns, headers: {})
+
+        sub_category
+
+        expect(sub_category.content).to eq([
+          {
+            type: :columns,
+            data: {
+              columns: [
+                {
+                  type: :column,
+                  data: {
+                    width: 'one-half',
+                    content: [
+                      {
+                        type: :image_link_with_description,
+                        data: {
+                          image_src: 'https://some-cow-drinking-tea.jpg',
+                          link: {
+                            type: :link,
+                            data: {
+                              text: 'Set moo expectations',
+                              type: :internal,
+                              url: '/guidance/set-moo-expectations'
+                            }
+                          },
+                          description: {
+                            type: :rich_text,
+                            data: {
+                              html_content: "<p class=\"govuk-body\"><a class=\"govuk-link\" href=\"/guidance/set-moo-expectations\">Set moo expectations</a></p>"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  type: :column,
+                  data: {
+                    width: 'one-half',
+                    content: [
+                      {
+                        type: :image_link_with_description,
+                        data: {
+                          image_src: 'https://some-cow-teaching-table-tennis.jpg',
+                          link: {
+                            type: :link,
+                            data: {
+                              text: 'Promote moo progress',
+                              type: :internal,
+                              url: '/guidance/promote-moo-progress'
+                            }
+                          },
+                          description: {
+                            type: :rich_text,
+                            data: {
+                              html_content: "<p class=\"govuk-body\"><a class=\"govuk-link\" href=\"/guidance/promote-moo-progress\">Promote moo progress</a></p>"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ])
+      end
+
+      it 'can assign equal width for three columns if not provided' do
+        response_with_three_columns = File.open("#{example_fixtures_path}with_three_columns.json", &:read)
+
+        stub_request(:get, sub_category_url)
+          .with(headers: headers)
+          .to_return(status: 200, body: response_with_three_columns, headers: {})
+
+        sub_category
+
+        expect(sub_category.content).to eq([
+          {
+            type: :columns,
+            data: {
+              columns: [
+                {
+                  type: :column,
+                  data: {
+                    width: 'one-third',
+                    content: [
+                      {
+                        type: :image_link_with_description,
+                        data: {
+                          image_src: 'https://some-cow-drinking-tea.jpg',
+                          link: {
+                            type: :link,
+                            data: {
+                              text: 'Set moo expectations',
+                              type: :internal,
+                              url: '/guidance/set-moo-expectations'
+                            }
+                          },
+                          description: {
+                            type: :rich_text,
+                            data: {
+                              html_content: "<p class=\"govuk-body\"><a class=\"govuk-link\" href=\"/guidance/set-moo-expectations\">Set moo expectations</a></p>"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  type: :column,
+                  data: {
+                    width: 'one-third',
+                    content: [
+                      {
+                        type: :image_link_with_description,
+                        data: {
+                          image_src: 'https://some-cow-teaching-table-tennis.jpg',
+                          link: {
+                            type: :link,
+                            data: {
+                              text: 'Promote moo progress',
+                              type: :internal,
+                              url: '/guidance/promote-moo-progress'
+                            }
+                          },
+                          description: {
+                            type: :rich_text,
+                            data: {
+                              html_content: "<p class=\"govuk-body\"><a class=\"govuk-link\" href=\"/guidance/promote-moo-progress\">Promote moo progress</a></p>"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  type: :column,
+                  data: {
+                    width: 'one-third',
+                    content: [
+                      {
+                        type: :image_link_with_description,
+                        data: {
+                          image_src: 'https://some-cow-eating-sushi.jpg',
+                          link: {
+                            type: :link,
+                            data: {
+                              text: 'Plan and teach well structured mooing lessons',
+                              type: :internal,
+                              url: '/guidance/plan-and-teach-well-structured-mooing-lessons'
+                            }
+                          },
+                          description: {
+                            type: :rich_text,
+                            data: {
+                              html_content: "<p class=\"govuk-body\"><a class=\"govuk-link\" href=\"/guidance/plan-and-teach-well-structured-mooing-lessons\">Plan and teach well structured mooing lessons</a></p>"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
               ]
             }
           }
