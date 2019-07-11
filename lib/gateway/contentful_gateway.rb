@@ -162,7 +162,6 @@ private
   end
 
   def create_download(content)
-    puts content.download_resource.file.url
     {
       type: :download,
       data: {
