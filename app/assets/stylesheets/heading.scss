@@ -1,9 +1,15 @@
+@import "govuk-frontend/settings/media-queries";
+
 .govuk-heading-xl, .govuk-heading-l, .govuk-heading-m, .govuk-heading-s {
   font-weight: 200;
 }
 
 .govuk-heading-xl {
-  font-size: 4rem;
+  font-size: 3rem;
+
+  @media (min-width: map-get($govuk-breakpoints, tablet)) {
+    font-size: 4rem;
+  }
 }
 
 .heavy {
