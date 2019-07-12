@@ -17,10 +17,22 @@
 
 .govuk-grid-row .govuk-grid-column-full .govuk-grid-row .govuk-grid-column-one-half:nth-child(odd),
 .govuk-grid-row .govuk-grid-column-two-thirds .govuk-grid-row .govuk-grid-column-one-half:nth-child(odd) {
-  padding: 0 15px 0 0;
+  padding: 0;
 }
 
 .govuk-grid-row .govuk-grid-column-full .govuk-grid-row .govuk-grid-column-one-half:nth-child(even),
 .govuk-grid-row .govuk-grid-column-two-thirds .govuk-grid-row .govuk-grid-column-one-half:nth-child(even) {
-  padding: 0 0 0 15px;
+  padding: 0;
+}
+
+@media (min-width: 40.0625em) {
+  .govuk-grid-row .govuk-grid-column-full .govuk-grid-row .govuk-grid-column-one-half:nth-child(odd),
+  .govuk-grid-row .govuk-grid-column-two-thirds .govuk-grid-row .govuk-grid-column-one-half:nth-child(odd) {
+    padding: 0 15px 0 0;
+  }
+
+  .govuk-grid-row .govuk-grid-column-full .govuk-grid-row .govuk-grid-column-one-half:nth-child(even),
+  .govuk-grid-row .govuk-grid-column-two-thirds .govuk-grid-row .govuk-grid-column-one-half:nth-child(even) {
+    padding: 0 0 0 15px;
+  }
 }
