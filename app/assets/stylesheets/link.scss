@@ -1,3 +1,5 @@
+@import "govuk-frontend/settings/media-queries";
+
 .govuk-link:link, .govuk-breadcrumbs__link:link {
   color: #215ABB;
   text-decoration: none;
@@ -16,4 +18,12 @@
 .govuk-breadcrumbs__list-item:before {
   bottom: 0px;
   border-width: 2px 2px 0 0;
+}
+
+a.govuk-link, p a.govuk-link {
+  font-size: inherit;
+
+  @media (min-width: map-get($govuk-breakpoints, tablet)) {
+    font-size: 125%;
+  }
 }

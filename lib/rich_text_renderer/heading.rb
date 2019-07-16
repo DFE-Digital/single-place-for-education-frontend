@@ -5,13 +5,13 @@ class HeadingRichTextRenderer < DefaultRichTextRenderer
     heading_level, css_class =
       case node['nodeType']
       when 'heading-1'
-        ['h1', 'govuk-heading-xl']
+        %w[h1 govuk-heading-xl]
       when 'heading-2'
-        ['h2', 'govuk-heading-l']
+        %w[h2 govuk-heading-l]
       when 'heading-3'
-        ['h3', 'govuk-heading-m']
+        %w[h3 govuk-heading-m]
       when 'heading-4'
-        ['h4', 'govuk-heading-s']
+        %w[h4 govuk-heading-s]
       end
 
     id = node['content'][0]['value'].gsub(' ', '-').downcase
