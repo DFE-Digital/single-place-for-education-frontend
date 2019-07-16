@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap');
+@import "govuk-frontend/settings/media-queries";
 
 html {
   font-size: 125%;
@@ -40,6 +41,10 @@ p a, p.govuk-body a.govuk-link, li a.govuk-link {
 .width-s {
   margin: 0 auto;
   width: 600px;
+
+  @media (max-width: map-get($govuk-breakpoints, tablet)) {
+    width: inherit;
+  }
 }
 
 hr {
