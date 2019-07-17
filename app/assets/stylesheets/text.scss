@@ -1,8 +1,14 @@
+@import "govuk-frontend/settings/all";
+@import "govuk-frontend/tools/all";
+@import "govuk-frontend/helpers/all";
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap');
-@import "govuk-frontend/settings/media-queries";
 
 html {
   font-size: 125%;
+}
+
+.govuk-link {
+  @include govuk-font($size: 19);
 }
 
 .govuk-heading-xl, .govuk-heading-l, .govuk-heading-m, .govuk-heading-s, .govuk-body, .govuk-body-s, .govuk-link, .govuk-button, .govuk-breadcrumbs__link, .govuk-list, .govuk-breadcrumbs__list-item, .govuk-caption-xl, .govuk-caption-l, .govuk-caption-m, .govuk-caption-s, .govuk-summary-list__row, .govuk-header {
@@ -12,14 +18,6 @@ html {
 
 .govuk-header {
   font-weight: 400;
-}
-
-.govuk-link {
-  font-size: 125%;
-}
-
-p a, p.govuk-body a.govuk-link, li a.govuk-link {
-  font-size: inherit;
 }
 
 .text-align-left {
