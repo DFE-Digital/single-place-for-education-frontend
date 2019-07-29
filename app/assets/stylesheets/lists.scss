@@ -18,9 +18,13 @@
 
 .dfe-list__large-numbers-item {
   min-height: 70px;
-  margin: 0 0 3.5rem 0 !important;
+  margin: 0 0 2.5rem 0 !important;
   counter-increment: counter;
   display: flex;
+
+  @media (min-width: map-get($govuk-breakpoints, tablet)) {
+    margin: 0 0 3.5rem 0 !important;
+  }
 }
 
 .dfe-list__large-numbers-item::before {
